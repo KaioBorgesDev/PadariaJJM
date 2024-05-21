@@ -33,11 +33,11 @@ namespace PadariaJJM
                 return false;
 
             // Se o preço por peso for especificado, verifica se é válido
-            if (PrecoPorPeso.HasValue && PrecoPorPeso <= 0)
+            if (PrecoPorPeso.HasValue && PrecoPorPeso < 0)
                 return false;
 
             // Se a data de validade for especificada, verifica se é válida
-            if (DataValidade.HasValue && DataValidade < DateTime.Now)
+            if (DataValidade < DateTime.Now)
                 return false;
 
             return true;
@@ -103,11 +103,11 @@ namespace PadariaJJM
                         produtos.Add(produto);
                 }
 
-                Console.WriteLine("Produtos carregados com sucesso do arquivo.");
+               
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ocorreu um erro ao carregar os produtos do arquivo: {ex.Message}");
+                MessageBox.Show($"Ocorreu um erro ao carregar os produtos do arquivo: {ex.Message}");
             }
 
             return produtos;
@@ -118,7 +118,7 @@ namespace PadariaJJM
             // Verifica se o produto é válido antes de salvar
             if (!IsValid())
             {
-                Console.WriteLine("Produto inválido. Não é possível salvar.");
+                MessageBox.Show("Produto inválido. Não é possível salvar.");
                 return;
             }
 
@@ -151,11 +151,11 @@ namespace PadariaJJM
                     writer.WriteLine(); // Adiciona uma linha em branco para separar os produtos no arquivo
                 }
 
-                Console.WriteLine("Produto salvo com sucesso no arquivo.");
+                MessageBox.Show("Produto salvo com sucesso no arquivo.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ocorreu um erro ao salvar o produto no arquivo: {ex.Message}");
+                MessageBox.Show($"Ocorreu um erro ao salvar o produto no arquivo: {ex.Message}");
             }
         }
        

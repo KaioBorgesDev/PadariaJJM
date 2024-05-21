@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormAdicionarProduto.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
-              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs [Projeto]",
-              "RelativeToolTip": "FormAdicionarProduto.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T21:19:23.661Z",
-              "IsPinned": true,
-              "EditorCaption": " [Projeto]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -60,40 +43,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T20:26:23.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
-              "RelativeDocumentMoniker": "entidade\\Produto.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
-              "RelativeToolTip": "entidade\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T21:28:51.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FormAdicionarProduto.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
               "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
               "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
               "RelativeToolTip": "FormAdicionarProduto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJAAAAAQAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAvwGYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T20:44:08.392Z",
+              "WhenOpened": "2024-05-21T01:05:57.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormAdicionarProduto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
+              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs [Projeto]",
+              "RelativeToolTip": "FormAdicionarProduto.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T01:05:54.835Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "RelativeDocumentMoniker": "entidade\\Produto.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "RelativeToolTip": "entidade\\Produto.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAEwFUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:28:51.26Z",
               "EditorCaption": ""
             }
           ]

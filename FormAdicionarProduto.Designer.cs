@@ -85,19 +85,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 110);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(69, 15);
             label2.TabIndex = 5;
-            label2.Text = "Preço:";
+            label2.Text = "Preço (Uni):";
             // 
             // lbQuantidade
             // 
             lbQuantidade.AutoSize = true;
             lbQuantidade.Location = new Point(12, 236);
             lbQuantidade.Name = "lbQuantidade";
-            lbQuantidade.Size = new Size(137, 15);
+            lbQuantidade.Size = new Size(166, 15);
             lbQuantidade.TabIndex = 6;
-            lbQuantidade.Text = "Quantidade em Estoque:";
-            
+            lbQuantidade.Text = "Quantidade em Estoque (Uni):";
             // 
             // label4
             // 
@@ -161,9 +160,9 @@
             label6.AutoSize = true;
             label6.Location = new Point(12, 164);
             label6.Name = "label6";
-            label6.Size = new Size(58, 15);
+            label6.Size = new Size(62, 15);
             label6.TabIndex = 14;
-            label6.Text = "Por Peso?";
+            label6.Text = "Peso (Kg)?";
             // 
             // pesoPreco
             // 

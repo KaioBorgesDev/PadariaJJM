@@ -34,6 +34,7 @@
             adicionarCategoriaToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem1 = new ToolStripMenuItem();
             procurarProdutoToolStripMenuItem = new ToolStripMenuItem();
+            nomeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,8 +63,15 @@
             // 
             // procurarProdutoToolStripMenuItem
             // 
+            procurarProdutoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nomeToolStripMenuItem });
             procurarProdutoToolStripMenuItem.Name = "procurarProdutoToolStripMenuItem";
             resources.ApplyResources(procurarProdutoToolStripMenuItem, "procurarProdutoToolStripMenuItem");
+            // 
+            // nomeToolStripMenuItem
+            // 
+            nomeToolStripMenuItem.Name = "nomeToolStripMenuItem";
+            resources.ApplyResources(nomeToolStripMenuItem, "nomeToolStripMenuItem");
+            nomeToolStripMenuItem.Click += nomeToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -90,5 +98,6 @@
         private ToolStripMenuItem adicionarCategoriaToolStripMenuItem;
         private ToolStripMenuItem adicionarCategoriaToolStripMenuItem1;
         private ToolStripMenuItem procurarProdutoToolStripMenuItem;
+        private ToolStripMenuItem nomeToolStripMenuItem;
     }
 }

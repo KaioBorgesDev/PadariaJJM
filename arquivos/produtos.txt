@@ -1,16 +1,59 @@
-Nome: Pão Francês
-Preço: 1,50
-Quantidade: 100
-Preço por Peso: 5,00
+Nome: 1
+Preço: 11
+Quantidade: 1
+Preço por Peso: 0
 Data de Validade: 02 07 2024
 Código de Barras: 1234567890123
 Fornecedor: Fornecedor A
 
-Nome: Pão Francês
-Preço: 1,50
-Quantidade: 100
-Preço por Peso: 5,00
-Data de Validade: 02 07 2024
-Código de Barras: 1234567890123
-Fornecedor: Fornecedor A
+Nome: 1
+Preço: 1
+Quantidade: 1
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: Papel Toalha
+Preço: 30,00
+Quantidade: 20
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: Alfa Romeo
+
+Nome: Bisnaguinha
+Preço: 150,00
+Quantidade: 10
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: Bisteca
+Preço: 10
+Quantidade: 10
+Preço por Peso: 10
+Data de Validade: 20 06 2024
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: Bisteca
+Preço: 1
+Quantidade: 10
+Preço por Peso: 1
+Data de Validade: 20 06 2024
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: 1
+Preço: 1
+Quantidade: 1
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: 1
+Preço: 1
+Quantidade: 1
+Preço por Peso: 1
+Código de Barras: -------
+Fornecedor: -------
 

@@ -17,5 +17,11 @@ namespace PadariaJJM
             FormAdicionarProduto formAdicionarProduto = new FormAdicionarProduto();
             formAdicionarProduto.Show();
         }
+
+        private void nomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProcurarProduto formProcurarProduto = new FormProcurarProduto();
+            formProcurarProduto.Show();
+        }
     }
 }

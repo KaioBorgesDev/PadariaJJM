@@ -127,13 +127,27 @@ namespace PadariaJJM
                 return;
             }
 
-            Produto produto = new Produto("Pão Francês", 1.50m, 100);
-            produto.PrecoPorPeso = 5.00m;
-            produto.DataValidade = DateTime.Now.AddDays(43);
-            produto.CodigoBarras = "1234567890123";
-            produto.Fornecedor = "Fornecedor A";
+            Produto produto = new Produto(nome.Text, decimal.Parse(preco.Text), int.Parse(quantidade.Text));
 
+            if (string.IsNullOrWhiteSpace(pesoPreco.Text))
+                produto.PrecoPorPeso = 0;
+            else
+                produto.PrecoPorPeso = decimal.Parse(preco.Text);
+
+            if (checkBox1.Checked)
+                produto.DataValidade = DateTime.Parse(data.Text);
+            else
+                produto.DataValidade = null;
             
+
+            produto.CodigoBarras = "-------";
+
+            if (string.IsNullOrWhiteSpace(fornecedor.Text))
+            produto.Fornecedor = "-------";
+            else
+            produto.Fornecedor = fornecedor.Text;
+
+
             if (produto.IsValid())
             {
                 
@@ -141,13 +155,6 @@ namespace PadariaJJM
                 MessageBox.Show("Produto válido. Salvo no banco de dados...");
                 string caminho = "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\arquivos\\produtos.txt";
                 produto.SalvarEmArquivo(caminho);
-
-                List<Produto> produtos = Produto.CarregarDoArquivo(caminho);
-                foreach(var pd in produtos)
-                {
-                    MessageBox.Show(pd.Nome.ToString());
-                }
-
             }
             else
             {
