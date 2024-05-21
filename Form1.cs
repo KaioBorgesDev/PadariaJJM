@@ -1,3 +1,5 @@
+using PadariaJJM.entidade;
+
 namespace PadariaJJM
 {
     public partial class Form1 : Form
@@ -22,6 +24,18 @@ namespace PadariaJJM
         {
             FormProcurarProduto formProcurarProduto = new FormProcurarProduto();
             formProcurarProduto.Show();
+        }
+
+        private void adicionarCategoriaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormAddCategoria categoria = new FormAddCategoria();
+            categoria.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormAddTributo formTributo = new FormAddTributo();
+            formTributo.Show();
         }
     }
 }

@@ -33,6 +33,7 @@
             cadastrarProdutoToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             procurarProdutoToolStripMenuItem = new ToolStripMenuItem();
             nomeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
@@ -46,7 +47,7 @@
             // 
             // cadastrarProdutoToolStripMenuItem
             // 
-            cadastrarProdutoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { adicionarCategoriaToolStripMenuItem, adicionarCategoriaToolStripMenuItem1 });
+            cadastrarProdutoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { adicionarCategoriaToolStripMenuItem, adicionarCategoriaToolStripMenuItem1, toolStripMenuItem1 });
             cadastrarProdutoToolStripMenuItem.Name = "cadastrarProdutoToolStripMenuItem";
             resources.ApplyResources(cadastrarProdutoToolStripMenuItem, "cadastrarProdutoToolStripMenuItem");
             // 
@@ -60,6 +61,13 @@
             // 
             adicionarCategoriaToolStripMenuItem1.Name = "adicionarCategoriaToolStripMenuItem1";
             resources.ApplyResources(adicionarCategoriaToolStripMenuItem1, "adicionarCategoriaToolStripMenuItem1");
+            adicionarCategoriaToolStripMenuItem1.Click += adicionarCategoriaToolStripMenuItem1_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(toolStripMenuItem1, "toolStripMenuItem1");
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // procurarProdutoToolStripMenuItem
             // 
@@ -99,5 +107,6 @@
         private ToolStripMenuItem adicionarCategoriaToolStripMenuItem1;
         private ToolStripMenuItem procurarProdutoToolStripMenuItem;
         private ToolStripMenuItem nomeToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }

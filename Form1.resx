@@ -122,25 +122,31 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="adicionarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Produto</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem1.Text" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Adicionar Imposto</value>
+  </data>
   <data name="cadastrarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
+    <value>72, 20</value>
   </data>
   <data name="cadastrarProdutoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cadastrar Produto</value>
+    <value>Cadastrar </value>
   </data>
   <data name="nomeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="nomeToolStripMenuItem.Text" xml:space="preserve">
     <value>Nome</value>
@@ -280,6 +286,12 @@
     <value>adicionarCategoriaToolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;adicionarCategoriaToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;procurarProdutoToolStripMenuItem.Name" xml:space="preserve">

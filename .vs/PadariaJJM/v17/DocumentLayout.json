@@ -1,18 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\",
+  "WorkspaceRootPath": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\entidade\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\formaddcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formaddcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\formaddcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formaddcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\formaddtributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formaddtributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\formaddcategoria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formaddcategoria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\documents\\importante\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\formaddtributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formaddtributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\source\\repos\\padariajjm\\log\\salvarlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:log\\salvarlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,40 +66,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormAdicionarProduto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
-              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
-              "RelativeToolTip": "FormAdicionarProduto.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAvwGYAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "FormAddCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.cs",
+              "RelativeDocumentMoniker": "FormAddCategoria.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.cs",
+              "RelativeToolTip": "FormAddCategoria.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAWwBcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T01:05:57.199Z",
+              "WhenOpened": "2024-05-21T20:21:04.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormAdicionarProduto.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs",
-              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\FormAdicionarProduto.cs [Projeto]",
-              "RelativeToolTip": "FormAdicionarProduto.cs [Projeto]",
+              "DocumentIndex": 2,
+              "Title": "FormAddCategoria.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.cs",
+              "RelativeDocumentMoniker": "FormAddCategoria.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.cs [Projeto]",
+              "RelativeToolTip": "FormAddCategoria.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T01:05:54.835Z",
+              "WhenOpened": "2024-05-21T20:21:02.206Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\entidade\\Categoria.cs",
+              "RelativeDocumentMoniker": "entidade\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\entidade\\Categoria.cs",
+              "RelativeToolTip": "entidade\\Categoria.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:20:42.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAddCategoria.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.Designer.cs",
+              "RelativeDocumentMoniker": "FormAddCategoria.Designer.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddCategoria.Designer.cs",
+              "RelativeToolTip": "FormAddCategoria.Designer.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvyoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:19:47.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAddTributo.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddTributo.cs",
+              "RelativeDocumentMoniker": "FormAddTributo.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddTributo.cs",
+              "RelativeToolTip": "FormAddTributo.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAlwBcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:15:46.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormAddTributo.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddTributo.cs",
+              "RelativeDocumentMoniker": "FormAddTributo.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\FormAddTributo.cs [Projeto]",
+              "RelativeToolTip": "FormAddTributo.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:15:44.045Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:16:47.9Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeDocumentMoniker": "entidade\\Produto.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeToolTip": "entidade\\Produto.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAEwFUAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T21:28:51.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SalvarLog.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\log\\SalvarLog.cs",
+              "RelativeDocumentMoniker": "log\\SalvarLog.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\log\\SalvarLog.cs",
+              "RelativeToolTip": "log\\SalvarLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:03:22.069Z",
               "EditorCaption": ""
             }
           ]

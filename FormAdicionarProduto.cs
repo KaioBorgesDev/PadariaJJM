@@ -44,15 +44,6 @@ namespace PadariaJJM
 
         private void checkboxPeso_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkboxPeso.Checked)
-            {
-                pesoPreco.Enabled = true;
-
-            }
-            else
-            {
-                pesoPreco.Enabled = false;
-            }
 
         }
 
@@ -121,40 +112,19 @@ namespace PadariaJJM
                 MessageBox.Show("Por favor, insira o nome do fornecedor do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (checkboxPeso.Checked && string.IsNullOrWhiteSpace(pesoPreco.Text))
-            {
-                MessageBox.Show("Por favor, insira o peso do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            
 
             Produto produto = new Produto(nome.Text, decimal.Parse(preco.Text), int.Parse(quantidade.Text));
 
-            if (string.IsNullOrWhiteSpace(pesoPreco.Text))
-                produto.PrecoPorPeso = 0;
-            else
-                produto.PrecoPorPeso = decimal.Parse(preco.Text);
-
-            if (checkBox1.Checked)
-                produto.DataValidade = DateTime.Parse(data.Text);
-            else
-                produto.DataValidade = null;
-            
-
-            produto.CodigoBarras = "-------";
-
-            if (string.IsNullOrWhiteSpace(fornecedor.Text))
-            produto.Fornecedor = "-------";
-            else
-            produto.Fornecedor = fornecedor.Text;
-
+           
 
             if (produto.IsValid())
-            {
-                
+            {              
                 // Salvar o produto no banco de dados ou realizar outras operações
-                MessageBox.Show("Produto válido. Salvo no banco de dados...");
-                string caminho = "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\arquivos\\produtos.txt";
-                produto.SalvarEmArquivo(caminho);
+                MessageBox.Show("Salvando no Banco de Dados");
+                
+                
+
             }
             else
             {

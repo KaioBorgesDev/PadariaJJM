@@ -57,3 +57,17 @@ Preço por Peso: 1
 Código de Barras: -------
 Fornecedor: -------
 
+Nome: 1
+Preço: 1
+Quantidade: 1
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: -------
+
+Nome: 123123
+Preço: 123
+Quantidade: 123
+Preço por Peso: 0
+Código de Barras: -------
+Fornecedor: -------
+

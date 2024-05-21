@@ -42,7 +42,6 @@
             checkBox2 = new CheckBox();
             barCode = new TextBox();
             label6 = new Label();
-            pesoPreco = new TextBox();
             checkboxPeso = new CheckBox();
             fornecedor = new TextBox();
             label3 = new Label();
@@ -66,7 +65,7 @@
             // 
             // quantidade
             // 
-            quantidade.Location = new Point(12, 254);
+            quantidade.Location = new Point(12, 204);
             quantidade.Name = "quantidade";
             quantidade.Size = new Size(137, 23);
             quantidade.TabIndex = 3;
@@ -85,14 +84,14 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 110);
             label2.Name = "label2";
-            label2.Size = new Size(69, 15);
+            label2.Size = new Size(88, 15);
             label2.TabIndex = 5;
-            label2.Text = "Preço (Uni):";
+            label2.Text = "Preço (Uni/Kg):";
             // 
             // lbQuantidade
             // 
             lbQuantidade.AutoSize = true;
-            lbQuantidade.Location = new Point(12, 236);
+            lbQuantidade.Location = new Point(12, 186);
             lbQuantidade.Name = "lbQuantidade";
             lbQuantidade.Size = new Size(166, 15);
             lbQuantidade.TabIndex = 6;
@@ -101,7 +100,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 299);
+            label4.Location = new Point(12, 249);
             label4.Name = "label4";
             label4.Size = new Size(81, 15);
             label4.TabIndex = 8;
@@ -111,7 +110,7 @@
             // 
             data.Enabled = false;
             data.Format = DateTimePickerFormat.Short;
-            data.Location = new Point(12, 317);
+            data.Location = new Point(12, 267);
             data.Name = "data";
             data.Size = new Size(200, 23);
             data.TabIndex = 9;
@@ -119,7 +118,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(99, 298);
+            checkBox1.Location = new Point(99, 248);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(46, 19);
             checkBox1.TabIndex = 10;
@@ -130,7 +129,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 364);
+            label5.Location = new Point(12, 314);
             label5.Name = "label5";
             label5.Size = new Size(103, 15);
             label5.TabIndex = 11;
@@ -139,7 +138,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(121, 363);
+            checkBox2.Location = new Point(121, 313);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(46, 19);
             checkBox2.TabIndex = 12;
@@ -150,7 +149,7 @@
             // barCode
             // 
             barCode.Enabled = false;
-            barCode.Location = new Point(12, 382);
+            barCode.Location = new Point(12, 332);
             barCode.Name = "barCode";
             barCode.Size = new Size(200, 23);
             barCode.TabIndex = 13;
@@ -163,14 +162,6 @@
             label6.Size = new Size(62, 15);
             label6.TabIndex = 14;
             label6.Text = "Peso (Kg)?";
-            // 
-            // pesoPreco
-            // 
-            pesoPreco.Enabled = false;
-            pesoPreco.Location = new Point(12, 189);
-            pesoPreco.Name = "pesoPreco";
-            pesoPreco.Size = new Size(137, 23);
-            pesoPreco.TabIndex = 15;
             // 
             // checkboxPeso
             // 
@@ -186,7 +177,7 @@
             // fornecedor
             // 
             fornecedor.Enabled = false;
-            fornecedor.Location = new Point(12, 446);
+            fornecedor.Location = new Point(12, 396);
             fornecedor.Name = "fornecedor";
             fornecedor.Size = new Size(200, 23);
             fornecedor.TabIndex = 17;
@@ -194,7 +185,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 428);
+            label3.Location = new Point(12, 378);
             label3.Name = "label3";
             label3.Size = new Size(67, 15);
             label3.TabIndex = 18;
@@ -203,7 +194,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(85, 427);
+            checkBox3.Location = new Point(85, 377);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(46, 19);
             checkBox3.TabIndex = 19;
@@ -213,7 +204,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(24, 510);
+            button1.Location = new Point(24, 460);
             button1.Name = "button1";
             button1.Size = new Size(178, 37);
             button1.TabIndex = 20;
@@ -231,7 +222,6 @@
             Controls.Add(label3);
             Controls.Add(fornecedor);
             Controls.Add(checkboxPeso);
-            Controls.Add(pesoPreco);
             Controls.Add(label6);
             Controls.Add(barCode);
             Controls.Add(checkBox2);
@@ -267,7 +257,6 @@
         private CheckBox checkBox2;
         private TextBox barCode;
         private Label label6;
-        private TextBox pesoPreco;
         private CheckBox checkboxPeso;
         private TextBox fornecedor;
         private Label label3;

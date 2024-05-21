@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {}
+    "C:\\Users\\Aluno.ESCOLAR509\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {
+    "C:\\Users\\Aluno.ESCOLAR509\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno.ESCOLAR509\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj",
         "projectName": "PadariaJJM",
-        "projectPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\obj\\",
+        "projectPath": "C:\\Users\\Aluno.ESCOLAR509\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj",
+        "packagesPath": "C:\\Users\\Aluno.ESCOLAR509\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aluno.ESCOLAR509\\Source\\Repos\\PadariaJJM\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aluno.ESCOLAR509\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +48,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
