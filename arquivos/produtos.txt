@@ -1,0 +1,16 @@
+Nome: Pão Francês
+Preço: 1,50
+Quantidade: 100
+Preço por Peso: 5,00
+Data de Validade: 02 07 2024
+Código de Barras: 1234567890123
+Fornecedor: Fornecedor A
+
+Nome: Pão Francês
+Preço: 1,50
+Quantidade: 100
+Preço por Peso: 5,00
+Data de Validade: 02 07 2024
+Código de Barras: 1234567890123
+Fornecedor: Fornecedor A
+
