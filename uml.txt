@@ -1,0 +1,59 @@
+CREATE DATABASE `padariajjm` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+
+CREATE TABLE `categoria` (
+  `idcategoria` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idcategoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `cliente_devedor` (
+  `idCliente` int(11) NOT NULL,
+  `nome` varchar(45) NOT NULL,
+  `cpf` varchar(12) NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `valor_devendo` decimal(12,0) NOT NULL,
+  `valor_pago` decimal(12,0) DEFAULT NULL,
+  `vendas_produtos_idprodutos` int(11) NOT NULL,
+  PRIMARY KEY (`idCliente`,`cpf`),
+  KEY `fk_cliente_devedor_vendas1` (`vendas_produtos_idprodutos`),
+  CONSTRAINT `fk_cliente_devedor_vendas1` FOREIGN KEY (`vendas_produtos_idprodutos`) REFERENCES `vendas` (`produtos_idprodutos`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `produtos` (
+  `idprodutos` int(11) NOT NULL,
+  `nome` varchar(45) NOT NULL,
+  `preco` varchar(45) NOT NULL,
+  `quantidade` varchar(45) NOT NULL,
+  `validade` datetime DEFAULT NULL,
+  `barCode` varchar(45) DEFAULT NULL,
+  `fornecedor` varchar(45) DEFAULT NULL,
+  `peso` bit(2) DEFAULT NULL,
+  `categoria_idcategoria` int(11) NOT NULL,
+  `tributos_idtributos` int(11) NOT NULL,
+  PRIMARY KEY (`idprodutos`,`categoria_idcategoria`),
+  KEY `fk_produtos_categoria1` (`categoria_idcategoria`),
+  KEY `fk_produtos_tributos1` (`tributos_idtributos`),
+  CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_idtributos`) REFERENCES `tributos` (`idtributos`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `tributos` (
+  `idtributos` int(11) NOT NULL,
+  `nome` varchar(45) DEFAULT NULL,
+  `valor_porcentagem` int(3) DEFAULT NULL,
+  PRIMARY KEY (`idtributos`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `vendas` (
+  `produtos_idprodutos` int(11) NOT NULL,
+  `quantidade` decimal(10,0) NOT NULL,
+  `preco_total` decimal(10,0) DEFAULT NULL,
+  `cpf` varchar(12) DEFAULT NULL,
+  `dinheiro` decimal(10,0) DEFAULT NULL,
+  `troco` decimal(10,0) DEFAULT NULL,
+  `metodo_pagamento` varchar(45) NOT NULL,
+  `data_venda` datetime NOT NULL,
+  PRIMARY KEY (`produtos_idprodutos`),
+  CONSTRAINT `vendas_ibfk_1` FOREIGN KEY (`produtos_idprodutos`) REFERENCES `produtos` (`idprodutos`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
