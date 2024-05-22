@@ -20,10 +20,12 @@ namespace PadariaJJM.entidade
         private void button1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(nome.Text) && !string.IsNullOrEmpty(valorImposto.Text)) {
+                //colocar o try parse
+                
                 Tributo tributo = new Tributo(null,nome.Text,int.Parse(valorImposto.Text));
-                tributo.inserir();
+                MessageBox.Show(tributo.inserir());
                 return;
-            };
+            }
             MessageBox.Show("Verifique as Informaçoes");
 
         }

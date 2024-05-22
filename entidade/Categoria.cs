@@ -14,8 +14,8 @@ namespace PadariaJJM.entidade
         private int? Id { get; set; }
         private string Name { get; set; }
         private SalvarLog salvar = new SalvarLog();
-        private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM;Uid=aluno;Pwd=Senai1234";
-        private string caminho = "C:\\Users\\Aluno.ESCOLAR509\\source\\repos\\PadariaJJM\\arquivos\\log.txt";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        private string caminho = @"arquivos\log.txt";
         public Categoria(int? id, string name)
         {
             this.Id = id;

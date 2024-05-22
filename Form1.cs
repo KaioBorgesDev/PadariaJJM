@@ -37,5 +37,10 @@ namespace PadariaJJM
             FormAddTributo formTributo = new FormAddTributo();
             formTributo.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
