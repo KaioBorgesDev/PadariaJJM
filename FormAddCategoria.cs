@@ -27,7 +27,7 @@ namespace PadariaJJM
                 MessageBox.Show("Coloque um nome por favor!");
                 return;
             }
-            Categoria categoria = new Categoria(null, nome_categoria.Text);
+            Categoria categoria = new Categoria( nome_categoria.Text);
 
             if (categoria != null )
             {

@@ -3,17 +3,15 @@ CREATE DATABASE `padariajjm` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `padariajjm`;
 
 CREATE TABLE `categoria` (
-  `idcategoria` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idcategoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `nome` varchar(45) NOT NULL,
+  PRIMARY KEY (`nome`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tributos` (
-  `idtributos` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) DEFAULT NULL,
+  `nome` varchar(45) NOT NULL,
   `valor_porcentagem` int(3) DEFAULT NULL,
-  PRIMARY KEY (`idtributos`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`nome`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `produtos` (
   `idprodutos` int(11) NOT NULL AUTO_INCREMENT,
@@ -24,13 +22,13 @@ CREATE TABLE `produtos` (
   `barCode` varchar(45) DEFAULT NULL,
   `fornecedor` varchar(45) DEFAULT NULL,
   `is_peso` boolean NOT NULL DEFAULT 0, -- Este campo indica se a quantidade é em peso
-  `categoria_idcategoria` int(11) NOT NULL,
-  `tributos_idtributos` int(11) NOT NULL,
+  `categoria_nome` varchar(45) NOT NULL,
+  `tributos_nome` varchar(45) NOT NULL,
   PRIMARY KEY (`idprodutos`),
-  KEY `fk_produtos_categoria1` (`categoria_idcategoria`),
-  KEY `fk_produtos_tributos1` (`tributos_idtributos`),
-  CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_idcategoria`) REFERENCES `categoria` (`idcategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_idtributos`) REFERENCES `tributos` (`idtributos`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_produtos_categoria1` (`categoria_nome`),
+  KEY `fk_produtos_tributos1` (`tributos_nome`),
+  CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_nome`) REFERENCES `categoria` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_nome`) REFERENCES `tributos` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `vendas` (

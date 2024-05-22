@@ -21,8 +21,14 @@ namespace PadariaJJM.entidade
         {
             if (!string.IsNullOrEmpty(nome.Text) && !string.IsNullOrEmpty(valorImposto.Text)) {
                 //colocar o try parse
+                int valorImp;
                 
-                Tributo tributo = new Tributo(null,nome.Text,int.Parse(valorImposto.Text));
+                if(!int.TryParse(valorImposto.Text, out valorImp))
+                {
+                    MessageBox.Show("Valor do imposto incorreto!");
+                    return;
+                }
+                Tributo tributo = new Tributo(nome.Text,valorImp);
                 MessageBox.Show(tributo.inserir());
                 return;
             }

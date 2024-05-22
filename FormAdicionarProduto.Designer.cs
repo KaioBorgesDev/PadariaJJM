@@ -47,25 +47,29 @@
             label3 = new Label();
             checkBox3 = new CheckBox();
             button1 = new Button();
+            label7 = new Label();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // nome
             // 
-            nome.Location = new Point(12, 75);
+            nome.Location = new Point(9, 75);
             nome.Name = "nome";
             nome.Size = new Size(328, 23);
             nome.TabIndex = 0;
             // 
             // preco
             // 
-            preco.Location = new Point(12, 128);
+            preco.Location = new Point(9, 128);
             preco.Name = "preco";
             preco.Size = new Size(137, 23);
             preco.TabIndex = 1;
             // 
             // quantidade
             // 
-            quantidade.Location = new Point(12, 204);
+            quantidade.Location = new Point(9, 261);
             quantidade.Name = "quantidade";
             quantidade.Size = new Size(137, 23);
             quantidade.TabIndex = 3;
@@ -91,16 +95,16 @@
             // lbQuantidade
             // 
             lbQuantidade.AutoSize = true;
-            lbQuantidade.Location = new Point(12, 186);
+            lbQuantidade.Location = new Point(9, 243);
             lbQuantidade.Name = "lbQuantidade";
-            lbQuantidade.Size = new Size(166, 15);
+            lbQuantidade.Size = new Size(200, 15);
             lbQuantidade.TabIndex = 6;
-            lbQuantidade.Text = "Quantidade em Estoque (Uni):";
+            lbQuantidade.Text = "Quantidade em Estoque (Uni ou Kg):";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 249);
+            label4.Location = new Point(9, 306);
             label4.Name = "label4";
             label4.Size = new Size(81, 15);
             label4.TabIndex = 8;
@@ -110,7 +114,7 @@
             // 
             data.Enabled = false;
             data.Format = DateTimePickerFormat.Short;
-            data.Location = new Point(12, 267);
+            data.Location = new Point(9, 324);
             data.Name = "data";
             data.Size = new Size(200, 23);
             data.TabIndex = 9;
@@ -118,7 +122,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(99, 248);
+            checkBox1.Location = new Point(96, 305);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(46, 19);
             checkBox1.TabIndex = 10;
@@ -129,7 +133,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 314);
+            label5.Location = new Point(9, 371);
             label5.Name = "label5";
             label5.Size = new Size(103, 15);
             label5.TabIndex = 11;
@@ -138,7 +142,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(121, 313);
+            checkBox2.Location = new Point(118, 370);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(46, 19);
             checkBox2.TabIndex = 12;
@@ -149,7 +153,7 @@
             // barCode
             // 
             barCode.Enabled = false;
-            barCode.Location = new Point(12, 332);
+            barCode.Location = new Point(9, 389);
             barCode.Name = "barCode";
             barCode.Size = new Size(200, 23);
             barCode.TabIndex = 13;
@@ -177,7 +181,7 @@
             // fornecedor
             // 
             fornecedor.Enabled = false;
-            fornecedor.Location = new Point(12, 396);
+            fornecedor.Location = new Point(9, 442);
             fornecedor.Name = "fornecedor";
             fornecedor.Size = new Size(200, 23);
             fornecedor.TabIndex = 17;
@@ -185,7 +189,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 378);
+            label3.Location = new Point(9, 424);
             label3.Name = "label3";
             label3.Size = new Size(67, 15);
             label3.TabIndex = 18;
@@ -194,7 +198,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(85, 377);
+            checkBox3.Location = new Point(82, 423);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(46, 19);
             checkBox3.TabIndex = 19;
@@ -204,7 +208,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(24, 460);
+            button1.Location = new Point(211, 548);
             button1.Name = "button1";
             button1.Size = new Size(178, 37);
             button1.TabIndex = 20;
@@ -212,11 +216,50 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 186);
+            label7.Name = "label7";
+            label7.Size = new Size(58, 15);
+            label7.TabIndex = 22;
+            label7.Text = "Categoria";
+            label7.Click += label7_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(9, 204);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(163, 23);
+            comboBox1.TabIndex = 23;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(9, 497);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(163, 23);
+            comboBox2.TabIndex = 25;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(9, 479);
+            label8.Name = "label8";
+            label8.Size = new Size(59, 15);
+            label8.TabIndex = 24;
+            label8.Text = "Imposto ?";
+            // 
             // FormAdicionarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 597);
+            Controls.Add(comboBox2);
+            Controls.Add(label8);
+            Controls.Add(comboBox1);
+            Controls.Add(label7);
             Controls.Add(button1);
             Controls.Add(checkBox3);
             Controls.Add(label3);
@@ -262,5 +305,9 @@
         private Label label3;
         private CheckBox checkBox3;
         private Button button1;
+        private Label label7;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Label label8;
     }
 }

@@ -8,9 +8,10 @@ namespace PadariaJJM.log
 {
     internal class SalvarLog
     {
-
-        public void SalvarEmArquivoLog(string caminho, string mensagem, string categoria)
+        
+        public void SalvarEmArquivoLog(string mensagem, string categoria)
         {
+            string caminho = @"arquivos\log.txt";
             try
             {
                 using (StreamWriter writer = new StreamWriter(caminho, true))
@@ -22,8 +23,6 @@ namespace PadariaJJM.log
 
                     writer.WriteLine(); // Adiciona uma linha em branco para separar os produtos no arquivo
                 }
-
-                MessageBox.Show("Log Salvo.");
             }
             catch (Exception ex)
             {

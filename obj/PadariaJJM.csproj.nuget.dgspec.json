@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julin\\Source\\Repos\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj": {}
+    "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julin\\Source\\Repos\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj": {
+    "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julin\\Source\\Repos\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
         "projectName": "PadariaJJM",
-        "projectPath": "C:\\Users\\julin\\Source\\Repos\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
-        "packagesPath": "C:\\Users\\julin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julin\\Source\\Repos\\KaioBorgesDev\\PadariaJJM\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\julin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

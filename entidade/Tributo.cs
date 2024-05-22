@@ -13,17 +13,22 @@ namespace PadariaJJM.entidade
 {
     internal class Tributo
     {
-        public int? ID { get; set; }
+        
         public string Nome { get; set;}
         public int Porcentagem { get; set;}
         SalvarLog salvar = new SalvarLog();
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        //url casa da julia
+        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        //url minha casa 
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
         private string caminho = @"arquivos\log.txt";
 
-
-        public Tributo(int? iD, string nome, int porcentagem)
+        public Tributo()
         {
-            ID = iD;
+        }
+
+        public Tributo(string nome, int porcentagem)
+        {
             Nome = nome;
             Porcentagem = porcentagem;
         }
@@ -39,7 +44,8 @@ namespace PadariaJJM.entidade
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao abrir banco");
-                salvar.SalvarEmArquivoLog(caminho, ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                return mensagem;
             }
 
             MySqlCommand comando = new MySqlCommand("Insert into tributos(nome, valor_porcentagem) values(@nome, @porcentagem)", conn);
@@ -53,9 +59,43 @@ namespace PadariaJJM.entidade
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao salvar no banco");
-                salvar.SalvarEmArquivoLog(caminho, ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
             }
             return mensagem = "Salvo com sucesso";
+        }
+
+        public List<Tributo> SelecionarTodos()
+        {
+            List<Tributo> tributos = new List<Tributo>();
+
+            MySqlConnection conn = new MySqlConnection(Url);
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM tributos", conn);
+                var reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Tributo tributo = new Tributo(reader["nome"].ToString(), int.Parse(reader["valor_porcentagem"].ToString()));
+                    tributos.Add(tributo);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao selecionar tributos do banco");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return tributos;
         }
     }
 }
