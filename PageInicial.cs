@@ -2,9 +2,9 @@ using PadariaJJM.entidade;
 
 namespace PadariaJJM
 {
-    public partial class Form1 : Form
+    public partial class PageInicial : Form
     {
-        public Form1()
+        public PageInicial()
         {
             InitializeComponent();
         }

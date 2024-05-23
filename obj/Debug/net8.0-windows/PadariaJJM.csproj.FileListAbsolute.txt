@@ -3,7 +3,6 @@ C:\Users\Administrador\Documents\Importante\PadariaJJM\bin\Debug\net8.0-windows\
 C:\Users\Administrador\Documents\Importante\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.runtimeconfig.json
 C:\Users\Administrador\Documents\Importante\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.dll
 C:\Users\Administrador\Documents\Importante\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.pdb
-C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.Form1.resources
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.GenerateResource.cache
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AssemblyInfoInputs.cache
@@ -108,3 +107,4 @@ C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.entidade.FormAddTributo.resources
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.Properties.Resources.resources
 C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.Up2Date
+C:\Users\Administrador\Documents\Importante\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.PageInicial.resources

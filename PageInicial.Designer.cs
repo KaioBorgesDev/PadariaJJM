@@ -1,6 +1,6 @@
 ﻿namespace PadariaJJM
 {
-    partial class Form1
+    partial class PageInicial
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageInicial));
             menuStrip1 = new MenuStrip();
             cadastrarProdutoToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem = new ToolStripMenuItem();
@@ -36,12 +36,8 @@
             toolStripMenuItem1 = new ToolStripMenuItem();
             procurarProdutoToolStripMenuItem = new ToolStripMenuItem();
             nomeToolStripMenuItem = new ToolStripMenuItem();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -88,43 +84,27 @@
             resources.ApplyResources(nomeToolStripMenuItem, "nomeToolStripMenuItem");
             nomeToolStripMenuItem.Click += nomeToolStripMenuItem_Click;
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(pictureBox2, "pictureBox2");
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.TabStop = false;
-            // 
             // pictureBox3
             // 
             resources.ApplyResources(pictureBox3, "pictureBox3");
             pictureBox3.Name = "pictureBox3";
             pictureBox3.TabStop = false;
             // 
-            // Form1
+            // PageInicial
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
             Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Form1";
+            Name = "PageInicial";
             WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -139,8 +119,6 @@
         private ToolStripMenuItem procurarProdutoToolStripMenuItem;
         private ToolStripMenuItem nomeToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox3;
     }
 }

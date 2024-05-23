@@ -14,7 +14,7 @@ namespace PadariaJJM
         public int? idProduto { get; set; }
         public string Nome { get; set; }
         public decimal Preco { get; set; }
-        public int Quantidade { get; set; }
+        public decimal Quantidade { get; set; }
         public bool IsPeso { get; set; }
         public string Categoria { get; set; }
         
@@ -28,7 +28,7 @@ namespace PadariaJJM
         //url minha casa 
         private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
-        public Produto(int? idProduto, string nome, decimal preco, int quantidade, bool isPeso, string categoria)
+        public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, bool isPeso, string categoria)
         {
             this.idProduto = idProduto;
             Nome = nome;
@@ -37,6 +37,10 @@ namespace PadariaJJM
             IsPeso = isPeso;
             Categoria = categoria;
             
+        }
+
+        public Produto()
+        {
         }
 
 
@@ -119,7 +123,52 @@ namespace PadariaJJM
             return mensagem = "Salvo com sucesso";
         }
 
+        public  List<Produto> PegarTodos()
+        {
+            List<Produto> produtos = new List<Produto>();
 
+            MySqlConnection conn = new MySqlConnection(Url);
 
+            try
+            {
+                conn.Open();
+
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos", conn);
+
+                var reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Produto produto = new Produto(
+                        int.Parse(reader["idprodutos"].ToString()),
+                        reader["nome"].ToString(),
+                        decimal.Parse(reader["preco"].ToString()),
+                        decimal.Parse(reader["quantidade"].ToString()),
+                        bool.Parse(reader["is_peso"].ToString()),
+                        reader["categoria_nome"].ToString());
+                        produto.Tributo = reader["tributos_nome"].ToString();
+                        produto.Fornecedor = reader["fornecedor"].ToString();
+                        produto.CodigoBarras = reader["barCode"].ToString();
+                        produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
+                    
+                    
+                    produtos.Add(produto);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao selecionar produtos do banco");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return produtos;
+        }
     }
+
 }

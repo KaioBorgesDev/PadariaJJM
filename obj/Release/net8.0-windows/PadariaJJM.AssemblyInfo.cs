@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PadariaJJM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f37a6f6a920878e830f0d7c94479c5bdf50d116b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84942a3fc4b3c63aaafaf418b1ebb5524f2a8e78")]
 [assembly: System.Reflection.AssemblyProductAttribute("PadariaJJM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PadariaJJM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -892,3 +892,27 @@ Mensagem: MySql.Data.MySqlClient.MySqlException (0x80004005): Column 'tributos_n
    at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
    at PadariaJJM.Produto.inserir() in C:\Users\Administrador\Documents\Importante\PadariaJJM\entidade\Produto.cs:line 111
 
+Data: 22/05/2024 20:24:49
+Categoria: 500
+Mensagem: System.IndexOutOfRangeException: Could not find specified column in results: id
+   at MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at PadariaJJM.Produto.PegarTodos() in C:\Users\Administrador\Documents\Importante\PadariaJJM\entidade\Produto.cs:line 141
+
+Data: 22/05/2024 20:25:48
+Categoria: 500
+Mensagem: System.IndexOutOfRangeException: Could not find specified column in results: id
+   at MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at PadariaJJM.Produto.PegarTodos()
+
+Data: 22/05/2024 20:26:22
+Categoria: 500
+Mensagem: System.IndexOutOfRangeException: Could not find specified column in results: tributo_nome
+   at MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at PadariaJJM.Produto.PegarTodos()
+
