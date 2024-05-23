@@ -121,6 +121,54 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="adicionarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Adicionar Produto</value>
+  </data>
+  <data name="adicionarCategoriaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="adicionarCategoriaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Adicionar Categoria</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Adicionar Imposto</value>
+  </data>
+  <data name="cadastrarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <data name="cadastrarProdutoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastrar </value>
+  </data>
+  <data name="nomeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="nomeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="procurarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="procurarProdutoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Procurar </value>
+  </data>
+  <data name="produtoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="produtoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="atualizarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="atualizarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -146,46 +194,10 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="cadastrarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
-  </data>
-  <data name="cadastrarProdutoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cadastrar </value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar Produto</value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Adicionar Categoria</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Adicionar Imposto</value>
-  </data>
-  <data name="procurarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="procurarProdutoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Procurar </value>
-  </data>
-  <data name="nomeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
-  </data>
-  <data name="nomeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produto</value>
-  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAKwlJREFUeF7t3QesZOddP+6/aD9AgOi9CyFAgOggiigSHYEEEgIBEiCqAAkUmmih
+        vQAADr0BR/uQrQAAKwlJREFUeF7t3QesZOddP+6/aD9AgOi9CyFAgOggiigSHYEEEgIBEiCqAAkUmmih
         hxoIRSJEQOiEklAUoiT00KWghCIS7xp77fV612t7bWfd7cxfn/GZ5Hr83jvnnDln5p13nkf6ynvn3nva
         jO/nlLf8fwsA4OAJdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABo
         gEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYI
@@ -526,6 +538,18 @@
     <value>nomeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;nomeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;atualizarToolStripMenuItem.Name" xml:space="preserve">
+    <value>atualizarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;atualizarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem.Name" xml:space="preserve">
+    <value>produtoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -37,6 +37,8 @@
             procurarProdutoToolStripMenuItem = new ToolStripMenuItem();
             nomeToolStripMenuItem = new ToolStripMenuItem();
             pictureBox3 = new PictureBox();
+            atualizarToolStripMenuItem = new ToolStripMenuItem();
+            produtoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -44,7 +46,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarProdutoToolStripMenuItem, procurarProdutoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarProdutoToolStripMenuItem, procurarProdutoToolStripMenuItem, atualizarToolStripMenuItem });
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
             // 
@@ -90,6 +92,18 @@
             pictureBox3.Name = "pictureBox3";
             pictureBox3.TabStop = false;
             // 
+            // atualizarToolStripMenuItem
+            // 
+            atualizarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem });
+            atualizarToolStripMenuItem.Name = "atualizarToolStripMenuItem";
+            resources.ApplyResources(atualizarToolStripMenuItem, "atualizarToolStripMenuItem");
+            // 
+            // produtoToolStripMenuItem
+            // 
+            produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
+            resources.ApplyResources(produtoToolStripMenuItem, "produtoToolStripMenuItem");
+            produtoToolStripMenuItem.Click += produtoToolStripMenuItem_Click;
+            // 
             // PageInicial
             // 
             resources.ApplyResources(this, "$this");
@@ -120,5 +134,7 @@
         private ToolStripMenuItem nomeToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
         private PictureBox pictureBox3;
+        private ToolStripMenuItem atualizarToolStripMenuItem;
+        private ToolStripMenuItem produtoToolStripMenuItem;
     }
 }

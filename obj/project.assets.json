@@ -1786,19 +1786,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
+    "C:\\Users\\Aluno.ESCOLAR509\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
       "projectName": "PadariaJJM",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\Importante\\PadariaJJM\\obj\\",
+      "projectPath": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+      "packagesPath": "C:\\Users\\Aluno.ESCOLAR509\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aluno.ESCOLAR509\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

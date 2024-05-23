@@ -17,16 +17,19 @@ namespace PadariaJJM
         public decimal Quantidade { get; set; }
         public bool IsPeso { get; set; }
         public string Categoria { get; set; }
-        
-        SalvarLog salvar = new SalvarLog(); 
+
+        SalvarLog salvar = new SalvarLog();
 
 
         // Construtor para as propriedades obrigatórias
 
+        //url casa da Senai
+        private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
         //url casa da julia
+
         //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
         //url minha casa 
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
         public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, bool isPeso, string categoria)
         {
@@ -36,7 +39,7 @@ namespace PadariaJJM
             Quantidade = quantidade;
             IsPeso = isPeso;
             Categoria = categoria;
-            
+
         }
 
         public Produto()
@@ -123,7 +126,7 @@ namespace PadariaJJM
             return mensagem = "Salvo com sucesso";
         }
 
-        public  List<Produto> PegarTodos()
+        public List<Produto> PegarTodos()
         {
             List<Produto> produtos = new List<Produto>();
 
@@ -146,12 +149,12 @@ namespace PadariaJJM
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
                         reader["categoria_nome"].ToString());
-                        produto.Tributo = reader["tributos_nome"].ToString();
-                        produto.Fornecedor = reader["fornecedor"].ToString();
-                        produto.CodigoBarras = reader["barCode"].ToString();
-                        produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
-                    
-                    
+                    produto.Tributo = reader["tributos_nome"].ToString();
+                    produto.Fornecedor = reader["fornecedor"].ToString();
+                    produto.CodigoBarras = reader["barCode"].ToString();
+                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
+
+
                     produtos.Add(produto);
                 }
 
@@ -169,6 +172,96 @@ namespace PadariaJJM
 
             return produtos;
         }
+        public void AtualizarProduto()
+        {
+            string connectionString = Url; 
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string query = @"
+                UPDATE produtos 
+                SET 
+                    nome = @nome,
+                    preco = @preco,
+                    quantidade = @quantidade,
+                    is_peso = @isPeso,
+                    categoria_nome = @categoria,
+                    validade = @validade,
+                    fornecedor = @fornecedor,
+                    barCode = @barCode,
+                    tributos_nome = @tributo
+                WHERE 
+                    idprodutos = @id";
+
+                    MySqlCommand comando = new MySqlCommand(query, conn);
+                    comando.Parameters.AddWithValue("@id", idProduto);
+                    comando.Parameters.AddWithValue("@nome", Nome);
+                    comando.Parameters.AddWithValue("@preco", Preco);
+                    comando.Parameters.AddWithValue("@quantidade", Quantidade);
+                    comando.Parameters.AddWithValue("@isPeso", IsPeso);
+                    comando.Parameters.AddWithValue("@categoria", Categoria);
+                    comando.Parameters.AddWithValue("@validade", DataValidade);
+                    comando.Parameters.AddWithValue("@fornecedor", Fornecedor);
+                    comando.Parameters.AddWithValue("@barCode", CodigoBarras);
+                    comando.Parameters.AddWithValue("@tributo", Tributo);
+
+                    comando.ExecuteNonQuery();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao atualizar produto no banco: " + ex.Message);
+                    // Supondo que você tenha um método salvar.SalvarEmArquivoLog para registrar logs
+                    salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                }
+
+                MessageBox.Show("Produto atualizado com sucesso!");
+            }
+        }
+        public Produto ProcurarProduto()
+        {
+            MySqlConnection conn = new MySqlConnection(Url);
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where idprodutos = @id ", conn);
+                comando.Parameters.AddWithValue("@id", idProduto.ToString());
+
+                var reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Produto produto = new Produto(
+                        int.Parse(reader["idprodutos"].ToString()),
+                        reader["nome"].ToString(),
+                        decimal.Parse(reader["preco"].ToString()),
+                        decimal.Parse(reader["quantidade"].ToString()),
+                        bool.Parse(reader["is_peso"].ToString()),
+                        reader["categoria_nome"].ToString());
+
+                    produto.Tributo = reader["tributos_nome"].ToString();
+                    produto.Fornecedor = reader["fornecedor"].ToString();
+                    produto.CodigoBarras = reader["barCode"].ToString();
+                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
+
+
+                    return produto;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao selecionar produtos do banco");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            return null;
+        }
+
     }
 
 }

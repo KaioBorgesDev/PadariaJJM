@@ -42,5 +42,11 @@ namespace PadariaJJM
         {
 
         }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AtualizarProdutoForm prod = new AtualizarProdutoForm();
+            prod.Show();
+        }
     }
 }

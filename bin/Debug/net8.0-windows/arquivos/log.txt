@@ -916,3 +916,102 @@ Mensagem: System.IndexOutOfRangeException: Could not find specified column in re
    at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
    at PadariaJJM.Produto.PegarTodos()
 
+Data: 23/05/2024 15:08:09
+Categoria: 500
+Mensagem: MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'idorodutos' in 'where clause'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at PadariaJJM.Produto.ProcurarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 187
+
+Data: 23/05/2024 15:58:42
+Categoria: 
+Mensagem: System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connectionString, Boolean isAnalyzed)
+   at MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 179
+   at PadariaJJM.AtualizarProdutoForm.button1_Click(Object sender, EventArgs e) in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\AtualizarProdutoForm.cs:line 105
+
+Data: 23/05/2024 15:58:47
+Categoria: 
+Mensagem: System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connectionString, Boolean isAnalyzed)
+   at MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 179
+   at PadariaJJM.AtualizarProdutoForm.button1_Click(Object sender, EventArgs e) in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\AtualizarProdutoForm.cs:line 105
+
+Data: 23/05/2024 15:58:51
+Categoria: 
+Mensagem: System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connectionString, Boolean isAnalyzed)
+   at MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 179
+   at PadariaJJM.AtualizarProdutoForm.button1_Click(Object sender, EventArgs e) in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\AtualizarProdutoForm.cs:line 105
+
+Data: 23/05/2024 15:58:53
+Categoria: 
+Mensagem: System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connectionString, Boolean isAnalyzed)
+   at MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 179
+   at PadariaJJM.AtualizarProdutoForm.button1_Click(Object sender, EventArgs e) in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\AtualizarProdutoForm.cs:line 105
+
+Data: 23/05/2024 16:02:22
+Categoria: 500
+Mensagem: MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`padariajjm_1`.`produtos`, CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_nome`) REFERENCES `categoria` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 212
+
+Data: 23/05/2024 16:03:17
+Categoria: 500
+Mensagem: MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`padariajjm_1`.`produtos`, CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_nome`) REFERENCES `categoria` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 212
+
