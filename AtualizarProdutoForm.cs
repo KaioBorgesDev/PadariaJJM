@@ -30,6 +30,11 @@ namespace PadariaJJM
         //btn Procurar
         private void button2_Click(object sender, EventArgs e)
         {
+            if(!int.TryParse(textBox1.Text, out int val))
+            {
+                MessageBox.Show("Você digitou um valor um numero.");
+                return;
+            }
             int id_procurado = int.Parse(textBox1.Text);
             Produto produto = new Produto();
             Categoria categoria = new Categoria();

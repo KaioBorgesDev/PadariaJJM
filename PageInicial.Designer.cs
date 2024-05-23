@@ -36,9 +36,11 @@
             toolStripMenuItem1 = new ToolStripMenuItem();
             procurarProdutoToolStripMenuItem = new ToolStripMenuItem();
             nomeToolStripMenuItem = new ToolStripMenuItem();
-            pictureBox3 = new PictureBox();
             atualizarToolStripMenuItem = new ToolStripMenuItem();
             produtoToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox3 = new PictureBox();
+            removerToolStripMenuItem = new ToolStripMenuItem();
+            produtoToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -46,7 +48,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarProdutoToolStripMenuItem, procurarProdutoToolStripMenuItem, atualizarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarProdutoToolStripMenuItem, procurarProdutoToolStripMenuItem, atualizarToolStripMenuItem, removerToolStripMenuItem });
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
             // 
@@ -86,12 +88,6 @@
             resources.ApplyResources(nomeToolStripMenuItem, "nomeToolStripMenuItem");
             nomeToolStripMenuItem.Click += nomeToolStripMenuItem_Click;
             // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(pictureBox3, "pictureBox3");
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.TabStop = false;
-            // 
             // atualizarToolStripMenuItem
             // 
             atualizarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem });
@@ -103,6 +99,24 @@
             produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
             resources.ApplyResources(produtoToolStripMenuItem, "produtoToolStripMenuItem");
             produtoToolStripMenuItem.Click += produtoToolStripMenuItem_Click;
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(pictureBox3, "pictureBox3");
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.TabStop = false;
+            // 
+            // removerToolStripMenuItem
+            // 
+            removerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem1 });
+            removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            resources.ApplyResources(removerToolStripMenuItem, "removerToolStripMenuItem");
+            // 
+            // produtoToolStripMenuItem1
+            // 
+            produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
+            resources.ApplyResources(produtoToolStripMenuItem1, "produtoToolStripMenuItem1");
+            produtoToolStripMenuItem1.Click += produtoToolStripMenuItem1_Click;
             // 
             // PageInicial
             // 
@@ -136,5 +150,7 @@
         private PictureBox pictureBox3;
         private ToolStripMenuItem atualizarToolStripMenuItem;
         private ToolStripMenuItem produtoToolStripMenuItem;
+        private ToolStripMenuItem removerToolStripMenuItem;
+        private ToolStripMenuItem produtoToolStripMenuItem1;
     }
 }

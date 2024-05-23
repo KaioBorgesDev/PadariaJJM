@@ -1,6 +1,6 @@
 ﻿namespace PadariaJJM
 {
-    partial class FormProcurarProduto
+    partial class ProdutoRemoverForm
     {
         /// <summary>
         /// Required designer variable.
@@ -19,147 +19,178 @@
             }
             base.Dispose(disposing);
         }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProcurarProduto));
-            comboBox1 = new ComboBox();
-            tabela = new DataGridView();
+            dataGridView1 = new DataGridView();
             idProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            isPesoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            isPesoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             categoriaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             dataValidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             codigoBarrasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             fornecedorDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             tributoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             produtoBindingSource = new BindingSource(components);
-            ((System.ComponentModel.ISupportInitialize)tabela).BeginInit();
+            button1 = new Button();
+            idProduto = new TextBox();
+            label1 = new Label();
+            button2 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).BeginInit();
             SuspendLayout();
             // 
-            // comboBox1
+            // dataGridView1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(430, 75);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(234, 23);
-            comboBox1.TabIndex = 0;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // tabela
-            // 
-            tabela.AllowUserToAddRows = false;
-            tabela.AllowUserToDeleteRows = false;
-            tabela.AutoGenerateColumns = false;
-            tabela.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tabela.Columns.AddRange(new DataGridViewColumn[] { idProdutoDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, isPesoDataGridViewCheckBoxColumn, quantidadeDataGridViewTextBoxColumn, categoriaDataGridViewTextBoxColumn, dataValidadeDataGridViewTextBoxColumn, codigoBarrasDataGridViewTextBoxColumn, fornecedorDataGridViewTextBoxColumn, tributoDataGridViewTextBoxColumn });
-            tabela.DataSource = produtoBindingSource;
-            tabela.Location = new Point(12, 167);
-            tabela.Name = "tabela";
-            tabela.ReadOnly = true;
-            tabela.Size = new Size(1097, 378);
-            tabela.TabIndex = 1;
-            tabela.CellContentClick += tabela_CellContentClick;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idProdutoDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, isPesoDataGridViewCheckBoxColumn, categoriaDataGridViewTextBoxColumn, dataValidadeDataGridViewTextBoxColumn, codigoBarrasDataGridViewTextBoxColumn, fornecedorDataGridViewTextBoxColumn, tributoDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = produtoBindingSource;
+            dataGridView1.Location = new Point(7, 84);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(544, 71);
+            dataGridView1.TabIndex = 0;
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
             idProdutoDataGridViewTextBoxColumn.DataPropertyName = "idProduto";
-            idProdutoDataGridViewTextBoxColumn.HeaderText = "idProduto";
+            idProdutoDataGridViewTextBoxColumn.HeaderText = "N° Produto";
             idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
             nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
             nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
             nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // precoDataGridViewTextBoxColumn
             // 
             precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
             precoDataGridViewTextBoxColumn.HeaderText = "Preco";
             precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
-            precoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isPesoDataGridViewCheckBoxColumn
-            // 
-            isPesoDataGridViewCheckBoxColumn.DataPropertyName = "IsPeso";
-            isPesoDataGridViewCheckBoxColumn.HeaderText = "IsPeso";
-            isPesoDataGridViewCheckBoxColumn.Name = "isPesoDataGridViewCheckBoxColumn";
-            isPesoDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
             quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
-            quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isPesoDataGridViewCheckBoxColumn
+            // 
+            isPesoDataGridViewCheckBoxColumn.DataPropertyName = "IsPeso";
+            isPesoDataGridViewCheckBoxColumn.HeaderText = "IsPeso";
+            isPesoDataGridViewCheckBoxColumn.Name = "isPesoDataGridViewCheckBoxColumn";
             // 
             // categoriaDataGridViewTextBoxColumn
             // 
             categoriaDataGridViewTextBoxColumn.DataPropertyName = "Categoria";
             categoriaDataGridViewTextBoxColumn.HeaderText = "Categoria";
             categoriaDataGridViewTextBoxColumn.Name = "categoriaDataGridViewTextBoxColumn";
-            categoriaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dataValidadeDataGridViewTextBoxColumn
             // 
             dataValidadeDataGridViewTextBoxColumn.DataPropertyName = "DataValidade";
             dataValidadeDataGridViewTextBoxColumn.HeaderText = "DataValidade";
             dataValidadeDataGridViewTextBoxColumn.Name = "dataValidadeDataGridViewTextBoxColumn";
-            dataValidadeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // codigoBarrasDataGridViewTextBoxColumn
             // 
             codigoBarrasDataGridViewTextBoxColumn.DataPropertyName = "CodigoBarras";
             codigoBarrasDataGridViewTextBoxColumn.HeaderText = "CodigoBarras";
             codigoBarrasDataGridViewTextBoxColumn.Name = "codigoBarrasDataGridViewTextBoxColumn";
-            codigoBarrasDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fornecedorDataGridViewTextBoxColumn
             // 
             fornecedorDataGridViewTextBoxColumn.DataPropertyName = "Fornecedor";
             fornecedorDataGridViewTextBoxColumn.HeaderText = "Fornecedor";
             fornecedorDataGridViewTextBoxColumn.Name = "fornecedorDataGridViewTextBoxColumn";
-            fornecedorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tributoDataGridViewTextBoxColumn
             // 
             tributoDataGridViewTextBoxColumn.DataPropertyName = "Tributo";
             tributoDataGridViewTextBoxColumn.HeaderText = "Tributo";
             tributoDataGridViewTextBoxColumn.Name = "tributoDataGridViewTextBoxColumn";
-            tributoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // produtoBindingSource
             // 
             produtoBindingSource.DataSource = typeof(Produto);
             // 
-            // FormProcurarProduto
+            // button1
             // 
-            ClientSize = new Size(1121, 571);
-            Controls.Add(tabela);
-            Controls.Add(comboBox1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FormProcurarProduto";
-            Text = "Procurando Produtos";
-            Load += FormProcurarProduto_Load;
-            ((System.ComponentModel.ISupportInitialize)tabela).EndInit();
+            button1.Location = new Point(175, 31);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 1;
+            button1.Text = "Procurar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // idProduto
+            // 
+            idProduto.Location = new Point(24, 31);
+            idProduto.Name = "idProduto";
+            idProduto.Size = new Size(124, 23);
+            idProduto.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(25, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Nº Produto";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(204, 180);
+            button2.Name = "button2";
+            button2.Size = new Size(171, 56);
+            button2.TabIndex = 4;
+            button2.Text = "Remover";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
+            // ProdutoRemoverForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(563, 248);
+            Controls.Add(button2);
+            Controls.Add(label1);
+            Controls.Add(idProduto);
+            Controls.Add(button1);
+            Controls.Add(dataGridView1);
+            Name = "ProdutoRemoverForm";
+            Text = "ProdutoRemoverForm";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
-        private ComboBox comboBox1;
-        private DataGridView tabela;
+        #endregion
+
+        private DataGridView dataGridView1;
         private BindingSource produtoBindingSource;
+        private Button button1;
+        private TextBox idProduto;
+        private Label label1;
+        private Button button2;
         private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn isPesoDataGridViewCheckBoxColumn;
         private DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn isPesoDataGridViewCheckBoxColumn;
         private DataGridViewTextBoxColumn categoriaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dataValidadeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn codigoBarrasDataGridViewTextBoxColumn;

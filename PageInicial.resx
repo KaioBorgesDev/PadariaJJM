@@ -146,7 +146,7 @@
     <value>Cadastrar </value>
   </data>
   <data name="nomeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="nomeToolStripMenuItem.Text" xml:space="preserve">
     <value>Produto</value>
@@ -158,7 +158,7 @@
     <value>Procurar </value>
   </data>
   <data name="produtoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="produtoToolStripMenuItem.Text" xml:space="preserve">
     <value>Produto</value>
@@ -168,6 +168,18 @@
   </data>
   <data name="atualizarToolStripMenuItem.Text" xml:space="preserve">
     <value>Atualizar</value>
+  </data>
+  <data name="produtoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="produtoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="removerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="removerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remover</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -197,7 +209,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAKwlJREFUeF7t3QesZOddP+6/aD9AgOi9CyFAgOggiigSHYEEEgIBEiCqAAkUmmih
+        vAAADrwBlbxySQAAKwlJREFUeF7t3QesZOddP+6/aD9AgOi9CyFAgOggiigSHYEEEgIBEiCqAAkUmmih
         hxoIRSJEQOiEklAUoiT00KWghCIS7xp77fV612t7bWfd7cxfn/GZ5Hr83jvnnDln5p13nkf6ynvn3nva
         jO/nlLf8fwsA4OAJdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABo
         gEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYIdABogEAHgAYI
@@ -550,6 +562,18 @@
     <value>produtoToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;produtoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removerToolStripMenuItem.Name" xml:space="preserve">
+    <value>removerToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;removerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem1.Name" xml:space="preserve">
+    <value>produtoToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

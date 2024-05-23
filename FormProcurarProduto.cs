@@ -22,13 +22,13 @@ namespace PadariaJJM
             List<Produto> listaProdutos = produto.PegarTodos();
             tabela.CellFormatting += dgvProdutos_CellFormatting;
             tabela.DataSource = listaProdutos;
-            
+
 
         }
         private void dgvProdutos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            
-            
+
+
             // Verificar se a célula a ser formatada é a célula da coluna de preço (supondo que a coluna de preço seja a segunda coluna)
             if (e.ColumnIndex == 2 && e.Value != null) // Altere 1 para o índice correto da coluna de preço
             {
@@ -36,10 +36,10 @@ namespace PadariaJJM
                 e.Value = "R$" + e.Value.ToString();
                 e.FormattingApplied = true; // Indicar que a formatação foi aplicada
             }
-            
+
             if (e.ColumnIndex == 3 && e.Value != null) // Altere 2 para o índice correto da coluna de quantidade
             {
-                if((bool) e.Value == true)
+                if ((bool)e.Value == true)
                     isPeso = true;
             }
 
@@ -48,7 +48,7 @@ namespace PadariaJJM
                 // Adicionar " KG" ao valor da célula
                 e.Value = e.Value.ToString() + " KG";
                 e.FormattingApplied = true; // Indicar que a formatação foi aplicada
-                isPeso = false ;
+                isPeso = false;
             }
         }
 
@@ -58,6 +58,11 @@ namespace PadariaJJM
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabela_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

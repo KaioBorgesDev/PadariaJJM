@@ -146,3 +146,4 @@ C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\Pad
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.genruntimeconfig.cache
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\ref\PadariaJJM.dll
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AtualizarProdutoForm.resources
+C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.ProdutoRemoverForm.resources

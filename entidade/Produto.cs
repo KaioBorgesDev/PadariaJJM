@@ -131,7 +131,9 @@ namespace PadariaJJM
             List<Produto> produtos = new List<Produto>();
 
             MySqlConnection conn = new MySqlConnection(Url);
-
+            Produto prod = new Produto();
+            
+               
             try
             {
                 conn.Open();
@@ -171,6 +173,38 @@ namespace PadariaJJM
             }
 
             return produtos;
+        }
+        public string RemoverProduto()
+        {
+            var mensagem = "Não foi possivel remover";
+            if (idProduto == 0)
+                return mensagem;
+            
+            string connectionString = Url;
+            
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string query = @"
+                            DELETE FROM produtos 
+                            WHERE 
+                                idprodutos = @id;";
+
+                    MySqlCommand comando = new MySqlCommand(query, conn);
+                    comando.Parameters.AddWithValue("@id", idProduto);
+
+                    comando.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                }
+                return mensagem;
+            }
+        
         }
         public void AtualizarProduto()
         {
@@ -214,18 +248,15 @@ namespace PadariaJJM
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro ao atualizar produto no banco: " + ex.Message);
-                    // Supondo que você tenha um método salvar.SalvarEmArquivoLog para registrar logs
                     salvar.SalvarEmArquivoLog(ex.ToString(), "500");
                 }
-
-                MessageBox.Show("Produto atualizado com sucesso!");
             }
         }
         public Produto ProcurarProduto()
         {
             MySqlConnection conn = new MySqlConnection(Url);
-
+            if (idProduto == 0)
+                return null;
             try
             {
                 conn.Open();

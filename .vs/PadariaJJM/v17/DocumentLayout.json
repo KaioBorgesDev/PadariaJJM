@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:formadicionarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\produtoremoverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:produtoremoverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\atualizarprodutoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:atualizarprodutoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\produtoremoverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:produtoremoverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\atualizarprodutoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:atualizarprodutoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\aluno.escolar509\\documents\\kaioborges\\padariajjm_2305\\kaioborgesdev\\padariajjm\\pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +58,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AtualizarProdutoForm.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\AtualizarProdutoForm.cs",
-              "RelativeDocumentMoniker": "AtualizarProdutoForm.cs",
-              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\AtualizarProdutoForm.cs",
-              "RelativeToolTip": "AtualizarProdutoForm.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAIwG4AAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "FormAdicionarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\FormAdicionarProduto.cs",
+              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\FormAdicionarProduto.cs",
+              "RelativeToolTip": "FormAdicionarProduto.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAnwKQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:45:52.525Z",
+              "WhenOpened": "2024-05-23T20:23:58.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AtualizarProdutoForm.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\AtualizarProdutoForm.cs",
-              "RelativeDocumentMoniker": "AtualizarProdutoForm.cs",
-              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\AtualizarProdutoForm.cs [Projeto]",
-              "RelativeToolTip": "AtualizarProdutoForm.cs [Projeto]",
+              "Title": "FormAdicionarProduto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\FormAdicionarProduto.cs",
+              "RelativeDocumentMoniker": "FormAdicionarProduto.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\FormAdicionarProduto.cs [Projeto]",
+              "RelativeToolTip": "FormAdicionarProduto.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:39:39.568Z",
+              "WhenOpened": "2024-05-23T20:23:55.272Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeDocumentMoniker": "entidade\\Produto.cs",
               "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeToolTip": "entidade\\Produto.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAAMwAAAAJAAAA",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAMwIYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:28:36.447Z",
+              "WhenOpened": "2024-05-23T19:29:19.709Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutoRemoverForm.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\ProdutoRemoverForm.cs",
+              "RelativeDocumentMoniker": "ProdutoRemoverForm.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\ProdutoRemoverForm.cs",
+              "RelativeToolTip": "ProdutoRemoverForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T19:24:48.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoRemoverForm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\ProdutoRemoverForm.cs",
+              "RelativeDocumentMoniker": "ProdutoRemoverForm.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\ProdutoRemoverForm.cs [Projeto]",
+              "RelativeToolTip": "ProdutoRemoverForm.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T19:19:00.786Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageInicial.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs",
+              "RelativeDocumentMoniker": "PageInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs",
+              "RelativeToolTip": "PageInicial.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAgwDgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T19:18:34.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageInicial.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs",
+              "RelativeDocumentMoniker": "PageInicial.cs",
+              "ToolTip": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs [Projeto]",
+              "RelativeToolTip": "PageInicial.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T19:18:04.121Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         },
