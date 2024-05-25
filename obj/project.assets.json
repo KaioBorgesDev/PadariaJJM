@@ -1786,24 +1786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aluno.ESCOLAR509\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\julin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+      "projectUniqueName": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
       "projectName": "PadariaJJM",
-      "projectPath": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
-      "packagesPath": "C:\\Users\\Aluno.ESCOLAR509\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno.ESCOLAR509\\Documents\\KaioBorges\\PadariaJJM_2305\\KaioBorgesDev\\PadariaJJM\\obj\\",
+      "projectPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+      "packagesPath": "C:\\Users\\julin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aluno.ESCOLAR509\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\julin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1858,7 +1853,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

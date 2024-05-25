@@ -147,3 +147,42 @@ C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\Pad
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\ref\PadariaJJM.dll
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AtualizarProdutoForm.resources
 C:\Users\Aluno.ESCOLAR509\Documents\KaioBorges\PadariaJJM_2305\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.ProdutoRemoverForm.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.exe
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.deps.json
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.runtimeconfig.json
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\PadariaJJM.pdb
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.AssemblyReference.cache
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AtualizarProdutoForm.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.FormAddCategoria.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.entidade.FormAddTributo.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.FormAdicionarProduto.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.FormProcurarProduto.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.PageInicial.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.ProdutoRemoverForm.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.Properties.Resources.resources
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.GenerateResource.cache
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AssemblyInfoInputs.cache
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.AssemblyInfo.cs
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.CoreCompileInputs.cache
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.sourcelink.json
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.csproj.Up2Date
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\refint\PadariaJJM.dll
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.pdb
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\PadariaJJM.genruntimeconfig.cache
+C:\Users\julin\Documents\Importante Kaio\PadariaJJM\KaioBorgesDev\PadariaJJM\obj\Debug\net8.0-windows\ref\PadariaJJM.dll

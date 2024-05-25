@@ -21,17 +21,28 @@ namespace PadariaJJM
         SalvarLog salvar = new SalvarLog();
 
 
-        // Construtor para as propriedades obrigatórias
+      
+        public decimal ValorTotal { get; set; } // Fornecedor é opcional
 
         //url casa da Senai
-        private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
+        //private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
         //url casa da julia
 
-        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
         //url minha casa 
         //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
-        public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, bool isPeso, string categoria)
+        // Construtor para as propriedades obrigatórias
+        public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, decimal valorTotal)
+        {
+            this.idProduto = idProduto;
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+            ValorTotal = valorTotal;
+        }
+
+            public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, bool isPeso, string categoria)
         {
             this.idProduto = idProduto;
             Nome = nome;
@@ -54,6 +65,7 @@ namespace PadariaJJM
         public string CodigoBarras { get; set; } // Código de Barras é opcional
         public string Fornecedor { get; set; } // Fornecedor é opcional
         public string Tributo { get; set; } // Fornecedor é opcional
+       
 
 
 
@@ -197,6 +209,7 @@ namespace PadariaJJM
                     comando.Parameters.AddWithValue("@id", idProduto);
 
                     comando.ExecuteNonQuery();
+                    mensagem = "Produto Removido";
                 }
                 catch (Exception ex)
                 {

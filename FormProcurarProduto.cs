@@ -37,18 +37,22 @@ namespace PadariaJJM
                 e.FormattingApplied = true; // Indicar que a formatação foi aplicada
             }
 
+
             if (e.ColumnIndex == 3 && e.Value != null) // Altere 2 para o índice correto da coluna de quantidade
             {
-                if ((bool)e.Value == true)
+                bool val = bool.Parse(e.Value.ToString());
+                if (val == true)
                     isPeso = true;
+                return;
             }
 
             if (e.ColumnIndex == 4 && e.Value != null && isPeso)
             {
                 // Adicionar " KG" ao valor da célula
                 e.Value = e.Value.ToString() + " KG";
-                e.FormattingApplied = true; // Indicar que a formatação foi aplicada
                 isPeso = false;
+                e.FormattingApplied = true; // Indicar que a formatação foi aplicada
+                
             }
         }
 

@@ -30,21 +30,24 @@ namespace PadariaJJM
             categorias = categoria1.PegarCategorias();
             tributos = tributo1.SelecionarTodos();
 
-            
 
-            if (categorias.Count != 0)
+            if (categorias != null)
             {
-                foreach (var categoria in categorias)
+                if (categorias.Count != 0)
                 {
-                    comboBox1.Items.Add(categoria.Name);
+                    foreach (var categoria in categorias)
+                    {
+                        comboBox1.Items.Add(categoria.Name);
 
+                    }
+                }
+
+                foreach (var tributo in tributos)
+                {
+                    comboBox2.Items.Add(tributo.Nome);
                 }
             }
-
-            foreach (var tributo in tributos)
-            {
-                comboBox2.Items.Add(tributo.Nome);
-            }
+              
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

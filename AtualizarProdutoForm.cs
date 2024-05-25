@@ -88,9 +88,74 @@ namespace PadariaJJM
         //btn Update
         private void button1_Click(object sender, EventArgs e)
         {
+            // Validar campos obrigatórios
+            if (string.IsNullOrWhiteSpace(nome_att.Text))
+            {
+                MessageBox.Show("Por favor, insira o nome do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            if (string.IsNullOrWhiteSpace(preco_att.Text))
+            {
+                MessageBox.Show("Por favor, insira o preço do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            int id = int.Parse(textBox1.Text);
+            if (!decimal.TryParse(preco_att.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira um preço válido para o produto.", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(quantidade_att.Text))
+            {
+                MessageBox.Show("Por favor, insira a quantidade do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(quantidade_att.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira uma quantidade válida para o produto.", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar campo de data de validade, se habilitado
+            if (checkBoxValidade_att.Checked)
+            {
+                if (!DateTime.TryParse(dateTimePicker1_att.Text, out DateTime dataValidade) || dataValidade <= DateTime.Now)
+                {
+                    MessageBox.Show("Por favor, insira uma data de validade válida para o produto.", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
+            // Validar campo de código de barras, se habilitado
+            if (checkBoxCodigoBar_Att.Checked && string.IsNullOrWhiteSpace(barCode_att.Text))
+            {
+                MessageBox.Show("Por favor, insira o código de barras do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar campo de fornecedor, se habilitado
+            if (checkBoxFornec_Att.Checked && string.IsNullOrWhiteSpace(fornecedor_att.Text))
+            {
+                MessageBox.Show("Por favor, insira o nome do fornecedor do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (comboBox1_att.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, insira a categoria ", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            int id = 0;
+            try
+            {
+                id = int.Parse(textBox1.Text);
+            } catch(Exception ex) { MessageBox.Show("Coloque o Nº em Pesquisar");
+                return;
+            }
+            
             string nome = nome_att.Text;
             decimal preco = decimal.Parse(preco_att.Text);
             bool isPeso = checkboxPeso_att.Checked;
