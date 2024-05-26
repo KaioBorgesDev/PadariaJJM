@@ -1,29 +1,20 @@
 ﻿using PadariaJJM.entidade;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace PadariaJJM
 {
     public partial class FormAdicionarProduto : Form
     {
-        
-        
+
+
         private List<Categoria> categorias;
         private List<Tributo> tributos;
-        
-        
+
+
 
         public FormAdicionarProduto()
         {
             InitializeComponent();
-            
+
             Categoria categoria1 = new Categoria();
             Tributo tributo1 = new Tributo();
 
@@ -47,7 +38,7 @@ namespace PadariaJJM
                     comboBox2.Items.Add(tributo.Nome);
                 }
             }
-              
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -62,18 +53,7 @@ namespace PadariaJJM
             }
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked)
-            {
-                barCode.Enabled = true;
-            }
-            else
-            {
-                barCode.Enabled = false;
-            }
-
-        }
+  
 
         private void checkboxPeso_CheckedChanged(object sender, EventArgs e)
         {
@@ -119,7 +99,7 @@ namespace PadariaJJM
                 return;
             }
 
-            if (!int.TryParse(quantidade.Text, out _))
+            if (!decimal.TryParse(quantidade.Text, out _))
             {
                 MessageBox.Show("Por favor, insira uma quantidade válida para o produto.", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -136,7 +116,7 @@ namespace PadariaJJM
             }
 
             // Validar campo de código de barras, se habilitado
-            if (checkBox2.Checked && string.IsNullOrWhiteSpace(barCode.Text))
+            if (string.IsNullOrWhiteSpace(barCode.Text))
             {
                 MessageBox.Show("Por favor, insira o código de barras do produto.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -162,9 +142,9 @@ namespace PadariaJJM
                 isPeso = true;
             }
 
-            string categoriaSelecionada = (string) comboBox1.SelectedItem;
+            string categoriaSelecionada = (string)comboBox1.SelectedItem;
 
-            Produto produto = new Produto(null, nome.Text, decimal.Parse(preco.Text), int.Parse(quantidade.Text),isPeso, categoriaSelecionada);
+            Produto produto = new Produto(nome.Text, decimal.Parse(preco.Text), int.Parse(quantidade.Text), isPeso, categoriaSelecionada, barCode.Text);
 
 
 
@@ -186,21 +166,21 @@ namespace PadariaJJM
 
                 DateTime dataSelecionada = data.Value;
 
-                
+
                 // Verificar se a data selecionada é igual à data mínima permitida
-                if (dataSelecionada != data.MinDate )
+                if (dataSelecionada != data.MinDate)
                 {
-                   produto.DataValidade = dataSelecionada;
+                    produto.DataValidade = dataSelecionada;
                 }
-                
-                
+
+
                 if (comboBox2.SelectedItem != null)
                 {
-                    produto.Tributo = (string) comboBox2.SelectedItem;
+                    produto.Tributo = (string)comboBox2.SelectedItem;
                 }
 
                 //cadastro
-               if(produto.inserir() == "Não foi salvo!")
+                if (produto.inserir() == "Não foi salvo!")
                 {
                     MessageBox.Show("Erro ao Cadastrar o Produto.");
                     return;

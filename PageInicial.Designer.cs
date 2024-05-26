@@ -46,7 +46,11 @@
             produtoToolStripMenuItem1 = new ToolStripMenuItem();
             pictureBox3 = new PictureBox();
             painelVendas = new Panel();
+            label8 = new Label();
+            vender = new Button();
             panel1 = new Panel();
+            cpf = new TextBox();
+            cpf_check = new CheckBox();
             troco_caixa = new TextBox();
             lbTroco = new Label();
             label6 = new Label();
@@ -57,27 +61,28 @@
             valorTotallb = new Label();
             label5 = new Label();
             dataGridView1 = new DataGridView();
-            idProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             valorTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            produtoBindingSource2 = new BindingSource(components);
+            produtoBindingSource3 = new BindingSource(components);
             label4 = new Label();
             textBox2 = new TextBox();
             label3 = new Label();
             textBox1 = new TextBox();
-            produtoBindingSource = new BindingSource(components);
+            produtoBindingSource2 = new BindingSource(components);
             label1 = new Label();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            produtoBindingSource1 = new BindingSource(components);
             hora = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            produtoBindingSource = new BindingSource(components);
+            produtoBindingSource1 = new BindingSource(components);
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             painelVendas.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)produtoBindingSource3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).BeginInit();
@@ -176,6 +181,8 @@
             // 
             // painelVendas
             // 
+            painelVendas.Controls.Add(label8);
+            painelVendas.Controls.Add(vender);
             painelVendas.Controls.Add(panel1);
             painelVendas.Controls.Add(dataGridView1);
             painelVendas.Controls.Add(label4);
@@ -185,10 +192,24 @@
             resources.ApplyResources(painelVendas, "painelVendas");
             painelVendas.Name = "painelVendas";
             // 
+            // label8
+            // 
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
+            // 
+            // vender
+            // 
+            resources.ApplyResources(vender, "vender");
+            vender.Name = "vender";
+            vender.UseVisualStyleBackColor = true;
+            vender.Click += vender_Click;
+            // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlDark;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(cpf);
+            panel1.Controls.Add(cpf_check);
             panel1.Controls.Add(troco_caixa);
             panel1.Controls.Add(lbTroco);
             panel1.Controls.Add(label6);
@@ -200,6 +221,18 @@
             panel1.Controls.Add(label5);
             resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
+            // 
+            // cpf
+            // 
+            resources.ApplyResources(cpf, "cpf");
+            cpf.Name = "cpf";
+            // 
+            // cpf_check
+            // 
+            resources.ApplyResources(cpf_check, "cpf_check");
+            cpf_check.Name = "cpf_check";
+            cpf_check.UseVisualStyleBackColor = true;
+            cpf_check.CheckedChanged += cpf_check_CheckedChanged;
             // 
             // troco_caixa
             // 
@@ -257,47 +290,46 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idProdutoDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorTotalDataGridViewTextBoxColumn });
-            dataGridView1.DataSource = produtoBindingSource2;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorTotalDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = produtoBindingSource3;
             resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.Name = "dataGridView1";
-            // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            idProdutoDataGridViewTextBoxColumn.DataPropertyName = "idProduto";
-            resources.ApplyResources(idProdutoDataGridViewTextBoxColumn, "idProdutoDataGridViewTextBoxColumn");
-            idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
+            dataGridView1.ReadOnly = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
             nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
             resources.ApplyResources(nomeDataGridViewTextBoxColumn, "nomeDataGridViewTextBoxColumn");
             nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // precoDataGridViewTextBoxColumn
             // 
             precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
             resources.ApplyResources(precoDataGridViewTextBoxColumn, "precoDataGridViewTextBoxColumn");
             precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
+            precoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
             resources.ApplyResources(quantidadeDataGridViewTextBoxColumn, "quantidadeDataGridViewTextBoxColumn");
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
+            quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // valorTotalDataGridViewTextBoxColumn
             // 
             valorTotalDataGridViewTextBoxColumn.DataPropertyName = "ValorTotal";
             resources.ApplyResources(valorTotalDataGridViewTextBoxColumn, "valorTotalDataGridViewTextBoxColumn");
             valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            valorTotalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // produtoBindingSource2
+            // produtoBindingSource3
             // 
-            produtoBindingSource2.DataSource = typeof(Produto);
+            produtoBindingSource3.DataSource = typeof(Produto);
             // 
             // label4
             // 
@@ -309,6 +341,7 @@
             resources.ApplyResources(textBox2, "textBox2");
             textBox2.Name = "textBox2";
             textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.KeyDown += textbox2_KeyDown;
             // 
             // label3
             // 
@@ -320,9 +353,9 @@
             resources.ApplyResources(textBox1, "textBox1");
             textBox1.Name = "textBox1";
             // 
-            // produtoBindingSource
+            // produtoBindingSource2
             // 
-            produtoBindingSource.DataSource = typeof(Produto);
+            produtoBindingSource2.DataSource = typeof(Produto);
             // 
             // label1
             // 
@@ -336,10 +369,6 @@
             mySqlCommand1.EnableCaching = false;
             mySqlCommand1.Transaction = null;
             // 
-            // produtoBindingSource1
-            // 
-            produtoBindingSource1.DataSource = typeof(Produto);
-            // 
             // hora
             // 
             resources.ApplyResources(hora, "hora");
@@ -350,6 +379,14 @@
             timer1.Enabled = true;
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
+            // 
+            // produtoBindingSource
+            // 
+            produtoBindingSource.DataSource = typeof(Produto);
+            // 
+            // produtoBindingSource1
+            // 
+            produtoBindingSource1.DataSource = typeof(Produto);
             // 
             // PageInicial
             // 
@@ -374,6 +411,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)produtoBindingSource3).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource2).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).EndInit();
@@ -429,5 +467,12 @@
         private Label lbTroco;
         private TextBox textBox3;
         private TextBox troco_caixa;
+        private Button button2;
+        private Button vender;
+        private Label label8;
+        private TextBox cpf;
+        private CheckBox checkBox1;
+        private CheckBox cpf_check;
+        private BindingSource produtoBindingSource3;
     }
 }

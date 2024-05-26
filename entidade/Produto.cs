@@ -1,27 +1,23 @@
-﻿using Microsoft.VisualBasic;
-using MySql.Data.MySqlClient;
-using Mysqlx.Datatypes;
+﻿using MySql.Data.MySqlClient;
 using PadariaJJM.log;
-using System;
-using System.Xml.Linq;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PadariaJJM
 {
     public class Produto
     {
         // Propriedades obrigatórias
-        public int? idProduto { get; set; }
+        
         public string Nome { get; set; }
         public decimal Preco { get; set; }
         public decimal Quantidade { get; set; }
         public bool IsPeso { get; set; }
         public string Categoria { get; set; }
+        public string CodigoBarras { get; set; } // Código de Barras é opcional
 
         SalvarLog salvar = new SalvarLog();
 
 
-      
+
         public decimal ValorTotal { get; set; } // Fornecedor é opcional
 
         //url casa da Senai
@@ -33,23 +29,17 @@ namespace PadariaJJM
         //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
         // Construtor para as propriedades obrigatórias
-        public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, decimal valorTotal)
-        {
-            this.idProduto = idProduto;
-            Nome = nome;
-            Preco = preco;
-            Quantidade = quantidade;
-            ValorTotal = valorTotal;
-        }
+        
 
-            public Produto(int? idProduto, string nome, decimal preco, decimal quantidade, bool isPeso, string categoria)
+        public Produto( string nome, decimal preco, decimal quantidade, bool isPeso, string categoria, string codigodebarras )
         {
-            this.idProduto = idProduto;
+           
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
             IsPeso = isPeso;
             Categoria = categoria;
+            this.CodigoBarras = codigodebarras;
 
         }
 
@@ -62,10 +52,10 @@ namespace PadariaJJM
         // Propriedades opcionais
 
         public DateTime? DataValidade { get; set; } // Data de Validade é opcional
-        public string CodigoBarras { get; set; } // Código de Barras é opcional
+      
         public string Fornecedor { get; set; } // Fornecedor é opcional
         public string Tributo { get; set; } // Fornecedor é opcional
-       
+
 
 
 
@@ -111,6 +101,7 @@ namespace PadariaJJM
             }
             else
             {
+    
                 comando.Parameters.AddWithValue("@validade", DataValidade);
             }
 
@@ -144,8 +135,8 @@ namespace PadariaJJM
 
             MySqlConnection conn = new MySqlConnection(Url);
             Produto prod = new Produto();
-            
-               
+
+
             try
             {
                 conn.Open();
@@ -157,15 +148,16 @@ namespace PadariaJJM
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        int.Parse(reader["idprodutos"].ToString()),
+                        
                         reader["nome"].ToString(),
                         decimal.Parse(reader["preco"].ToString()),
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
-                        reader["categoria_nome"].ToString());
+                        reader["categoria_nome"].ToString(),
+                        reader["barCode"].ToString()
+); ;
                     produto.Tributo = reader["tributos_nome"].ToString();
                     produto.Fornecedor = reader["fornecedor"].ToString();
-                    produto.CodigoBarras = reader["barCode"].ToString();
                     produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
 
 
@@ -189,11 +181,11 @@ namespace PadariaJJM
         public string RemoverProduto()
         {
             var mensagem = "Não foi possivel remover";
-            if (idProduto == 0)
+            if (string.IsNullOrEmpty(CodigoBarras))
                 return mensagem;
-            
+
             string connectionString = Url;
-            
+
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -203,10 +195,10 @@ namespace PadariaJJM
                     string query = @"
                             DELETE FROM produtos 
                             WHERE 
-                                idprodutos = @id;";
+                                barCode = @id;";
 
                     MySqlCommand comando = new MySqlCommand(query, conn);
-                    comando.Parameters.AddWithValue("@id", idProduto);
+                    comando.Parameters.AddWithValue("@id", CodigoBarras);
 
                     comando.ExecuteNonQuery();
                     mensagem = "Produto Removido";
@@ -217,11 +209,11 @@ namespace PadariaJJM
                 }
                 return mensagem;
             }
-        
+
         }
         public void AtualizarProduto()
         {
-            string connectionString = Url; 
+            string connectionString = Url;
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -239,13 +231,14 @@ namespace PadariaJJM
                     categoria_nome = @categoria,
                     validade = @validade,
                     fornecedor = @fornecedor,
-                    barCode = @barCode,
+                    
                     tributos_nome = @tributo
                 WHERE 
-                    idprodutos = @id";
+                    barCode = @barcode";
 
                     MySqlCommand comando = new MySqlCommand(query, conn);
-                    comando.Parameters.AddWithValue("@id", idProduto);
+
+                    comando.Parameters.AddWithValue("@barCode", CodigoBarras);
                     comando.Parameters.AddWithValue("@nome", Nome);
                     comando.Parameters.AddWithValue("@preco", Preco);
                     comando.Parameters.AddWithValue("@quantidade", Quantidade);
@@ -253,7 +246,6 @@ namespace PadariaJJM
                     comando.Parameters.AddWithValue("@categoria", Categoria);
                     comando.Parameters.AddWithValue("@validade", DataValidade);
                     comando.Parameters.AddWithValue("@fornecedor", Fornecedor);
-                    comando.Parameters.AddWithValue("@barCode", CodigoBarras);
                     comando.Parameters.AddWithValue("@tributo", Tributo);
 
                     comando.ExecuteNonQuery();
@@ -268,30 +260,30 @@ namespace PadariaJJM
         public Produto ProcurarProduto()
         {
             MySqlConnection conn = new MySqlConnection(Url);
-            if (idProduto == 0)
+            if (string.IsNullOrEmpty(CodigoBarras))
                 return null;
             try
             {
                 conn.Open();
 
-                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where idprodutos = @id ", conn);
-                comando.Parameters.AddWithValue("@id", idProduto.ToString());
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id ", conn);
+                comando.Parameters.AddWithValue("@id", CodigoBarras);
 
                 var reader = comando.ExecuteReader();
 
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        int.Parse(reader["idprodutos"].ToString()),
+                        
                         reader["nome"].ToString(),
                         decimal.Parse(reader["preco"].ToString()),
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
-                        reader["categoria_nome"].ToString());
+                        reader["categoria_nome"].ToString(),
+                        reader["barCode"].ToString());
 
                     produto.Tributo = reader["tributos_nome"].ToString();
                     produto.Fornecedor = reader["fornecedor"].ToString();
-                    produto.CodigoBarras = reader["barCode"].ToString();
                     produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
 
 
@@ -301,6 +293,47 @@ namespace PadariaJJM
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao selecionar produtos do banco");
+                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            return null;
+        }
+        public Produto ProcurarProduto(string codigoDeBarras)
+        {
+            MySqlConnection conn = new MySqlConnection(Url);
+            if (string.IsNullOrEmpty(codigoDeBarras))
+                return null;
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id ", conn);
+                comando.Parameters.AddWithValue("@id", codigoDeBarras);
+
+                var reader = comando.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Produto produto = new Produto(
+                        
+                        reader["nome"].ToString(),
+                        decimal.Parse(reader["preco"].ToString()),
+                        decimal.Parse(reader["quantidade"].ToString()),
+                        bool.Parse(reader["is_peso"].ToString()),
+                        reader["categoria_nome"].ToString(),
+                        reader["barCode"].ToString());
+
+                    produto.Tributo = reader["tributos_nome"].ToString();
+                    produto.Fornecedor = reader["fornecedor"].ToString();
+                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
+
+
+                    return produto;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao selecionar produto do banco");
                 salvar.SalvarEmArquivoLog(ex.ToString(), "500");
             }
             return null;

@@ -443,6 +443,120 @@
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 16.2pt, style=Italic</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1354, 8</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 33</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>PAGAMENTO</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>painelVendas</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="vender.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 24pt, style=Italic</value>
+  </data>
+  <data name="vender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1204, 730</value>
+  </data>
+  <data name="vender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 89</value>
+  </data>
+  <data name="vender.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="vender.Text" xml:space="preserve">
+    <value>Finalizar Venda</value>
+  </data>
+  <data name="&gt;&gt;vender.Name" xml:space="preserve">
+    <value>vender</value>
+  </data>
+  <data name="&gt;&gt;vender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vender.Parent" xml:space="preserve">
+    <value>painelVendas</value>
+  </data>
+  <data name="&gt;&gt;vender.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cpf.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cpf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 166</value>
+  </data>
+  <data name="cpf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 27</value>
+  </data>
+  <data name="cpf.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cpf.Name" xml:space="preserve">
+    <value>cpf</value>
+  </data>
+  <data name="&gt;&gt;cpf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cpf.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cpf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cpf_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cpf_check.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt</value>
+  </data>
+  <data name="cpf_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 125</value>
+  </data>
+  <data name="cpf_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 35</value>
+  </data>
+  <data name="cpf_check.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cpf_check.Text" xml:space="preserve">
+    <value>CPF NA NOTA</value>
+  </data>
+  <data name="&gt;&gt;cpf_check.Name" xml:space="preserve">
+    <value>cpf_check</value>
+  </data>
+  <data name="&gt;&gt;cpf_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cpf_check.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cpf_check.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="troco_caixa.Location" type="System.Drawing.Point, System.Drawing">
     <value>489, 55</value>
   </data>
@@ -451,6 +565,9 @@
   </data>
   <data name="troco_caixa.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
+  </data>
+  <data name="troco_caixa.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;troco_caixa.Name" xml:space="preserve">
     <value>troco_caixa</value>
@@ -462,7 +579,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;troco_caixa.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="lbTroco.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -498,7 +615,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lbTroco.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -528,7 +645,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="valor_Troco.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -561,7 +678,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;valor_Troco.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="mtd_Pagamento.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 55</value>
@@ -582,7 +699,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;mtd_Pagamento.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -615,7 +732,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -648,7 +765,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="valorTotallb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -681,7 +798,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;valorTotallb.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -714,7 +831,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1066, 128</value>
@@ -735,16 +852,7 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="idProdutoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>idProduto</value>
-  </data>
-  <data name="idProdutoDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="idProdutoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>2</value>
   </data>
   <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Nome</value>
@@ -782,8 +890,8 @@
   <data name="valorTotalDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <metadata name="produtoBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>755, 17</value>
+  <metadata name="produtoBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 58</value>
   </metadata>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 128</value>
@@ -792,7 +900,7 @@
     <value>51</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>696, 600</value>
+    <value>553, 600</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -807,7 +915,7 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -819,7 +927,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 8</value>
+    <value>202, 38</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>291, 33</value>
@@ -840,13 +948,13 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 44</value>
+    <value>202, 84</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 27</value>
+    <value>373, 27</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -861,7 +969,7 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -873,7 +981,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 8</value>
+    <value>22, 38</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 33</value>
@@ -894,10 +1002,10 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 44</value>
+    <value>22, 84</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 27</value>
@@ -915,7 +1023,7 @@
     <value>painelVendas</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="painelVendas.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 113</value>
@@ -941,8 +1049,8 @@
   <data name="&gt;&gt;painelVendas.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="produtoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>327, 17</value>
+  <metadata name="produtoBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>755, 17</value>
   </metadata>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -983,9 +1091,6 @@
   <metadata name="mySqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>153, 17</value>
   </metadata>
-  <metadata name="produtoBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>537, 17</value>
-  </metadata>
   <data name="hora.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1015,6 +1120,12 @@
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>973, 17</value>
+  </metadata>
+  <metadata name="produtoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>327, 17</value>
+  </metadata>
+  <metadata name="produtoBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>537, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1188,12 +1299,6 @@
   <data name="&gt;&gt;produtoToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;idProdutoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idProdutoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idProdutoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>nomeDataGridViewTextBoxColumn</value>
   </data>
@@ -1218,16 +1323,16 @@
   <data name="&gt;&gt;valorTotalDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;produtoBindingSource3.Name" xml:space="preserve">
+    <value>produtoBindingSource3</value>
+  </data>
+  <data name="&gt;&gt;produtoBindingSource3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;produtoBindingSource2.Name" xml:space="preserve">
     <value>produtoBindingSource2</value>
   </data>
   <data name="&gt;&gt;produtoBindingSource2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;produtoBindingSource.Name" xml:space="preserve">
-    <value>produtoBindingSource</value>
-  </data>
-  <data name="&gt;&gt;produtoBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;mySqlCommand1.Name" xml:space="preserve">
@@ -1236,17 +1341,23 @@
   <data name="&gt;&gt;mySqlCommand1.Type" xml:space="preserve">
     <value>MySql.Data.MySqlClient.MySqlCommand, MySql.Data, Culture=neutral, PublicKeyToken=c5687fc88969c44d</value>
   </data>
-  <data name="&gt;&gt;produtoBindingSource1.Name" xml:space="preserve">
-    <value>produtoBindingSource1</value>
-  </data>
-  <data name="&gt;&gt;produtoBindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;produtoBindingSource.Name" xml:space="preserve">
+    <value>produtoBindingSource</value>
+  </data>
+  <data name="&gt;&gt;produtoBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;produtoBindingSource1.Name" xml:space="preserve">
+    <value>produtoBindingSource1</value>
+  </data>
+  <data name="&gt;&gt;produtoBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PageInicial</value>

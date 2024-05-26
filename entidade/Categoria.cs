@@ -1,17 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
-using PadariaJJM.conexao;
 using PadariaJJM.log;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PadariaJJM.entidade
 {
     internal class Categoria
     {
-        
+
         public string Name { get; set; }
 
         private SalvarLog salvar = new SalvarLog();
@@ -24,9 +18,9 @@ namespace PadariaJJM.entidade
 
         public Categoria(string name)
         {
-            
+
             this.Name = name;
-        } 
+        }
         public Categoria()
         {
             Name = "";
@@ -110,7 +104,7 @@ namespace PadariaJJM.entidade
             MySqlConnection conn = new MySqlConnection(Url);
             Categoria categoria = null;
 
-            
+
             try
             {
                 conn.Open();
@@ -140,6 +134,6 @@ namespace PadariaJJM.entidade
             return categoria;
         }
 
-        
+
     }
 }

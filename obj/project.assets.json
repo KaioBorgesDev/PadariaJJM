@@ -1791,11 +1791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+      "projectUniqueName": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\PadariaJJM\\PadariaJJM\\PadariaJJM.csproj",
       "projectName": "PadariaJJM",
-      "projectPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\PadariaJJM.csproj",
+      "projectPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\PadariaJJM\\PadariaJJM\\PadariaJJM.csproj",
       "packagesPath": "C:\\Users\\julin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\KaioBorgesDev\\PadariaJJM\\obj\\",
+      "outputPath": "C:\\Users\\julin\\Documents\\Importante Kaio\\PadariaJJM\\PadariaJJM\\PadariaJJM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\julin\\AppData\\Roaming\\NuGet\\NuGet.Config",

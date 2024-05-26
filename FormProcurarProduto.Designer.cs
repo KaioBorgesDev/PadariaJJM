@@ -23,9 +23,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProcurarProduto));
-            comboBox1 = new ComboBox();
             tabela = new DataGridView();
-            idProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             isPesoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
@@ -35,19 +33,12 @@
             codigoBarrasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             fornecedorDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             tributoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            produtoBindingSource1 = new BindingSource(components);
             produtoBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)tabela).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).BeginInit();
             SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(430, 75);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(234, 23);
-            comboBox1.TabIndex = 0;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // tabela
             // 
@@ -55,84 +46,101 @@
             tabela.AllowUserToDeleteRows = false;
             tabela.AutoGenerateColumns = false;
             tabela.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tabela.Columns.AddRange(new DataGridViewColumn[] { idProdutoDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, isPesoDataGridViewCheckBoxColumn, quantidadeDataGridViewTextBoxColumn, categoriaDataGridViewTextBoxColumn, dataValidadeDataGridViewTextBoxColumn, codigoBarrasDataGridViewTextBoxColumn, fornecedorDataGridViewTextBoxColumn, tributoDataGridViewTextBoxColumn });
-            tabela.DataSource = produtoBindingSource;
-            tabela.Location = new Point(12, 167);
+            tabela.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, isPesoDataGridViewCheckBoxColumn, quantidadeDataGridViewTextBoxColumn, categoriaDataGridViewTextBoxColumn, dataValidadeDataGridViewTextBoxColumn, codigoBarrasDataGridViewTextBoxColumn, fornecedorDataGridViewTextBoxColumn, tributoDataGridViewTextBoxColumn });
+            tabela.DataSource = produtoBindingSource1;
+            tabela.Dock = DockStyle.Fill;
+            tabela.Location = new Point(0, 0);
             tabela.Name = "tabela";
             tabela.ReadOnly = true;
-            tabela.Size = new Size(1097, 378);
+            tabela.RowHeadersWidth = 51;
+            tabela.Size = new Size(1179, 571);
             tabela.TabIndex = 1;
             tabela.CellContentClick += tabela_CellContentClick;
-            // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            idProdutoDataGridViewTextBoxColumn.DataPropertyName = "idProduto";
-            idProdutoDataGridViewTextBoxColumn.HeaderText = "idProduto";
-            idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
             nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
             nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
             nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 125;
             // 
             // precoDataGridViewTextBoxColumn
             // 
             precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
             precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            precoDataGridViewTextBoxColumn.MinimumWidth = 6;
             precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
             precoDataGridViewTextBoxColumn.ReadOnly = true;
+            precoDataGridViewTextBoxColumn.Width = 125;
             // 
             // isPesoDataGridViewCheckBoxColumn
             // 
             isPesoDataGridViewCheckBoxColumn.DataPropertyName = "IsPeso";
             isPesoDataGridViewCheckBoxColumn.HeaderText = "IsPeso";
+            isPesoDataGridViewCheckBoxColumn.MinimumWidth = 6;
             isPesoDataGridViewCheckBoxColumn.Name = "isPesoDataGridViewCheckBoxColumn";
             isPesoDataGridViewCheckBoxColumn.ReadOnly = true;
+            isPesoDataGridViewCheckBoxColumn.Width = 125;
             // 
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
             quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
+            quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
             quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            quantidadeDataGridViewTextBoxColumn.Width = 125;
             // 
             // categoriaDataGridViewTextBoxColumn
             // 
             categoriaDataGridViewTextBoxColumn.DataPropertyName = "Categoria";
             categoriaDataGridViewTextBoxColumn.HeaderText = "Categoria";
+            categoriaDataGridViewTextBoxColumn.MinimumWidth = 6;
             categoriaDataGridViewTextBoxColumn.Name = "categoriaDataGridViewTextBoxColumn";
             categoriaDataGridViewTextBoxColumn.ReadOnly = true;
+            categoriaDataGridViewTextBoxColumn.Width = 125;
             // 
             // dataValidadeDataGridViewTextBoxColumn
             // 
             dataValidadeDataGridViewTextBoxColumn.DataPropertyName = "DataValidade";
             dataValidadeDataGridViewTextBoxColumn.HeaderText = "DataValidade";
+            dataValidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             dataValidadeDataGridViewTextBoxColumn.Name = "dataValidadeDataGridViewTextBoxColumn";
             dataValidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            dataValidadeDataGridViewTextBoxColumn.Width = 125;
             // 
             // codigoBarrasDataGridViewTextBoxColumn
             // 
             codigoBarrasDataGridViewTextBoxColumn.DataPropertyName = "CodigoBarras";
             codigoBarrasDataGridViewTextBoxColumn.HeaderText = "CodigoBarras";
+            codigoBarrasDataGridViewTextBoxColumn.MinimumWidth = 6;
             codigoBarrasDataGridViewTextBoxColumn.Name = "codigoBarrasDataGridViewTextBoxColumn";
             codigoBarrasDataGridViewTextBoxColumn.ReadOnly = true;
+            codigoBarrasDataGridViewTextBoxColumn.Width = 125;
             // 
             // fornecedorDataGridViewTextBoxColumn
             // 
             fornecedorDataGridViewTextBoxColumn.DataPropertyName = "Fornecedor";
             fornecedorDataGridViewTextBoxColumn.HeaderText = "Fornecedor";
+            fornecedorDataGridViewTextBoxColumn.MinimumWidth = 6;
             fornecedorDataGridViewTextBoxColumn.Name = "fornecedorDataGridViewTextBoxColumn";
             fornecedorDataGridViewTextBoxColumn.ReadOnly = true;
+            fornecedorDataGridViewTextBoxColumn.Width = 125;
             // 
             // tributoDataGridViewTextBoxColumn
             // 
             tributoDataGridViewTextBoxColumn.DataPropertyName = "Tributo";
             tributoDataGridViewTextBoxColumn.HeaderText = "Tributo";
+            tributoDataGridViewTextBoxColumn.MinimumWidth = 6;
             tributoDataGridViewTextBoxColumn.Name = "tributoDataGridViewTextBoxColumn";
             tributoDataGridViewTextBoxColumn.ReadOnly = true;
+            tributoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // produtoBindingSource1
+            // 
+            produtoBindingSource1.DataSource = typeof(Produto);
             // 
             // produtoBindingSource
             // 
@@ -140,14 +148,14 @@
             // 
             // FormProcurarProduto
             // 
-            ClientSize = new Size(1121, 571);
+            ClientSize = new Size(1179, 571);
             Controls.Add(tabela);
-            Controls.Add(comboBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormProcurarProduto";
             Text = "Procurando Produtos";
             Load += FormProcurarProduto_Load;
             ((System.ComponentModel.ISupportInitialize)tabela).EndInit();
+            ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).EndInit();
             ResumeLayout(false);
         }
@@ -165,5 +173,6 @@
         private DataGridViewTextBoxColumn codigoBarrasDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn fornecedorDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tributoDataGridViewTextBoxColumn;
+        private BindingSource produtoBindingSource1;
     }
 }

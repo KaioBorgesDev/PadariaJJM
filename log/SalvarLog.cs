@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PadariaJJM.log
+﻿namespace PadariaJJM.log
 {
     internal class SalvarLog
     {
-        
+
         public void SalvarEmArquivoLog(string mensagem, string categoria)
         {
             string caminho = @"arquivos\log.txt";

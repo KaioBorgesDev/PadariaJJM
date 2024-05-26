@@ -1,17 +1,5 @@
 ﻿using PadariaJJM.entidade;
 using PadariaJJM.log;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace PadariaJJM
 {
@@ -30,12 +18,12 @@ namespace PadariaJJM
         //btn Procurar
         private void button2_Click(object sender, EventArgs e)
         {
-            if(!int.TryParse(textBox1.Text, out int val))
+            if (string.IsNullOrEmpty(textBox1.Text))
             {
-                MessageBox.Show("Você digitou um valor um numero.");
+                MessageBox.Show("Digite um codigo!");
                 return;
             }
-            int id_procurado = int.Parse(textBox1.Text);
+            string barCode = textBox1.Text;
             Produto produto = new Produto();
             Categoria categoria = new Categoria();
             Tributo tributo = new Tributo();
@@ -64,16 +52,26 @@ namespace PadariaJJM
 
             Produto produto1;
 
-            produto.idProduto = id_procurado;
+            
 
-            produto1 = produto.ProcurarProduto();
+            produto1 = produto.ProcurarProduto(barCode);
             if (produto1 != null)
             {
+                decimal quantidade; 
                 nome_att.Text = produto1.Nome;
                 preco_att.Text = produto1.Preco.ToString();
                 checkboxPeso_att.Checked = produto1.IsPeso;
-                comboBox1_att.SelectedText = produto1.Categoria;
-                quantidade_att.Text = produto1.Quantidade.ToString();
+                if (produto1.IsPeso == false)
+                {
+                    quantidade = Math.Round(produto1.Quantidade);
+                    quantidade_att.Text = quantidade.ToString();
+                }
+                else
+                {
+                    quantidade_att.Text = produto1.Quantidade.ToString();
+                    
+                }
+                
                 barCode_att.Text = produto1.CodigoBarras;
                 dateTimePicker1_att.Text = produto1.DataValidade.ToString();
                 fornecedor_att.Text = produto1.Fornecedor;
@@ -113,7 +111,7 @@ namespace PadariaJJM
                 return;
             }
 
-            if (!int.TryParse(quantidade_att.Text, out _))
+            if (!decimal.TryParse(quantidade_att.Text, out _))
             {
                 MessageBox.Show("Por favor, insira uma quantidade válida para o produto.", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -148,29 +146,32 @@ namespace PadariaJJM
                 MessageBox.Show("Por favor, insira a categoria ", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            int id = 0;
+            string barCode;
             try
             {
-                id = int.Parse(textBox1.Text);
-            } catch(Exception ex) { MessageBox.Show("Coloque o Nº em Pesquisar");
+                barCode = textBox1.Text;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Coloque o Nº em Pesquisar");
                 return;
             }
-            
+
+            decimal quantidade = decimal.Parse(quantidade_att.Text.ToString());
             string nome = nome_att.Text;
             decimal preco = decimal.Parse(preco_att.Text);
             bool isPeso = checkboxPeso_att.Checked;
+            
             string categoria = comboBox1_att.Text;
-            decimal quantidade = decimal.Parse(quantidade_att.Text.ToString());
             string codigoBarra = barCode_att.Text;
-            DateTime data = DateTime.Parse(dateTimePicker1_att.Text) ;
+            DateTime data = DateTime.Parse(dateTimePicker1_att.Text);
             string fornecedor = fornecedor_att.Text;
             string imposto = comboBox2_att.Text;
 
 
-            var produtoAtualizado = new Produto(id, nome, preco, quantidade, isPeso, categoria);
+            var produtoAtualizado = new Produto(nome, preco, quantidade, isPeso, categoria,codigoBarra);
             produtoAtualizado.DataValidade = data;
             produtoAtualizado.Fornecedor = fornecedor;
-            produtoAtualizado.CodigoBarras = codigoBarra;
             produtoAtualizado.Tributo = imposto;
 
 
@@ -179,13 +180,13 @@ namespace PadariaJJM
                 produtoAtualizado.AtualizarProduto();
                 MessageBox.Show("Produto Alterado com Sucesso.");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Não foi possivel alterar o produto.");
                 SalvarLog salvar = new SalvarLog();
-                salvar.SalvarEmArquivoLog(ex.ToString() , categoria);
+                salvar.SalvarEmArquivoLog(ex.ToString(), categoria);
             }
-            
+
 
         }
     }
