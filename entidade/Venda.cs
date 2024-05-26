@@ -29,14 +29,7 @@ namespace PadariaJJM.entidade
             this.metodo_pagamento = metodo_pagamento;
             this.data_venda = data_venda;
         }
-        public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, decimal troco)
-        {
-            this.idVenda = idVenda;
-            this.preco_total = preco_total;
-            this.metodo_pagamento = metodo_pagamento;
-            this.data_venda = data_venda;
-            this.troco = troco;
-        }
+        
         public Venda()
         {
 
@@ -51,7 +44,7 @@ namespace PadariaJJM.entidade
 
         public string inserirVenda()
         {
-            string mensagem = "Inserido com sucesso";
+            string mensagem = "Inserido com Sucesso!";
             MySqlConnection conn = new MySqlConnection(Url);
 
             try

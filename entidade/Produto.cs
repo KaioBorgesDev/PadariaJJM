@@ -238,6 +238,8 @@ namespace PadariaJJM
 
                     MySqlCommand comando = new MySqlCommand(query, conn);
 
+                    var peso = 0;
+                    if (IsPeso) { peso = 1;}else { peso = 0; }
                     comando.Parameters.AddWithValue("@barCode", CodigoBarras);
                     comando.Parameters.AddWithValue("@nome", Nome);
                     comando.Parameters.AddWithValue("@preco", Preco);

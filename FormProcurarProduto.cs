@@ -35,29 +35,19 @@
                 return;
             }
 
-            if (e.ColumnIndex == 4 && e.Value != null && isPeso)
+            if (e.ColumnIndex == 3 && e.Value != null && isPeso)
             {
                 // Adicionar " KG" ao valor da célula
                 e.Value = e.Value.ToString() + " KG";
                 isPeso = false;
                 e.FormattingApplied = true; // Indicar que a formatação foi aplicada
 
+            } else if(e.Value != null && e.ColumnIndex == 3)
+            {
+                
+                decimal valorInteiro = decimal.Parse(e.Value.ToString());
+                e.Value = Math.Round(valorInteiro);
             }
-        }
-
-        private void FormProcurarProduto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabela_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        } 
     }
 }

@@ -170,7 +170,6 @@
             checkboxPeso.TabIndex = 16;
             checkboxPeso.Text = "Sim";
             checkboxPeso.UseVisualStyleBackColor = true;
-            checkboxPeso.CheckedChanged += checkboxPeso_CheckedChanged;
             // 
             // fornecedor
             // 
@@ -221,7 +220,6 @@
             label7.Size = new Size(74, 20);
             label7.TabIndex = 22;
             label7.Text = "Categoria";
-            label7.Click += label7_Click;
             // 
             // comboBox1
             // 

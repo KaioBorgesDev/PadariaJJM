@@ -47,11 +47,6 @@ namespace PadariaJJM
             formTributo.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AtualizarProdutoForm prod = new AtualizarProdutoForm();
@@ -70,7 +65,7 @@ namespace PadariaJJM
         {
             painelVendas.Visible = true;
             label1.Visible = true;
-            textBox1.Text = "1";
+            qtdTB.Text = "1";
             dataGridView1.DataSource = produtosVenda;
 
         }
@@ -146,20 +141,60 @@ namespace PadariaJJM
 
         private void vender_Click(object sender, EventArgs e)
         {
-
-
-            if (mtd_Pagamento.Text == "Dinheiro")
+            if (mtd_Pagamento.Text == "")
             {
-                Venda v = new Venda(null, decimal.Parse(valorTotallb.Text), "Dinheiro", DateTime.Now, decimal.Parse(valor_Troco.Text));
-                if (v.inserirVenda() == "Inserido com Sucesso!")
-                    produtosVenda.Clear();
+                MessageBox.Show("Selecione um metodo de pagamento.");
+                return;
 
+            }
+            if (decimal.Parse(valor_Troco.Text) < 0)
+            {
+                MessageBox.Show("Está faltando dinheiro. Verifique o troco.");
                 return;
             }
-            var metodo = mtd_Pagamento.Text;
+            if(produtosVenda.Count == 0)
+            {
+                MessageBox.Show("Não tem nenhuma venda sendo realizada!");
+            }
 
-            Venda venda = new Venda(null, decimal.Parse(valorTotallb.Text), metodo, DateTime.Now);
-            venda.inserirVenda();
+
+            Venda v = new Venda(null, decimal.Parse(valorTotallb.Text), mtd_Pagamento.Text, DateTime.Now);
+            
+            if (cpf_check.Checked)
+            {
+                v.Cpf = cpf.Text;
+            }
+            if (mtd_Pagamento.Text == "Dinheiro")
+            {
+                v.Troco = decimal.Parse(valor_Troco.Text);
+            }
+
+            if (v.inserirVenda() == "Inserido com Sucesso!")
+            {
+                produtosVenda.Clear();
+                
+                DialogResult resultado = new DialogResult();
+                resultado = MessageBox.Show("Imprimir a via?","Venda Finalizada.",MessageBoxButtons.OKCancel);
+                if(resultado == DialogResult.OK)
+                {
+                    //implementar a logica de imprimir a via
+                    try
+                    {
+
+                    }catch(Exception) { 
+                    
+                    
+                    }
+                }
+                valorTotallb.Text = "0";
+                valor_Troco.Text = "0";
+                cpf.Text = "";
+                troco_caixa.Text = "0";
+                mtd_Pagamento.Text = "";
+                return;
+            }
+
+            MessageBox.Show("Não foi possivel terminar a venda. \n Erro ao inserir.");
             produtosVenda.Clear();
         }
 
@@ -185,7 +220,7 @@ namespace PadariaJJM
 
                     if (produto != null)
                     {
-                        if (decimal.TryParse(textBox1.Text, out decimal quantidade))
+                        if (decimal.TryParse(qtdTB.Text, out decimal quantidade))
                         {
                             produto.Quantidade = quantidade;
                             produto.ValorTotal = Math.Round(produto.Quantidade * produto.Preco, 2);
@@ -208,7 +243,7 @@ namespace PadariaJJM
                     textBox2.Text = "";
                 }
                 catch (Exception ex)
-                {
+                {               
                     MessageBox.Show($"Ocorreu um erro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 e.Handled = true; // Evita o beep padrão do Enter

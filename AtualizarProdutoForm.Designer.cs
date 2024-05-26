@@ -275,7 +275,7 @@
             label4.Size = new Size(137, 20);
             label4.TabIndex = 46;
             label4.Text = "Codigo do Produto";
-            label4.Click += label4_Click;
+            
             // 
             // button2
             // 

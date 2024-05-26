@@ -52,14 +52,6 @@ namespace PadariaJJM
                 data.Enabled = false;
             }
         }
-
-  
-
-        private void checkboxPeso_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox3.Checked)
@@ -192,11 +184,6 @@ namespace PadariaJJM
             {
                 MessageBox.Show("Produto inválido. Verifique os valores.");
             }
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

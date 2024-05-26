@@ -70,7 +70,6 @@
             label1.Size = new Size(53, 20);
             label1.TabIndex = 3;
             label1.Text = "Nome:";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -80,7 +79,6 @@
             label2.Size = new Size(131, 20);
             label2.TabIndex = 4;
             label2.Text = "Valor Imposto (%):";
-            label2.Click += label2_Click;
             // 
             // FormAddTributo
             // 

@@ -24,6 +24,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProcurarProduto));
             tabela = new DataGridView();
+            produtoBindingSource1 = new BindingSource(components);
+            produtoBindingSource = new BindingSource(components);
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             isPesoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
@@ -33,8 +35,6 @@
             codigoBarrasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             fornecedorDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             tributoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            produtoBindingSource1 = new BindingSource(components);
-            produtoBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)tabela).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).BeginInit();
@@ -55,12 +55,19 @@
             tabela.RowHeadersWidth = 51;
             tabela.Size = new Size(1179, 571);
             tabela.TabIndex = 1;
-            tabela.CellContentClick += tabela_CellContentClick;
+            // 
+            // produtoBindingSource1
+            // 
+            produtoBindingSource1.DataSource = typeof(Produto);
+            // 
+            // produtoBindingSource
+            // 
+            produtoBindingSource.DataSource = typeof(Produto);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
             nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Produto";
             nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
             nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             nomeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -69,7 +76,7 @@
             // precoDataGridViewTextBoxColumn
             // 
             precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
-            precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            precoDataGridViewTextBoxColumn.HeaderText = "Preço";
             precoDataGridViewTextBoxColumn.MinimumWidth = 6;
             precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
             precoDataGridViewTextBoxColumn.ReadOnly = true;
@@ -78,7 +85,7 @@
             // isPesoDataGridViewCheckBoxColumn
             // 
             isPesoDataGridViewCheckBoxColumn.DataPropertyName = "IsPeso";
-            isPesoDataGridViewCheckBoxColumn.HeaderText = "IsPeso";
+            isPesoDataGridViewCheckBoxColumn.HeaderText = "Peso ? ";
             isPesoDataGridViewCheckBoxColumn.MinimumWidth = 6;
             isPesoDataGridViewCheckBoxColumn.Name = "isPesoDataGridViewCheckBoxColumn";
             isPesoDataGridViewCheckBoxColumn.ReadOnly = true;
@@ -87,7 +94,7 @@
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
-            quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
+            quantidadeDataGridViewTextBoxColumn.HeaderText = "Qtd ESTOQUE";
             quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
             quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -105,7 +112,7 @@
             // dataValidadeDataGridViewTextBoxColumn
             // 
             dataValidadeDataGridViewTextBoxColumn.DataPropertyName = "DataValidade";
-            dataValidadeDataGridViewTextBoxColumn.HeaderText = "DataValidade";
+            dataValidadeDataGridViewTextBoxColumn.HeaderText = "Validade";
             dataValidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             dataValidadeDataGridViewTextBoxColumn.Name = "dataValidadeDataGridViewTextBoxColumn";
             dataValidadeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -114,7 +121,7 @@
             // codigoBarrasDataGridViewTextBoxColumn
             // 
             codigoBarrasDataGridViewTextBoxColumn.DataPropertyName = "CodigoBarras";
-            codigoBarrasDataGridViewTextBoxColumn.HeaderText = "CodigoBarras";
+            codigoBarrasDataGridViewTextBoxColumn.HeaderText = "Código";
             codigoBarrasDataGridViewTextBoxColumn.MinimumWidth = 6;
             codigoBarrasDataGridViewTextBoxColumn.Name = "codigoBarrasDataGridViewTextBoxColumn";
             codigoBarrasDataGridViewTextBoxColumn.ReadOnly = true;
@@ -132,19 +139,11 @@
             // tributoDataGridViewTextBoxColumn
             // 
             tributoDataGridViewTextBoxColumn.DataPropertyName = "Tributo";
-            tributoDataGridViewTextBoxColumn.HeaderText = "Tributo";
+            tributoDataGridViewTextBoxColumn.HeaderText = "Imposto";
             tributoDataGridViewTextBoxColumn.MinimumWidth = 6;
             tributoDataGridViewTextBoxColumn.Name = "tributoDataGridViewTextBoxColumn";
             tributoDataGridViewTextBoxColumn.ReadOnly = true;
             tributoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // produtoBindingSource1
-            // 
-            produtoBindingSource1.DataSource = typeof(Produto);
-            // 
-            // produtoBindingSource
-            // 
-            produtoBindingSource.DataSource = typeof(Produto);
             // 
             // FormProcurarProduto
             // 
@@ -153,7 +152,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormProcurarProduto";
             Text = "Procurando Produtos";
-            Load += FormProcurarProduto_Load;
             ((System.ComponentModel.ISupportInitialize)tabela).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).EndInit();
@@ -164,6 +162,7 @@
         private DataGridView tabela;
         private BindingSource produtoBindingSource;
         private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
+        private BindingSource produtoBindingSource1;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn isPesoDataGridViewCheckBoxColumn;
@@ -173,6 +172,5 @@
         private DataGridViewTextBoxColumn codigoBarrasDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn fornecedorDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tributoDataGridViewTextBoxColumn;
-        private BindingSource produtoBindingSource1;
     }
 }

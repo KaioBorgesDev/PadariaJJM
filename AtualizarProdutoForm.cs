@@ -10,11 +10,6 @@ namespace PadariaJJM
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         //btn Procurar
         private void button2_Click(object sender, EventArgs e)
         {
@@ -76,6 +71,7 @@ namespace PadariaJJM
                 dateTimePicker1_att.Text = produto1.DataValidade.ToString();
                 fornecedor_att.Text = produto1.Fornecedor;
                 comboBox2_att.Text = produto1.Tributo;
+                comboBox1_att.Text = produto1.Categoria;
             }
             else
             {
@@ -146,6 +142,11 @@ namespace PadariaJJM
                 MessageBox.Show("Por favor, insira a categoria ", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if(!checkboxPeso_att.Checked && !int.TryParse(quantidade_att.Text, out _))
+            {
+                MessageBox.Show("A quantidade do produto não é Peso (KG), troque para um numero inteiro(UNI)\nOu marque a caixinha de peso!");
+                return;
+            }
             string barCode;
             try
             {
@@ -186,8 +187,6 @@ namespace PadariaJJM
                 SalvarLog salvar = new SalvarLog();
                 salvar.SalvarEmArquivoLog(ex.ToString(), categoria);
             }
-
-
         }
     }
 }
