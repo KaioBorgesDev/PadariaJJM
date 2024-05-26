@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gPCkk+GqPBzd0RmwHJ4+u5A0q+SCW1VCmO9YGRQhobeLCw9Quh2YbOo9T/vafSOebR3RXv07Ry0mIV3jjOL3cw==",
+  "dgSpecHash": "2ub5z2CmGFwxDZdsJ50mZsxoMhweuqXHMwZfllwAb3mSRZuTC1pofTKsKpkg8zbYHecyEUMZw2gK6VWbWa5OjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj",
+  "projectFilePath": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julin\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\julin\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

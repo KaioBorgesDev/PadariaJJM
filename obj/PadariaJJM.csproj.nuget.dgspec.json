@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj": {}
+    "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj": {
+    "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj",
+        "projectUniqueName": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
         "projectName": "PadariaJJM",
-        "projectPath": "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\PadariaJJM.csproj",
+        "projectPath": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PadariaJJM.csproj",
         "packagesPath": "C:\\Users\\julin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julin\\Source\\Repos\\PadariaJJM\\obj\\",
+        "outputPath": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julin\\AppData\\Roaming\\NuGet\\NuGet.Config",

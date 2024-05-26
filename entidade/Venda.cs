@@ -1,5 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using PadariaJJM.log;
+using System;
+using System.Collections.Generic;
 
 namespace PadariaJJM.entidade
 {
@@ -12,24 +14,19 @@ namespace PadariaJJM.entidade
         private string metodo_pagamento;
         private DateTime data_venda;
 
-
         SalvarLog log = new SalvarLog();
-        //url casa da Senai
-        //private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
-        //url casa da julia
         private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
-        //url minha casa 
-        // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
-        private string caminho = @"arquivos\log.txt";
 
-        public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda)
+        public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, string cpf = null, decimal troco = 0  )
         {
             this.idVenda = idVenda;
             this.preco_total = preco_total;
             this.metodo_pagamento = metodo_pagamento;
             this.data_venda = data_venda;
+            this.cpf = cpf;
+            this.troco = troco;
         }
-        
+
         public Venda()
         {
 
@@ -42,7 +39,7 @@ namespace PadariaJJM.entidade
         public string Metodo_pagamento { get => metodo_pagamento; set => metodo_pagamento = value; }
         public DateTime Data_venda { get => data_venda; set => data_venda = value; }
 
-        public string inserirVenda()
+        public string InserirVenda()
         {
             string mensagem = "Inserido com Sucesso!";
             MySqlConnection conn = new MySqlConnection(Url);
@@ -62,7 +59,7 @@ namespace PadariaJJM.entidade
                     comando.Parameters.AddWithValue("@cpf", Cpf);
                     comando.Parameters.AddWithValue("@troco", Troco);
                     comando.Parameters.AddWithValue("@metodo_pagamento", Metodo_pagamento);
-                    comando.Parameters.AddWithValue("@data_venda", Data_venda.ToString("yyy-MM-dd HH-mm-ss"));
+                    comando.Parameters.AddWithValue("@data_venda", Data_venda.ToString("yyyy-MM-dd HH:mm:ss"));
 
                     comando.ExecuteNonQuery();
                 }
@@ -88,7 +85,82 @@ namespace PadariaJJM.entidade
             return mensagem;
         }
 
+        public List<Venda> ObterTodasAsVendas()
+        {
+            List<Venda> vendas = new List<Venda>();
+            MySqlConnection conn = new MySqlConnection(Url);
 
+            try
+            {
+                conn.Open();
 
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM vendas", conn);
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Venda venda = new Venda
+                        (
+                            IdVenda = reader.IsDBNull(reader.GetOrdinal("idvenda")) ? (int?)null : reader.GetInt32("idvenda"),
+                            Preco_total = reader.GetDecimal("preco_total"),
+                            Metodo_pagamento = reader.GetString("metodo_pagamento"),
+                            Data_venda = reader.GetDateTime("data_venda"),
+                            Cpf = reader.IsDBNull(reader.GetOrdinal("cpf")) ? null : reader.GetString("cpf"),
+                            Troco = reader.IsDBNull(reader.GetOrdinal("troco")) ? 0 : reader.GetDecimal("troco")
+                        );
+
+                        vendas.Add(venda);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                log.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return vendas;
+        }
+
+        public decimal ObterTotalValorVendas()
+        {
+            decimal total = 0;
+            MySqlConnection conn = new MySqlConnection(Url);
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand comando = new MySqlCommand("SELECT preco_total FROM vendas", conn);
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        total += reader.GetDecimal("preco_total");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                log.SalvarEmArquivoLog(ex.ToString(), "500");
+            }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return total;
+        }
+
+       
     }
 }

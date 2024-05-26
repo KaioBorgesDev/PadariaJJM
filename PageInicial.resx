@@ -122,16 +122,22 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="abrirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="abrirToolStripMenuItem.Text" xml:space="preserve">
     <value>Abrir Caixa</value>
   </data>
   <data name="fecharCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="fecharCaixaToolStripMenuItem.Text" xml:space="preserve">
     <value>Fechar Caixa</value>
+  </data>
+  <data name="relátorioVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="relátorioVendasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relátorio Vendas</value>
   </data>
   <data name="iniciarVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 24</value>
@@ -1370,6 +1376,12 @@
   </data>
   <data name="&gt;&gt;valorTotalDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Name" xml:space="preserve">
+    <value>relátorioVendasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PageInicial</value>

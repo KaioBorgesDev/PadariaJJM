@@ -64,7 +64,7 @@ namespace PadariaJJM
         public bool IsValid()
         {
             // Verifica se o nome, preço e quantidade são obrigatórios e têm valores válidos
-            if (string.IsNullOrWhiteSpace(Nome) || Preco <= 0 || Quantidade <= -5 || string.IsNullOrWhiteSpace(Categoria))
+            if (string.IsNullOrWhiteSpace(Nome) || Preco <= 0 || Quantidade <= -20 || string.IsNullOrWhiteSpace(Categoria))
                 return false;
 
             // Se a data de validade for especificada, verifica se é válida

@@ -8,6 +8,7 @@ namespace PadariaJJM
     {
         SoundPlayer player = new SoundPlayer();
         BindingList<Produto> produtosVenda = new BindingList<Produto>();
+        BindingList<Venda> listaVenda = new BindingList<Venda>();
 
         public PageInicial()
         {
@@ -161,7 +162,7 @@ namespace PadariaJJM
                 v.Troco = decimal.Parse(valor_Troco.Text);
             }
 
-            if (v.inserirVenda() == "Inserido com Sucesso!")
+            if (v.InserirVenda() == "Inserido com Sucesso!")
             {
                 //metodo aonde retiro o produto vendido do estoque
 
@@ -215,7 +216,7 @@ namespace PadariaJJM
             {
                 var texto = qtdTB.Text;
                 bool havePointer = texto.Contains('.');
-                if(havePointer )
+                if (havePointer)
                 {
                     MessageBox.Show("Por Favor use virgula no lugar de '.'");
                     return;
@@ -253,7 +254,7 @@ namespace PadariaJJM
                                 else
                                     produto.Quantidade = quantidade;
 
-                                
+
                                 produto.ValorTotal = Math.Round(produto.Quantidade * produto.Preco, 2);
                                 produtosVenda.Add(produto);
 
@@ -296,7 +297,20 @@ namespace PadariaJJM
             }
         }
 
+        private void relátorioVendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+            
+
+            DialogResult resultado = new DialogResult();
+            resultado = MessageBox.Show("Deseja abrir o relátorio? (Somente Administrador)", "Relátorio PadariaJJM", MessageBoxButtons.OKCancel);
+            if(resultado == DialogResult.OK)
+            {
+                Login login = new Login();
+                login.Show();
+                
+            }
+        }
     }
 }
 
