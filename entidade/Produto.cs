@@ -14,7 +14,7 @@ namespace PadariaJJM
         public string Categoria { get; set; }
         public string CodigoBarras { get; set; } // Código de Barras é opcional
 
-        SalvarLog salvar = new SalvarLog();
+        SalvarLog salvar = new();
 
 
 
@@ -180,13 +180,17 @@ namespace PadariaJJM
         }
         public string RemoverProduto()
         {
+           if (ProcurarProduto() == null)
+            {
+                return "Não foi possivel remover";
+            }
             var mensagem = "Não foi possivel remover";
             if (string.IsNullOrEmpty(CodigoBarras))
                 return mensagem;
 
             string connectionString = Url;
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new(connectionString))
             {
                 try
                 {
@@ -329,6 +333,7 @@ namespace PadariaJJM
                     produto.Fornecedor = reader["fornecedor"].ToString();
                     produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
 
+                   
 
                     return produto;
                 }

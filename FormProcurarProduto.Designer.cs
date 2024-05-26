@@ -85,7 +85,7 @@
             // isPesoDataGridViewCheckBoxColumn
             // 
             isPesoDataGridViewCheckBoxColumn.DataPropertyName = "IsPeso";
-            isPesoDataGridViewCheckBoxColumn.HeaderText = "Peso ? ";
+            isPesoDataGridViewCheckBoxColumn.HeaderText = "Vendido por PESO?";
             isPesoDataGridViewCheckBoxColumn.MinimumWidth = 6;
             isPesoDataGridViewCheckBoxColumn.Name = "isPesoDataGridViewCheckBoxColumn";
             isPesoDataGridViewCheckBoxColumn.ReadOnly = true;

@@ -136,7 +136,7 @@ namespace PadariaJJM
 
             string categoriaSelecionada = (string)comboBox1.SelectedItem;
 
-            Produto produto = new Produto(nome.Text, decimal.Parse(preco.Text), int.Parse(quantidade.Text), isPeso, categoriaSelecionada, barCode.Text);
+            Produto produto = new Produto(nome.Text, decimal.Parse(preco.Text), decimal.Parse(quantidade.Text), isPeso, categoriaSelecionada, barCode.Text);
 
 
 
@@ -174,7 +174,7 @@ namespace PadariaJJM
                 //cadastro
                 if (produto.inserir() == "Não foi salvo!")
                 {
-                    MessageBox.Show("Erro ao Cadastrar o Produto.");
+                    MessageBox.Show("Erro ao Cadastrar o Produto. Verifique o código de barras existente ou a Conexão com o banco.");
                     return;
                 }
                 MessageBox.Show("Produto Cadastrado.");

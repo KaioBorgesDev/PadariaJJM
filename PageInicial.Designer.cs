@@ -227,7 +227,6 @@
             // 
             resources.ApplyResources(textBox2, "textBox2");
             textBox2.Name = "textBox2";
-            textBox2.TextChanged += textBox2_TextChanged;
             textBox2.KeyDown += textbox2_KeyDown;
             // 
             // label4
@@ -351,7 +350,6 @@
             resources.ApplyResources(valorTotallb, "valorTotallb");
             valorTotallb.ForeColor = SystemColors.ActiveCaptionText;
             valorTotallb.Name = "valorTotallb";
-            valorTotallb.Click += valorTotallb_Click;
             // 
             // label5
             // 

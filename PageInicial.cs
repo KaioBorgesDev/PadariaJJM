@@ -85,16 +85,7 @@ namespace PadariaJJM
             produtosVenda.Clear();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            // Remove o evento para evitar recursão durante a modificação do texto
-            
-        }
 
-        private void valorTotallb_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -152,14 +143,15 @@ namespace PadariaJJM
                 MessageBox.Show("Está faltando dinheiro. Verifique o troco.");
                 return;
             }
-            if(produtosVenda.Count == 0)
+            if (produtosVenda.Count == 0)
             {
                 MessageBox.Show("Não tem nenhuma venda sendo realizada!");
+                return;
             }
 
 
             Venda v = new Venda(null, decimal.Parse(valorTotallb.Text), mtd_Pagamento.Text, DateTime.Now);
-            
+
             if (cpf_check.Checked)
             {
                 v.Cpf = cpf.Text;
@@ -171,19 +163,30 @@ namespace PadariaJJM
 
             if (v.inserirVenda() == "Inserido com Sucesso!")
             {
+                //metodo aonde retiro o produto vendido do estoque
+
+                foreach (var product in produtosVenda)
+                {
+                    var quantidadeRetirada = product.Quantidade;
+                    Produto produto = product.ProcurarProduto(product.CodigoBarras);
+                    produto.Quantidade -= quantidadeRetirada;
+                    produto.AtualizarProduto();
+                }
                 produtosVenda.Clear();
-                
+
                 DialogResult resultado = new DialogResult();
-                resultado = MessageBox.Show("Imprimir a via?","Venda Finalizada.",MessageBoxButtons.OKCancel);
-                if(resultado == DialogResult.OK)
+                resultado = MessageBox.Show("Imprimir a via?", "Venda Finalizada.", MessageBoxButtons.OKCancel);
+                if (resultado == DialogResult.OK)
                 {
                     //implementar a logica de imprimir a via
                     try
                     {
+                        MessageBox.Show("Imprimindo sua via");
+                    }
+                    catch (Exception)
+                    {
 
-                    }catch(Exception) { 
-                    
-                    
+
                     }
                 }
                 valorTotallb.Text = "0";
@@ -208,48 +211,91 @@ namespace PadariaJJM
 
         private void textbox2_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (e.KeyCode == Keys.Enter)
             {
-                
+                var texto = qtdTB.Text;
+                bool havePointer = texto.Contains('.');
+                if(havePointer )
+                {
+                    MessageBox.Show("Por Favor use virgula no lugar de '.'");
+                    return;
+                }
                 try
                 {
                     Produto produto = new Produto();
-                    //aqui eu crio um produto, e busco pela textbox2 (codigo de barras)
+                    // aqui eu crio um produto, e busco pela textbox2 (codigo de barras)
                     produto = produto.ProcurarProduto(textBox2.Text);
 
                     if (produto != null)
                     {
                         if (decimal.TryParse(qtdTB.Text, out decimal quantidade))
                         {
-                            produto.Quantidade = quantidade;
-                            produto.ValorTotal = Math.Round(produto.Quantidade * produto.Preco, 2);
-                            produtosVenda.Add(produto);
-                            player.Play();
-                            decimal valorTotal = decimal.Parse(valorTotallb.Text);
-                            valorTotal += produto.ValorTotal;
-                            valorTotallb.Text = valorTotal.ToString();
-                            // Atualiza a exibição do DataGridView
-                            dataGridView1.DataSource = null;
-                            dataGridView1.DataSource = produtosVenda;
+                            bool isQuantidadeValida = false;
+
+                            // Verifica se o produto é vendido por peso
+                            if (produto.IsPeso)
+                            {
+                                isQuantidadeValida = true; // Permite quantidades fracionárias e inteiras
+                            }
+                            else
+                            {
+                                // Verifica se a quantidade é um número inteiro para produtos vendidos por unidade
+                                if (quantidade % 1 == 0)
+                                {
+                                    isQuantidadeValida = true; // Apenas inteiros são válidos
+                                }
+                            }
+
+                            if (isQuantidadeValida)
+                            {
+                                if (!produto.IsPeso)
+                                    produto.Quantidade = Math.Round(quantidade);
+                                else
+                                    produto.Quantidade = quantidade;
+
+                                
+                                produto.ValorTotal = Math.Round(produto.Quantidade * produto.Preco, 2);
+                                produtosVenda.Add(produto);
+
+                                // ao adicionar eu solto um som de bip
+                                player.Play();
+                                decimal valorTotal = decimal.Parse(valorTotallb.Text);
+                                valorTotal += produto.ValorTotal;
+                                valorTotallb.Text = valorTotal.ToString();
+
+                                // Atualiza a exibição do DataGridView
+                                dataGridView1.DataSource = null;
+                                dataGridView1.DataSource = produtosVenda;
+
+                                // Limpa a caixa de texto após a operação
+                                textBox2.Text = "";
+                                qtdTB.Text = "1"; // Reseta a quantidade para 1
+                            }
+                            else
+                            {
+                                MessageBox.Show($"A quantidade de {produto.Nome} deve ser um número inteiro.");
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Quantidade não aceitada (Verifique se há algum ponto ou letras)");
+                            MessageBox.Show("Quantidade inválida. Verifique se não há caracteres não numéricos.");
                         }
                     }
-
-                    // Limpa a caixa de texto após a operação
-                    textBox2.Text = "";
+                    else
+                    {
+                        MessageBox.Show("Produto não encontrado.");
+                    }
                 }
                 catch (Exception ex)
-                {               
+                {
                     MessageBox.Show($"Ocorreu um erro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
                 e.Handled = true; // Evita o beep padrão do Enter
                 e.SuppressKeyPress = true; // Evita a inserção da nova linha
             }
         }
+
 
     }
 }
