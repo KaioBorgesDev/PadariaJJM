@@ -1,139 +1,169 @@
 ﻿using MySql.Data.MySqlClient;
 using PadariaJJM.log;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace PadariaJJM.entidade
 {
     internal class Categoria
     {
-
         public string Name { get; set; }
-
         private SalvarLog salvar = new SalvarLog();
-        //url casa da Senai
-        //private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
-        //url minha casa 
         private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
-        //url casa da julia
-       // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
 
         public Categoria(string name)
         {
-
             this.Name = name;
         }
+
         public Categoria()
         {
             Name = "";
         }
 
-        public string inserir()
+        public string Inserir()
         {
             var mensagem = "Não foi salvo!";
             MySqlConnection conn = new MySqlConnection(Url);
 
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados.", "200");
                 conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao abrir banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
-                return mensagem;
-            }
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-            MySqlCommand comando = new MySqlCommand("Insert into categoria(nome) values(@nome)", conn);
-            comando.Parameters.AddWithValue("@nome", Name);
+                MySqlCommand comando = new MySqlCommand("INSERT INTO categoria(nome) VALUES(@nome)", conn);
+                comando.Parameters.AddWithValue("@nome", Name);
 
-            try
-            {
-                comando.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao salvar no banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
-            }
-            return mensagem = "Salvo com sucesso";
-        }
-
-        public List<Categoria> PegarCategorias()
-        {
-            var mensagem = "não foi possivel pegar as categorias";
-
-            List<Categoria> categorias = new List<Categoria>();
-
-            MySqlConnection conn = new MySqlConnection(Url);
-
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao abrir banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
-                return null;
-            }
-
-            MySqlCommand comando = new MySqlCommand("Select * from categoria", conn);
-
-
-            try
-            {
-                var reader = comando.ExecuteReader();
-
-                while (reader.Read())
+                try
                 {
-                    Categoria categoria = new Categoria(reader["nome"].ToString());
-                    categorias.Add(categoria);
+                    salvar.SalvarEmArquivoLog("Executando comando para inserir categoria.", "200");
+                    comando.ExecuteNonQuery();
+                    salvar.SalvarEmArquivoLog("Categoria inserida com sucesso.", "200");
+                    mensagem = "Salvo com sucesso";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao salvar no banco");
+                    salvar.SalvarEmArquivoLog("Erro ao tentar inserir categoria: " + ex.ToString(), "500");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao procurar categoria no banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                MessageBox.Show("Erro ao abrir banco");
+                salvar.SalvarEmArquivoLog("Erro ao abrir conexão: " + ex.ToString(), "500");
             }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
+            return mensagem;
+        }
+
+        public List<Categoria> PegarCategorias()
+        {
+            List<Categoria> categorias = new List<Categoria>();
+            MySqlConnection conn = new MySqlConnection(Url);
+
+            try
+            {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para pegar todas as categorias.", "200");
+                conn.Open();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
+
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM categoria", conn);
+
+                try
+                {
+                    var reader = comando.ExecuteReader();
+                    salvar.SalvarEmArquivoLog("Lendo categorias do banco de dados.", "200");
+
+                    while (reader.Read())
+                    {
+                        Categoria categoria = new Categoria(reader["nome"].ToString());
+                        categorias.Add(categoria);
+                    }
+
+                    salvar.SalvarEmArquivoLog("Categorias lidas com sucesso.", "200");
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao procurar categoria no banco");
+                    salvar.SalvarEmArquivoLog("Erro ao ler categorias: " + ex.ToString(), "500");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao abrir banco");
+                salvar.SalvarEmArquivoLog("Erro ao abrir conexão: " + ex.ToString(), "500");
+            }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
             return categorias;
         }
 
         public Categoria BuscaCategoria()
         {
-
-            var mensagem = "não foi possivel pegar a categoria";
             MySqlConnection conn = new MySqlConnection(Url);
             Categoria categoria = null;
 
-
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para buscar categoria.", "200");
                 conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao abrir banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
-            }
-            MySqlCommand comando = new MySqlCommand("Select * from categoria(nome) where idcategoria = @nome", conn);
-            comando.Parameters.AddWithValue("@nome", Name);
-            try
-            {
-                var reader = comando.ExecuteReader();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-                while (reader.Read())
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM categoria WHERE nome = @nome", conn);
+                comando.Parameters.AddWithValue("@nome", Name);
+
+                try
                 {
-                    Categoria cat = new Categoria(reader["nome"].ToString());
-                    return cat;
+                    var reader = comando.ExecuteReader();
+                    salvar.SalvarEmArquivoLog("Lendo categoria do banco de dados.", "200");
+
+                    if (reader.Read())
+                    {
+                        categoria = new Categoria(reader["nome"].ToString());
+                        salvar.SalvarEmArquivoLog("Categoria encontrada: " + categoria.Name, "200");
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao procurar categoria no banco");
+                    salvar.SalvarEmArquivoLog("Erro ao ler categoria: " + ex.ToString(), "500");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao procurar categoria no banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                MessageBox.Show("Erro ao abrir banco");
+                salvar.SalvarEmArquivoLog("Erro ao abrir conexão: " + ex.ToString(), "500");
             }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
             return categoria;
         }
-
-
     }
 }

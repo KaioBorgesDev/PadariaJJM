@@ -139,6 +139,11 @@ namespace PadariaJJM
                 return;
 
             }
+            if (!decimal.TryParse(valor_Troco.Text, out _))
+            {
+                MessageBox.Show("Nao foi possivel estabelecer o troco");
+                return;
+            }
             if (decimal.Parse(valor_Troco.Text) < 0)
             {
                 MessageBox.Show("Está faltando dinheiro. Verifique o troco.");

@@ -21,7 +21,7 @@ namespace PadariaJJM
 
             if (categoria != null)
             {
-                resposta = categoria.inserir();
+                resposta = categoria.Inserir();
             }
 
             if (resposta != "Não foi salvo!")

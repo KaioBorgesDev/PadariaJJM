@@ -1997,3 +1997,2523 @@ Mensagem: MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to 
    at MySql.Data.MySqlClient.MySqlConnection.Open()
    at PadariaJJM.Produto.ProcurarProduto(String codigoDeBarras) in C:\Users\Administrador\Source\Repos\KaioBorgesDev\PadariaJJM\entidade\Produto.cs:line 314
 
+Data: 29/05/2024 20:13:15
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:13:15
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:15
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:13:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:13:56
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:13:56
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:56
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:13:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:13:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:13:57
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:13:57
+Categoria: 500
+Mensagem: Erro ao tentar inserir venda: MySql.Data.MySqlClient.MySqlException (0x80004005): Out of range value for column 'preco_total' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at PadariaJJM.entidade.Venda.InserirVenda() in C:\Users\Administrador\Source\Repos\KaioBorgesDev\PadariaJJM\entidade\Venda.cs:line 69
+
+Data: 29/05/2024 20:13:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:14:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:14:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:14:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:14:21
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:14:21
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:14:21
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:14:23
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:14:23
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:14:23
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:14:23
+Categoria: 500
+Mensagem: Erro ao tentar inserir venda: MySql.Data.MySqlClient.MySqlException (0x80004005): Out of range value for column 'preco_total' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at PadariaJJM.entidade.Venda.InserirVenda() in C:\Users\Administrador\Source\Repos\KaioBorgesDev\PadariaJJM\entidade\Venda.cs:line 69
+
+Data: 29/05/2024 20:14:23
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:21
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:22
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:22
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:26
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:26
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:26
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:35
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:35
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:35
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:43
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:43
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:43
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:47
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:47
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:47
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:54
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:54
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:54
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:15:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:05
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:05
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:05
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:09
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:18
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:18
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:18
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:19
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:20
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:21
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:26
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:26
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:26
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:16:31
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:16:37
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:16:37
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:16:37
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:46
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:47
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:47
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:48
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:48
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:48
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:49
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:49
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:49
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:50
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:17:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:58
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:58
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:58
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:17:59
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:17:59
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:17:59
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:00
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:00
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:00
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:01
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:18:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter todas as vendas.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Todas as vendas foram obtidas com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o total de vendas.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Total de vendas obtido com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:18:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:19:09
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:19:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:19:09
+Categoria: 200
+Mensagem: Obtendo vendas de 01/06/2024 00:00:00 a 30/06/2024 00:00:00.
+
+Data: 29/05/2024 20:19:09
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:19:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:19:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:19:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:19:10
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:19:10
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:19:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:21:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:22:14
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:14
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:22:15
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Obtendo vendas de 01/06/2024 00:00:00 a 30/06/2024 00:00:00.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:22:30
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:43
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:22:43
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:43
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 29/05/2024 20:22:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:22:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:52
+Categoria: 200
+Mensagem: Obtendo vendas de 01/06/2024 00:00:00 a 30/06/2024 00:00:00.
+
+Data: 29/05/2024 20:22:52
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:22:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:22:53
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:22:53
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:22:53
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:22:53
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:22:53
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:01
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:01
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:01
+Categoria: 200
+Mensagem: Obtendo vendas de 01/04/2024 00:00:00 a 30/04/2024 00:00:00.
+
+Data: 29/05/2024 20:23:01
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:01
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:02
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:02
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:02
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:23:02
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:02
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:03
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:03
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:03
+Categoria: 200
+Mensagem: Obtendo vendas de 01/06/2024 00:00:00 a 30/06/2024 00:00:00.
+
+Data: 29/05/2024 20:23:03
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:03
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Obtendo vendas de 01/04/2024 00:00:00 a 30/04/2024 00:00:00.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:04
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:05
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.
+
+Data: 29/05/2024 20:23:05
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:05
+Categoria: 200
+Mensagem: Obtendo vendas de 01/05/2024 00:00:00 a 31/05/2024 00:00:00.
+
+Data: 29/05/2024 20:23:05
+Categoria: 200
+Mensagem: Vendas por mês e ano obtidas com sucesso.
+
+Data: 29/05/2024 20:23:05
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todas as categorias.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Lendo categorias do banco de dados.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Categorias lidas com sucesso.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para selecionar todos os tributos.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Tributos selecionados com sucesso.
+
+Data: 29/05/2024 20:23:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
