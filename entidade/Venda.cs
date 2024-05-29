@@ -15,7 +15,9 @@ namespace PadariaJJM.entidade
         private DateTime data_venda;
 
         SalvarLog log = new SalvarLog();
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+       // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
 
         public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, string cpf = null, decimal troco = 0  )
         {
@@ -127,7 +129,56 @@ namespace PadariaJJM.entidade
 
             return vendas;
         }
+        public List<Venda> ObterVendasPorMesAno(int mes, int ano)
+        {
+            List<Venda> vendas = new List<Venda>();
+            string connStr = "seu_connection_string"; 
+            MySqlConnection conn = new MySqlConnection(Url);
 
+            try
+            {
+                conn.Open();
+
+                // Obter o primeiro e o último dia do mês selecionado
+                DateTime primeiroDiaDoMes = new DateTime(ano, mes, 1);
+                DateTime ultimoDiaDoMes = primeiroDiaDoMes.AddMonths(1).AddDays(-1);
+
+                // Comando SQL com filtro de data
+                string sql = "SELECT * FROM vendas WHERE data_venda >= @primeiroDiaDoMes AND data_venda <= @ultimoDiaDoMes";
+                MySqlCommand comando = new MySqlCommand(sql, conn);
+                comando.Parameters.AddWithValue("@primeiroDiaDoMes", primeiroDiaDoMes);
+                comando.Parameters.AddWithValue("@ultimoDiaDoMes", ultimoDiaDoMes);
+
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Venda venda = new Venda
+                        {
+                            IdVenda = reader.IsDBNull(reader.GetOrdinal("idvenda")) ? (int?)null : reader.GetInt32("idvenda"),
+                            Preco_total = reader.GetDecimal("preco_total"),
+                            Metodo_pagamento = reader.GetString("metodo_pagamento"),
+                            Data_venda = reader.GetDateTime("data_venda"),
+                            Cpf = reader.IsDBNull(reader.GetOrdinal("cpf")) ? null : reader.GetString("cpf"),
+                            Troco = reader.IsDBNull(reader.GetOrdinal("troco")) ? 0 : reader.GetDecimal("troco")
+                        };
+
+                        vendas.Add(venda);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Tratar exceções
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return vendas;
+        }
         public decimal ObterTotalValorVendas()
         {
             decimal total = 0;

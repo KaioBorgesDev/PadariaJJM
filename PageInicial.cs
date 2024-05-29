@@ -300,7 +300,7 @@ namespace PadariaJJM
         private void relátorioVendasToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            
+           
 
             DialogResult resultado = new DialogResult();
             resultado = MessageBox.Show("Deseja abrir o relátorio? (Somente Administrador)", "Relátorio PadariaJJM", MessageBoxButtons.OKCancel);

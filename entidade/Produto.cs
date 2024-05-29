@@ -24,9 +24,9 @@ namespace PadariaJJM
         //private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
         //url casa da julia
 
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
         //url minha casa 
-        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
         // Construtor para as propriedades obrigatórias
         

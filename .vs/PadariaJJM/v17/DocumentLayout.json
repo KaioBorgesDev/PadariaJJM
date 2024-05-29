@@ -1,30 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PageInicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PageInicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pageinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\entidade\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:entidade\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\script_database.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:script_database.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\entidade\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\impressao\\lugao58.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:impressao\\lugao58.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|c:\\users\\administrador\\source\\repos\\kaioborgesdev\\padariajjm\\entidade\\tributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3207DB05-101F-4A6B-AFB2-DBDF78CFA9D6}|PadariaJJM.csproj|solutionrelative:entidade\\tributo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,12 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -54,75 +62,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PageInicial.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PageInicial.cs",
-              "RelativeDocumentMoniker": "PageInicial.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PageInicial.cs [Design]",
-              "RelativeToolTip": "PageInicial.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "Lugao58.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\impressao\\Lugao58.cs",
+              "RelativeDocumentMoniker": "impressao\\Lugao58.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\impressao\\Lugao58.cs",
+              "RelativeToolTip": "impressao\\Lugao58.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowFQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T20:46:05.915Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-29T02:05:19.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Relatorio.cs",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\Relatorio.cs",
-              "RelativeDocumentMoniker": "Relatorio.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\Relatorio.cs",
-              "RelativeToolTip": "Relatorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
+              "DocumentIndex": 5,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Categoria.cs",
+              "RelativeDocumentMoniker": "entidade\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Categoria.cs",
+              "RelativeToolTip": "entidade\\Categoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T20:42:10.071Z"
+              "WhenOpened": "2024-05-29T01:50:32.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Relatorio.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\Relatorio.cs",
-              "RelativeDocumentMoniker": "Relatorio.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\Relatorio.cs [Projeto]",
-              "RelativeToolTip": "Relatorio.cs [Projeto]",
+              "DocumentIndex": 8,
+              "Title": "Tributo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Tributo.cs",
+              "RelativeDocumentMoniker": "entidade\\Tributo.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Tributo.cs",
+              "RelativeToolTip": "entidade\\Tributo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T20:50:20.164Z"
+              "WhenOpened": "2024-05-29T01:49:45.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Venda.cs",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\Venda.cs",
-              "RelativeDocumentMoniker": "entidade\\Venda.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\Venda.cs",
-              "RelativeToolTip": "entidade\\Venda.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAvwBMAAABzAAAA",
+              "Title": "script_database.txt",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\script_database.txt",
+              "RelativeDocumentMoniker": "script_database.txt",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\script_database.txt",
+              "RelativeToolTip": "script_database.txt",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-29T01:41:17.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Relatorio.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\Relatorio.cs",
+              "RelativeDocumentMoniker": "Relatorio.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\Relatorio.cs",
+              "RelativeToolTip": "Relatorio.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T20:46:34.461Z"
+              "WhenOpened": "2024-05-29T01:31:32.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Relatorio.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\Relatorio.cs",
+              "RelativeDocumentMoniker": "Relatorio.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\Relatorio.cs [Projeto]",
+              "RelativeToolTip": "Relatorio.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T01:30:40.609Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Venda.cs",
+              "RelativeDocumentMoniker": "entidade\\Venda.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Venda.cs",
+              "RelativeToolTip": "entidade\\Venda.cs",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAewIYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T20:46:34.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PageInicial.cs",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PageInicial.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs",
               "RelativeDocumentMoniker": "PageInicial.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\PageInicial.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\PageInicial.cs",
               "RelativeToolTip": "PageInicial.cs",
-              "ViewState": "AQIAAB0BAAAAAAAAAAAuwDUBAAAdAAAA",
+              "ViewState": "AQIAAAABAAAAAAAAAAAIwC4BAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T20:46:08.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeDocumentMoniker": "entidade\\Produto.cs",
-              "ToolTip": "C:\\Users\\julin\\Documents\\Importante\\PadariaJJM\\entidade\\Produto.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\KaioBorgesDev\\PadariaJJM\\entidade\\Produto.cs",
               "RelativeToolTip": "entidade\\Produto.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAmwFYAAAAYAAAA",
+              "ViewState": "AQIAANEAAAAAAAAAAAAAAOMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T20:37:22.321Z"
+              "WhenOpened": "2024-05-26T20:37:22.321Z",
+              "EditorCaption": ""
             }
           ]
         },
