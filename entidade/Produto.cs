@@ -1,12 +1,14 @@
 ﻿using MySql.Data.MySqlClient;
 using PadariaJJM.log;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace PadariaJJM
 {
     public class Produto
     {
         // Propriedades obrigatórias
-        
         public string Nome { get; set; }
         public decimal Preco { get; set; }
         public decimal Quantidade { get; set; }
@@ -16,49 +18,30 @@ namespace PadariaJJM
 
         SalvarLog salvar = new();
 
-
-
         public decimal ValorTotal { get; set; } // Fornecedor é opcional
 
-        //url casa da Senai
-        //private string Url = "Server=ESN509VMYSQL;Database=PadariaJJM_1;Uid=aluno;Pwd=Senai1234";
-        //url casa da julia
-
-        //private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
-        //url minha casa 
+        // URL da conexão com o banco de dados
         private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
 
         // Construtor para as propriedades obrigatórias
-        
-
-        public Produto( string nome, decimal preco, decimal quantidade, bool isPeso, string categoria, string codigodebarras )
+        public Produto(string nome, decimal preco, decimal quantidade, bool isPeso, string categoria, string codigodebarras)
         {
-           
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
             IsPeso = isPeso;
             Categoria = categoria;
-            this.CodigoBarras = codigodebarras;
-
+            CodigoBarras = codigodebarras;
         }
 
         public Produto()
         {
         }
 
-
-
         // Propriedades opcionais
-
         public DateTime? DataValidade { get; set; } // Data de Validade é opcional
-      
         public string Fornecedor { get; set; } // Fornecedor é opcional
         public string Tributo { get; set; } // Fornecedor é opcional
-
-
-
-
 
         // Método para validar se o produto está pronto para ser salvo
         public bool IsValid()
@@ -73,19 +56,22 @@ namespace PadariaJJM
 
             return true;
         }
-        public string inserir()
+
+        public string Inserir()
         {
             var mensagem = "Não foi salvo!";
             MySqlConnection conn = new MySqlConnection(Url);
 
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados.", "200");
                 conn.Open();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao abrir banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog("Erro ao abrir conexão: " + ex.ToString(), "500");
                 return mensagem;
             }
 
@@ -101,8 +87,7 @@ namespace PadariaJJM
             }
             else
             {
-    
-                comando.Parameters.AddWithValue("@validade", DataValidade);
+                comando.Parameters.AddWithValue("@validade", DBNull.Value);
             }
 
             comando.Parameters.AddWithValue("@barCode", CodigoBarras);
@@ -115,18 +100,28 @@ namespace PadariaJJM
             comando.Parameters.AddWithValue("@categoria_nome", Categoria);
             comando.Parameters.AddWithValue("@tributos_nome", Tributo);
 
-
             try
             {
+                salvar.SalvarEmArquivoLog("Executando comando para inserir produto.", "200");
                 comando.ExecuteNonQuery();
+                salvar.SalvarEmArquivoLog("Produto inserido com sucesso.", "200");
+                mensagem = "Salvo com sucesso";
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao enviar para o banco.");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
-                return mensagem;
+                salvar.SalvarEmArquivoLog("Erro ao tentar inserir produto: " + ex.ToString(), "500");
             }
-            return mensagem = "Salvo com sucesso";
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
+            return mensagem;
         }
 
         public List<Produto> PegarTodos()
@@ -134,145 +129,165 @@ namespace PadariaJJM
             List<Produto> produtos = new List<Produto>();
 
             MySqlConnection conn = new MySqlConnection(Url);
-            Produto prod = new Produto();
-
 
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para pegar todos os produtos.", "200");
                 conn.Open();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
                 MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos", conn);
-
                 var reader = comando.ExecuteReader();
 
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        
                         reader["nome"].ToString(),
                         decimal.Parse(reader["preco"].ToString()),
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
                         reader["categoria_nome"].ToString(),
                         reader["barCode"].ToString()
-); ;
-                    produto.Tributo = reader["tributos_nome"].ToString();
-                    produto.Fornecedor = reader["fornecedor"].ToString();
-                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
-
+                    )
+                    {
+                        Tributo = reader["tributos_nome"].ToString(),
+                        Fornecedor = reader["fornecedor"].ToString(),
+                        DataValidade = reader["validade"] == DBNull.Value ? (DateTime?)null : DateTime.Parse(reader["validade"].ToString())
+                    };
 
                     produtos.Add(produto);
                 }
 
                 reader.Close();
+                salvar.SalvarEmArquivoLog("Produtos selecionados com sucesso.", "200");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao selecionar produtos do banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog("Erro ao selecionar produtos: " + ex.ToString(), "500");
             }
             finally
             {
-                conn.Close();
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
             }
 
             return produtos;
         }
+
         public string RemoverProduto()
         {
-           if (ProcurarProduto() == null)
+            if (ProcurarProduto() == null)
             {
                 return "Não foi possivel remover";
             }
+
             var mensagem = "Não foi possivel remover";
             if (string.IsNullOrEmpty(CodigoBarras))
                 return mensagem;
 
-            string connectionString = Url;
-
-            using (MySqlConnection conn = new(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Url))
             {
                 try
                 {
+                    salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para remover produto.", "200");
                     conn.Open();
+                    salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-                    string query = @"
-                            DELETE FROM produtos 
-                            WHERE 
-                                barCode = @id;";
-
+                    string query = "DELETE FROM produtos WHERE barCode = @id";
                     MySqlCommand comando = new MySqlCommand(query, conn);
                     comando.Parameters.AddWithValue("@id", CodigoBarras);
 
                     comando.ExecuteNonQuery();
                     mensagem = "Produto Removido";
+                    salvar.SalvarEmArquivoLog("Produto removido com sucesso.", "200");
                 }
                 catch (Exception ex)
                 {
-                    salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                    salvar.SalvarEmArquivoLog("Erro ao remover produto: " + ex.ToString(), "500");
                 }
+                finally
+                {
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        conn.Close();
+                        salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                    }
+                }
+
                 return mensagem;
             }
-
         }
+
         public void AtualizarProduto()
         {
-            string connectionString = Url;
-
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Url))
             {
                 try
                 {
+                    salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para atualizar produto.", "200");
                     conn.Open();
+                    salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
                     string query = @"
-                UPDATE produtos 
-                SET 
-                    nome = @nome,
-                    preco = @preco,
-                    quantidade = @quantidade,
-                    is_peso = @isPeso,
-                    categoria_nome = @categoria,
-                    validade = @validade,
-                    fornecedor = @fornecedor,
-                    
-                    tributos_nome = @tributo
-                WHERE 
-                    barCode = @barcode";
+                        UPDATE produtos 
+                        SET 
+                            nome = @nome,
+                            preco = @preco,
+                            quantidade = @quantidade,
+                            is_peso = @isPeso,
+                            categoria_nome = @categoria,
+                            validade = @validade,
+                            fornecedor = @fornecedor,
+                            tributos_nome = @tributo
+                        WHERE 
+                            barCode = @barcode";
 
                     MySqlCommand comando = new MySqlCommand(query, conn);
-
-                    var peso = 0;
-                    if (IsPeso) { peso = 1;}else { peso = 0; }
                     comando.Parameters.AddWithValue("@barCode", CodigoBarras);
                     comando.Parameters.AddWithValue("@nome", Nome);
                     comando.Parameters.AddWithValue("@preco", Preco);
                     comando.Parameters.AddWithValue("@quantidade", Quantidade);
-                    comando.Parameters.AddWithValue("@isPeso", IsPeso);
+                    comando.Parameters.AddWithValue("@isPeso", IsPeso ? 1 : 0);
                     comando.Parameters.AddWithValue("@categoria", Categoria);
                     comando.Parameters.AddWithValue("@validade", DataValidade);
                     comando.Parameters.AddWithValue("@fornecedor", Fornecedor);
                     comando.Parameters.AddWithValue("@tributo", Tributo);
 
                     comando.ExecuteNonQuery();
-
+                    salvar.SalvarEmArquivoLog("Produto atualizado com sucesso.", "200");
                 }
                 catch (Exception ex)
                 {
-                    salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                    salvar.SalvarEmArquivoLog("Erro ao atualizar produto: " + ex.ToString(), "500");
+                }
+                finally
+                {
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        conn.Close();
+                        salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                    }
                 }
             }
         }
+
         public Produto ProcurarProduto()
         {
             MySqlConnection conn = new MySqlConnection(Url);
             if (string.IsNullOrEmpty(CodigoBarras))
                 return null;
+
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para procurar produto.", "200");
                 conn.Open();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id ", conn);
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id", conn);
                 comando.Parameters.AddWithValue("@id", CodigoBarras);
 
                 var reader = comando.ExecuteReader();
@@ -280,18 +295,18 @@ namespace PadariaJJM
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        
                         reader["nome"].ToString(),
                         decimal.Parse(reader["preco"].ToString()),
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
                         reader["categoria_nome"].ToString(),
-                        reader["barCode"].ToString());
-
-                    produto.Tributo = reader["tributos_nome"].ToString();
-                    produto.Fornecedor = reader["fornecedor"].ToString();
-                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
-
+                        reader["barCode"].ToString()
+                    )
+                    {
+                        Tributo = reader["tributos_nome"].ToString(),
+                        Fornecedor = reader["fornecedor"].ToString(),
+                        DataValidade = reader["validade"] == DBNull.Value ? (DateTime?)null : DateTime.Parse(reader["validade"].ToString())
+                    };
 
                     return produto;
                 }
@@ -299,10 +314,20 @@ namespace PadariaJJM
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao selecionar produtos do banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog("Erro ao selecionar produto: " + ex.ToString(), "500");
             }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
             return null;
         }
+
         public Produto ProcurarProduto(string codigoDeBarras)
         {
             MySqlConnection conn = new MySqlConnection(Url);
@@ -311,9 +336,11 @@ namespace PadariaJJM
 
             try
             {
+                salvar.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.", "200");
                 conn.Open();
+                salvar.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id ", conn);
+                MySqlCommand comando = new MySqlCommand("SELECT * FROM produtos where barCode = @id", conn);
                 comando.Parameters.AddWithValue("@id", codigoDeBarras);
 
                 var reader = comando.ExecuteReader();
@@ -321,19 +348,18 @@ namespace PadariaJJM
                 while (reader.Read())
                 {
                     Produto produto = new Produto(
-                        
                         reader["nome"].ToString(),
                         decimal.Parse(reader["preco"].ToString()),
                         decimal.Parse(reader["quantidade"].ToString()),
                         bool.Parse(reader["is_peso"].ToString()),
                         reader["categoria_nome"].ToString(),
-                        reader["barCode"].ToString());
-
-                    produto.Tributo = reader["tributos_nome"].ToString();
-                    produto.Fornecedor = reader["fornecedor"].ToString();
-                    produto.DataValidade = DateTime.Parse(reader["validade"].ToString());
-
-                   
+                        reader["barCode"].ToString()
+                    )
+                    {
+                        Tributo = reader["tributos_nome"].ToString(),
+                        Fornecedor = reader["fornecedor"].ToString(),
+                        DataValidade = reader["validade"] == DBNull.Value ? (DateTime?)null : DateTime.Parse(reader["validade"].ToString())
+                    };
 
                     return produto;
                 }
@@ -341,11 +367,18 @@ namespace PadariaJJM
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao selecionar produto do banco");
-                salvar.SalvarEmArquivoLog(ex.ToString(), "500");
+                salvar.SalvarEmArquivoLog("Erro ao selecionar produto: " + ex.ToString(), "500");
             }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    salvar.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+
             return null;
         }
-
     }
-
 }

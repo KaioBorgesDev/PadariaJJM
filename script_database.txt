@@ -1,60 +1,59 @@
-CREATE DATABASE `padariajjm` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE `padariajjm` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
 
 USE `padariajjm`;
 
 CREATE TABLE `categoria` (
   `nome` varchar(45) NOT NULL,
   PRIMARY KEY (`nome`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
 
 CREATE TABLE `tributos` (
   `nome` varchar(45) NOT NULL,
-  `valor_porcentagem` int(3) DEFAULT NULL,
+  `valor_porcentagem` int DEFAULT NULL,
   PRIMARY KEY (`nome`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
 
 CREATE TABLE `produtos` (
-  `idprodutos` int(11) NOT NULL AUTO_INCREMENT,
+  `idprodutos` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
-  `quantidade` decimal(10,2) NOT NULL, -- Aqui, a quantidade pode representar unidades ou peso
+  `quantidade` decimal(10,2) NOT NULL,
   `validade` datetime DEFAULT NULL,
   `barCode` varchar(45) DEFAULT NULL,
   `fornecedor` varchar(45) DEFAULT NULL,
-  `is_peso` boolean NOT NULL DEFAULT 0, -- Este campo indica se a quantidade é em peso
+  `is_peso` tinyint(1) NOT NULL DEFAULT '0',
   `categoria_nome` varchar(45) NOT NULL,
   `tributos_nome` varchar(45) NOT NULL,
   PRIMARY KEY (`idprodutos`),
   KEY `fk_produtos_categoria1` (`categoria_nome`),
   KEY `fk_produtos_tributos1` (`tributos_nome`),
-  CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_nome`) REFERENCES `categoria` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_nome`) REFERENCES `tributos` (`nome`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_produtos_categoria1` FOREIGN KEY (`categoria_nome`) REFERENCES `categoria` (`nome`),
+  CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_nome`) REFERENCES `tributos` (`nome`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
 CREATE TABLE `vendas` (
-  `idvenda` int(11) NOT NULL AUTO_INCREMENT,
-  `produtos_idprodutos` int(11) NOT NULL,
-  `quantidade_vendida` decimal(10,2) NOT NULL, -- Aqui, a quantidade vendida pode representar unidades ou peso
-  `preco_total` decimal(10,2) DEFAULT NULL,
+  `idvenda` int NOT NULL AUTO_INCREMENT,
+  `preco_total` decimal(10,2) NOT NULL,
   `cpf` varchar(12) DEFAULT NULL,
-  `dinheiro` decimal(10,2) DEFAULT NULL,
   `troco` decimal(10,2) DEFAULT NULL,
   `metodo_pagamento` varchar(45) NOT NULL,
   `data_venda` datetime NOT NULL,
-  PRIMARY KEY (`idvenda`),
-  KEY `fk_vendas_produtos1` (`produtos_idprodutos`),
-  CONSTRAINT `fk_vendas_produtos1` FOREIGN KEY (`produtos_idprodutos`) REFERENCES `produtos` (`idprodutos`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`idvenda`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3;
+SELECT * FROM padariajjm.vendas;
 
 CREATE TABLE `cliente_devedor` (
-  `idCliente` int(11) NOT NULL AUTO_INCREMENT,
+  `idCliente` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `cpf` varchar(12) NOT NULL,
   `endereco` varchar(45) NOT NULL,
   `valor_devendo` decimal(12,2) NOT NULL,
   `valor_pago` decimal(12,2) DEFAULT NULL,
-  `vendas_idvenda` int(11) NOT NULL,
-  PRIMARY KEY (`idCliente`, `cpf`),
+  `vendas_idvenda` int NOT NULL,
+  PRIMARY KEY (`idCliente`,`cpf`),
   KEY `fk_cliente_devedor_vendas1` (`vendas_idvenda`),
-  CONSTRAINT `fk_cliente_devedor_vendas1` FOREIGN KEY (`vendas_idvenda`) REFERENCES `vendas` (`idvenda`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_cliente_devedor_vendas1` FOREIGN KEY (`vendas_idvenda`) REFERENCES `vendas` (`idvenda`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;

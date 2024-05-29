@@ -17,9 +17,9 @@ namespace PadariaJJM.entidade
         SalvarLog log = new SalvarLog();
 
         private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
-       // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
+        // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
 
-        public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, string cpf = null, decimal troco = 0  )
+        public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, string cpf = null, decimal troco = 0)
         {
             this.idVenda = idVenda;
             this.preco_total = preco_total;
@@ -48,10 +48,13 @@ namespace PadariaJJM.entidade
 
             try
             {
+                log.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados.", "200");
                 conn.Open();
+                log.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
                 try
                 {
+                    log.SalvarEmArquivoLog("Preparando comando para inserir venda.", "200");
                     MySqlCommand comando = new MySqlCommand(
                         "INSERT INTO vendas (idvenda, preco_total, cpf, troco, metodo_pagamento, data_venda) " +
                         "VALUES (@idvenda, @preco_total, @cpf, @troco, @metodo_pagamento, @data_venda)", conn);
@@ -64,23 +67,25 @@ namespace PadariaJJM.entidade
                     comando.Parameters.AddWithValue("@data_venda", Data_venda.ToString("yyyy-MM-dd HH:mm:ss"));
 
                     comando.ExecuteNonQuery();
+                    log.SalvarEmArquivoLog("Venda inserida com sucesso.", "200");
                 }
                 catch (Exception ex)
                 {
                     mensagem = "Não foi possível salvar.";
-                    log.SalvarEmArquivoLog(ex.ToString(), "500");
+                    log.SalvarEmArquivoLog("Erro ao tentar inserir venda: " + ex.ToString(), "500");
                 }
             }
             catch (Exception ex)
             {
                 mensagem = "Não foi possível abrir conexão.";
-                log.SalvarEmArquivoLog(ex.ToString(), "500");
+                log.SalvarEmArquivoLog("Erro ao abrir conexão: " + ex.ToString(), "500");
             }
             finally
             {
                 if (conn.State == System.Data.ConnectionState.Open)
                 {
                     conn.Close();
+                    log.SalvarEmArquivoLog("Conexão fechada.", "200");
                 }
             }
 
@@ -94,7 +99,9 @@ namespace PadariaJJM.entidade
 
             try
             {
+                log.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para obter todas as vendas.", "200");
                 conn.Open();
+                log.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
                 MySqlCommand comando = new MySqlCommand("SELECT * FROM vendas", conn);
                 using (MySqlDataReader reader = comando.ExecuteReader())
@@ -114,36 +121,39 @@ namespace PadariaJJM.entidade
                         vendas.Add(venda);
                     }
                 }
+                log.SalvarEmArquivoLog("Todas as vendas foram obtidas com sucesso.", "200");
             }
             catch (Exception ex)
             {
-                log.SalvarEmArquivoLog(ex.ToString(), "500");
+                log.SalvarEmArquivoLog("Erro ao obter todas as vendas: " + ex.ToString(), "500");
             }
             finally
             {
                 if (conn.State == System.Data.ConnectionState.Open)
                 {
                     conn.Close();
+                    log.SalvarEmArquivoLog("Conexão fechada.", "200");
                 }
             }
 
             return vendas;
         }
+
         public List<Venda> ObterVendasPorMesAno(int mes, int ano)
         {
             List<Venda> vendas = new List<Venda>();
-            string connStr = "seu_connection_string"; 
             MySqlConnection conn = new MySqlConnection(Url);
 
             try
             {
+                log.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para obter vendas por mês e ano.", "200");
                 conn.Open();
+                log.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
-                // Obter o primeiro e o último dia do mês selecionado
                 DateTime primeiroDiaDoMes = new DateTime(ano, mes, 1);
                 DateTime ultimoDiaDoMes = primeiroDiaDoMes.AddMonths(1).AddDays(-1);
 
-                // Comando SQL com filtro de data
+                log.SalvarEmArquivoLog($"Obtendo vendas de {primeiroDiaDoMes} a {ultimoDiaDoMes}.", "200");
                 string sql = "SELECT * FROM vendas WHERE data_venda >= @primeiroDiaDoMes AND data_venda <= @ultimoDiaDoMes";
                 MySqlCommand comando = new MySqlCommand(sql, conn);
                 comando.Parameters.AddWithValue("@primeiroDiaDoMes", primeiroDiaDoMes);
@@ -166,19 +176,24 @@ namespace PadariaJJM.entidade
                         vendas.Add(venda);
                     }
                 }
+                log.SalvarEmArquivoLog("Vendas por mês e ano obtidas com sucesso.", "200");
             }
             catch (Exception ex)
             {
-                // Tratar exceções
-                Console.WriteLine(ex.Message);
+                log.SalvarEmArquivoLog("Erro ao obter vendas por mês e ano: " + ex.ToString(), "500");
             }
             finally
             {
-                conn.Close();
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    log.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
             }
 
             return vendas;
         }
+
         public decimal ObterTotalValorVendas()
         {
             decimal total = 0;
@@ -186,7 +201,9 @@ namespace PadariaJJM.entidade
 
             try
             {
+                log.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para obter o total de vendas.", "200");
                 conn.Open();
+                log.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
 
                 MySqlCommand comando = new MySqlCommand("SELECT preco_total FROM vendas", conn);
                 using (MySqlDataReader reader = comando.ExecuteReader())
@@ -196,22 +213,22 @@ namespace PadariaJJM.entidade
                         total += reader.GetDecimal("preco_total");
                     }
                 }
+                log.SalvarEmArquivoLog("Total de vendas obtido com sucesso.", "200");
             }
             catch (Exception ex)
             {
-                log.SalvarEmArquivoLog(ex.ToString(), "500");
+                log.SalvarEmArquivoLog("Erro ao obter total de vendas: " + ex.ToString(), "500");
             }
             finally
             {
                 if (conn.State == System.Data.ConnectionState.Open)
                 {
                     conn.Close();
+                    log.SalvarEmArquivoLog("Conexão fechada.", "200");
                 }
             }
 
             return total;
         }
-
-       
     }
 }

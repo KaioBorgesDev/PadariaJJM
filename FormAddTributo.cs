@@ -20,7 +20,7 @@
                     return;
                 }
                 Tributo tributo = new Tributo(nome.Text, valorImp);
-                MessageBox.Show(tributo.inserir());
+                MessageBox.Show(tributo.Inserir());
                 return;
             }
             MessageBox.Show("Verifique as Informaçoes");

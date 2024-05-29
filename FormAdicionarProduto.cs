@@ -172,7 +172,7 @@ namespace PadariaJJM
                 }
 
                 //cadastro
-                if (produto.inserir() == "Não foi salvo!")
+                if (produto.Inserir() == "Não foi salvo!")
                 {
                     MessageBox.Show("Erro ao Cadastrar o Produto. Verifique o código de barras existente ou a Conexão com o banco.");
                     return;
