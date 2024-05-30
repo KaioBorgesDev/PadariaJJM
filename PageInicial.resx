@@ -122,85 +122,85 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="abrirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>161, 22</value>
   </data>
   <data name="abrirToolStripMenuItem.Text" xml:space="preserve">
     <value>Abrir Caixa</value>
   </data>
   <data name="fecharCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>161, 22</value>
   </data>
   <data name="fecharCaixaToolStripMenuItem.Text" xml:space="preserve">
     <value>Fechar Caixa</value>
   </data>
   <data name="relátorioVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>161, 22</value>
   </data>
   <data name="relátorioVendasToolStripMenuItem.Text" xml:space="preserve">
     <value>Relátorio Vendas</value>
   </data>
   <data name="iniciarVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 24</value>
+    <value>56, 20</value>
   </data>
   <data name="iniciarVendasToolStripMenuItem.Text" xml:space="preserve">
     <value>Vendas</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
+    <value>179, 22</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Produto</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
+    <value>179, 22</value>
   </data>
   <data name="adicionarCategoriaToolStripMenuItem1.Text" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 26</value>
+    <value>179, 22</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>Adicionar Imposto</value>
   </data>
   <data name="cadastrarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 24</value>
+    <value>72, 20</value>
   </data>
   <data name="cadastrarProdutoToolStripMenuItem.Text" xml:space="preserve">
     <value>Cadastrar </value>
   </data>
   <data name="nomeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 26</value>
+    <value>117, 22</value>
   </data>
   <data name="nomeToolStripMenuItem.Text" xml:space="preserve">
     <value>Produto</value>
   </data>
   <data name="procurarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
+    <value>67, 20</value>
   </data>
   <data name="procurarProdutoToolStripMenuItem.Text" xml:space="preserve">
     <value>Procurar </value>
   </data>
   <data name="produtoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 26</value>
+    <value>117, 22</value>
   </data>
   <data name="produtoToolStripMenuItem.Text" xml:space="preserve">
     <value>Produto</value>
   </data>
   <data name="atualizarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
+    <value>65, 20</value>
   </data>
   <data name="atualizarToolStripMenuItem.Text" xml:space="preserve">
     <value>Atualizar</value>
   </data>
   <data name="produtoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 26</value>
+    <value>117, 22</value>
   </data>
   <data name="produtoToolStripMenuItem1.Text" xml:space="preserve">
     <value>Produto</value>
   </data>
   <data name="removerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
+    <value>66, 20</value>
   </data>
   <data name="removerToolStripMenuItem.Text" xml:space="preserve">
     <value>Remover</value>
@@ -208,12 +208,8 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 3, 0, 3</value>
-  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1673, 30</value>
+    <value>1464, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -429,10 +425,14 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>832, 356</value>
+    <value>728, 267</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 544</value>
+    <value>700, 408</value>
   </data>
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -459,13 +459,13 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 28.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 28.2pt, style=Italic</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 30</value>
+    <value>584, 22</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>682, 56</value>
+    <value>482, 44</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -501,10 +501,10 @@
     <value>Sylfaen, 13.8pt, style=Italic</value>
   </data>
   <data name="hora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+    <value>0, 22</value>
   </data>
   <data name="hora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 29</value>
+    <value>0, 25</value>
   </data>
   <data name="hora.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -534,16 +534,16 @@
     <value>True</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 38</value>
+    <value>19, 28</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 33</value>
+    <value>59, 26</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -564,10 +564,13 @@
     <value>7</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 84</value>
+    <value>177, 63</value>
+  </data>
+  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 27</value>
+    <value>327, 23</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -588,16 +591,16 @@
     <value>True</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 38</value>
+    <value>177, 28</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 33</value>
+    <value>255, 26</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -654,13 +657,16 @@
     <value>125</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 128</value>
+    <value>19, 96</value>
+  </data>
+  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>553, 600</value>
+    <value>484, 450</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -681,13 +687,16 @@
     <value>False</value>
   </data>
   <data name="cpf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 166</value>
+    <value>-1, 124</value>
+  </data>
+  <data name="cpf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="cpf.Mask" xml:space="preserve">
     <value>000-000-000-00</value>
   </data>
   <data name="cpf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 27</value>
+    <value>218, 23</value>
   </data>
   <data name="cpf.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -714,10 +723,13 @@
     <value>NoControl</value>
   </data>
   <data name="cpf_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 125</value>
+    <value>3, 94</value>
+  </data>
+  <data name="cpf_check.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="cpf_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 35</value>
+    <value>147, 29</value>
   </data>
   <data name="cpf_check.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -738,10 +750,13 @@
     <value>1</value>
   </data>
   <data name="troco_caixa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 55</value>
+    <value>428, 41</value>
+  </data>
+  <data name="troco_caixa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="troco_caixa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 27</value>
+    <value>60, 23</value>
   </data>
   <data name="troco_caixa.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -771,10 +786,10 @@
     <value>NoControl</value>
   </data>
   <data name="lbTroco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 21</value>
+    <value>428, 16</value>
   </data>
   <data name="lbTroco.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 31</value>
+    <value>57, 25</value>
   </data>
   <data name="lbTroco.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -807,10 +822,10 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 21</value>
+    <value>-1, 16</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 31</value>
+    <value>195, 25</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -834,16 +849,16 @@
     <value>True</value>
   </data>
   <data name="valor_Troco.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 19.800001pt</value>
+    <value>Microsoft Sans Serif, 19.800001pt</value>
   </data>
   <data name="valor_Troco.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="valor_Troco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 558</value>
+    <value>428, 378</value>
   </data>
   <data name="valor_Troco.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 40</value>
+    <value>29, 31</value>
   </data>
   <data name="valor_Troco.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -864,10 +879,13 @@
     <value>5</value>
   </data>
   <data name="mtd_Pagamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 55</value>
+    <value>-1, 41</value>
+  </data>
+  <data name="mtd_Pagamento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mtd_Pagamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 28</value>
+    <value>218, 23</value>
   </data>
   <data name="mtd_Pagamento.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -888,16 +906,16 @@
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 566</value>
+    <value>3, 378</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 33</value>
+    <value>72, 26</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -921,16 +939,16 @@
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1418, 0</value>
+    <value>1241, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 33</value>
+    <value>95, 26</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -954,16 +972,16 @@
     <value>True</value>
   </data>
   <data name="valorTotallb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 19.800001pt</value>
+    <value>Microsoft Sans Serif, 19.800001pt</value>
   </data>
   <data name="valorTotallb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="valorTotallb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 497</value>
+    <value>428, 313</value>
   </data>
   <data name="valorTotallb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 40</value>
+    <value>29, 31</value>
   </data>
   <data name="valorTotallb.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -987,16 +1005,16 @@
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 497</value>
+    <value>3, 313</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 33</value>
+    <value>122, 26</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1017,10 +1035,13 @@
     <value>10</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1066, 128</value>
+    <value>933, 96</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>663, 600</value>
+    <value>580, 450</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1038,16 +1059,19 @@
     <value>3</value>
   </data>
   <data name="vender.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 24pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 24pt, style=Italic</value>
   </data>
   <data name="vender.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="vender.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1204, 730</value>
+    <value>1054, 548</value>
+  </data>
+  <data name="vender.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="vender.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 89</value>
+    <value>349, 67</value>
   </data>
   <data name="vender.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1071,16 +1095,16 @@
     <value>True</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 16.2pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 16.2pt, style=Italic</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1354, 8</value>
+    <value>1185, 6</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 33</value>
+    <value>152, 26</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1101,10 +1125,13 @@
     <value>1</value>
   </data>
   <data name="qtdTB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 84</value>
+    <value>19, 63</value>
+  </data>
+  <data name="qtdTB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="qtdTB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 27</value>
+    <value>110, 23</value>
   </data>
   <data name="qtdTB.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1122,10 +1149,13 @@
     <value>0</value>
   </data>
   <data name="painelVendas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 113</value>
+    <value>0, 85</value>
+  </data>
+  <data name="painelVendas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="painelVendas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1876, 995</value>
+    <value>1642, 746</value>
   </data>
   <data name="painelVendas.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1152,10 +1182,10 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1673, 871</value>
+    <value>1464, 653</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1233,9 +1263,6 @@
         EAGSAQQCQgFQoPICehH6An9C/AV///pS//8=
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Padaria JJM</value>
   </data>
@@ -1255,6 +1282,12 @@
     <value>fecharCaixaToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;fecharCaixaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Name" xml:space="preserve">
+    <value>relátorioVendasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cadastrarProdutoToolStripMenuItem.Name" xml:space="preserve">
@@ -1376,12 +1409,6 @@
   </data>
   <data name="&gt;&gt;valorTotalDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Name" xml:space="preserve">
-    <value>relátorioVendasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relátorioVendasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PageInicial</value>

@@ -4517,3 +4517,1463 @@ Data: 29/05/2024 20:23:12
 Categoria: 200
 Mensagem: Conexão fechada.
 
+Data: 30/05/2024 10:38:02
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todas as categorias.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Lendo categorias do banco de dados.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Categorias lidas com sucesso.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para selecionar todos os tributos.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Tributos selecionados com sucesso.
+
+Data: 30/05/2024 10:38:03
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:38:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 10:38:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:38:36
+Categoria: 200
+Mensagem: Executando comando para inserir produto.
+
+Data: 30/05/2024 10:38:36
+Categoria: 200
+Mensagem: Produto inserido com sucesso.
+
+Data: 30/05/2024 10:38:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:38:40
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todos os produtos.
+
+Data: 30/05/2024 10:38:40
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:38:40
+Categoria: 200
+Mensagem: Produtos selecionados com sucesso.
+
+Data: 30/05/2024 10:38:40
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:39:59
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 10:39:59
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:39:59
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 10:40:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 10:40:39
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todos os produtos.
+
+Data: 30/05/2024 10:40:40
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 10:40:40
+Categoria: 200
+Mensagem: Produtos selecionados com sucesso.
+
+Data: 30/05/2024 10:40:40
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:16:37
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:37
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:40
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:16:40
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:40
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 11:16:45
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:16:47
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 11:17:49
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:17:49
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:17:49
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 11:17:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 11:20:28
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 11:20:28
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 11:20:28
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 27
+
+Data: 30/05/2024 11:20:28
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:14
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:13:15
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:15
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:13:18
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:20
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 12:13:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:13:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:13:32
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:13:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 12:13:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:13:57
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 31
+
+Data: 30/05/2024 12:13:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:19:11
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:11
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:19:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:50
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:19:51
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:51
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:19:53
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:19:55
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 12:20:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:20:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:20:16
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 12:20:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:29
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 34
+
+Data: 30/05/2024 12:20:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:33
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:20:33
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:33
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:20:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:20:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 12:20:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:20:44
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 35
+
+Data: 30/05/2024 12:20:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:21:53
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:21:54
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:21:54
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:21:57
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:22:05
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 12:22:07
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:22:07
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:22:07
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 12:22:10
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 12:22:11
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 12:22:11
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 12:22:11
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 37
+
+Data: 30/05/2024 12:22:11
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:07:51
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:07:52
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:07:52
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:07:55
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:07:57
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:08:08
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:08:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:08:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:08:12
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:08:14
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:09:35
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:09:36
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:09:36
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:09:39
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:09:40
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:10:02
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:10:03
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:03
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:10:05
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:07
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:10:32
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:10:32
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:32
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:10:34
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:10:42
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para obter o último ID de venda.
+
+Data: 30/05/2024 13:10:42
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:10:42
+Categoria: 200
+Mensagem: Último ID de venda obtido com sucesso: 42
+
+Data: 30/05/2024 13:10:42
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:18
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todos os produtos.
+
+Data: 30/05/2024 13:37:19
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:19
+Categoria: 200
+Mensagem: Produtos selecionados com sucesso.
+
+Data: 30/05/2024 13:37:19
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para pegar todas as categorias.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Lendo categorias do banco de dados.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Categorias lidas com sucesso.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para selecionar todos os tributos.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Tributos selecionados com sucesso.
+
+Data: 30/05/2024 13:37:22
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:26
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:37:26
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:26
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:37:29
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:37:31
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:38:07
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:38:08
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:08
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:38:09
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:10
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+
+Data: 30/05/2024 13:38:41
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:38:42
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:42
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Produto atualizado com sucesso.
+
+Data: 30/05/2024 13:38:44
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 30/05/2024 13:38:46
+Categoria: 500
+Mensagem: The input string '' was not in a correct format.
+

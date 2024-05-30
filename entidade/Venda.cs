@@ -13,6 +13,7 @@ namespace PadariaJJM.entidade
         private decimal troco;
         private string metodo_pagamento;
         private DateTime data_venda;
+      
 
         SalvarLog log = new SalvarLog();
 
@@ -27,6 +28,7 @@ namespace PadariaJJM.entidade
             this.data_venda = data_venda;
             this.cpf = cpf;
             this.troco = troco;
+            
         }
 
         public Venda()
@@ -40,6 +42,9 @@ namespace PadariaJJM.entidade
         public decimal Troco { get => troco; set => troco = value; }
         public string Metodo_pagamento { get => metodo_pagamento; set => metodo_pagamento = value; }
         public DateTime Data_venda { get => data_venda; set => data_venda = value; }
+     
+
+
 
         public string InserirVenda()
         {
@@ -65,6 +70,7 @@ namespace PadariaJJM.entidade
                     comando.Parameters.AddWithValue("@troco", Troco);
                     comando.Parameters.AddWithValue("@metodo_pagamento", Metodo_pagamento);
                     comando.Parameters.AddWithValue("@data_venda", Data_venda.ToString("yyyy-MM-dd HH:mm:ss"));
+                    
 
                     comando.ExecuteNonQuery();
                     log.SalvarEmArquivoLog("Venda inserida com sucesso.", "200");
@@ -116,6 +122,7 @@ namespace PadariaJJM.entidade
                             Data_venda = reader.GetDateTime("data_venda"),
                             Cpf = reader.IsDBNull(reader.GetOrdinal("cpf")) ? null : reader.GetString("cpf"),
                             Troco = reader.IsDBNull(reader.GetOrdinal("troco")) ? 0 : reader.GetDecimal("troco")
+                            
                         );
 
                         vendas.Add(venda);
@@ -171,6 +178,7 @@ namespace PadariaJJM.entidade
                             Data_venda = reader.GetDateTime("data_venda"),
                             Cpf = reader.IsDBNull(reader.GetOrdinal("cpf")) ? null : reader.GetString("cpf"),
                             Troco = reader.IsDBNull(reader.GetOrdinal("troco")) ? 0 : reader.GetDecimal("troco")
+
                         };
 
                         vendas.Add(venda);
@@ -230,5 +238,45 @@ namespace PadariaJJM.entidade
 
             return total;
         }
+
+        public int ObterUltimoIdVenda()
+        {
+            int ultimoIdVenda = -1;
+            MySqlConnection conn = new MySqlConnection(Url);
+
+            try
+            {
+                log.SalvarEmArquivoLog("Tentando abrir conexão com o banco de dados para obter o último ID de venda.", "200");
+                conn.Open();
+                log.SalvarEmArquivoLog("Conexão aberta com sucesso.", "200");
+
+                MySqlCommand comando = new MySqlCommand("SELECT MAX(idvenda) FROM vendas", conn);
+                object result = comando.ExecuteScalar();
+
+                if (result != DBNull.Value && result != null)
+                {
+                    ultimoIdVenda = Convert.ToInt32(result);
+                    log.SalvarEmArquivoLog("Último ID de venda obtido com sucesso: " + ultimoIdVenda, "200");
+                }
+                else
+                {
+                    log.SalvarEmArquivoLog("Nenhuma venda encontrada.", "200");
+                }
+            }
+            catch (Exception ex)
+            {
+                log.SalvarEmArquivoLog("Erro ao obter o último ID de venda: " + ex.ToString(), "500");
+            }
+            finally
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                    log.SalvarEmArquivoLog("Conexão fechada.", "200");
+                }
+            }
+            return ultimoIdVenda;
+        }
+    
     }
 }

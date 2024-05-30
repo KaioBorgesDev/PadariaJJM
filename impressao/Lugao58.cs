@@ -1,6 +1,8 @@
 ﻿using PadariaJJM;
+using PadariaJJM.entidade;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO.Ports;
 using System.Text;
 using System.Windows.Forms;
@@ -9,13 +11,15 @@ namespace PadariaJJM.impressao
 {
     internal class Lugao58
     {
-        private readonly List<Produto> lista;
+
+        private readonly BindingList<Produto> lista;
         private readonly decimal valorTotal;
         private readonly string metodo_pagamento;
         private readonly DateTime data_venda;
         private readonly decimal troco;
 
-        public Lugao58(List<Produto> lista, decimal valorTotal, string metodo_pagamento, DateTime data_venda, decimal troco)
+        private Venda venda = new Venda();
+        public Lugao58(BindingList<Produto> lista, decimal valorTotal, string metodo_pagamento, DateTime data_venda, decimal troco)
         {
             this.lista = lista ?? throw new ArgumentNullException(nameof(lista));
             this.valorTotal = valorTotal;
@@ -26,7 +30,7 @@ namespace PadariaJJM.impressao
 
         public void ImprimirCupom()
         {
-            string portaSerial = "COM1";
+            string portaSerial = "USB002";
             int baudRate = 9600;
             string dadosParaImpressao = GerarDadosParaImpressao();
 
@@ -70,7 +74,7 @@ namespace PadariaJJM.impressao
             dadosParaImpressao.AppendLine("---------------------------------------------------");
             dadosParaImpressao.AppendLine($"Data: {data_venda:dd/MM/yyyy} Hora: {data_venda:HH:mm:ss}");
             dadosParaImpressao.AppendLine("---------------------------------------------------");
-            dadosParaImpressao.AppendLine($"                     Extrato nº {1}");
+            dadosParaImpressao.AppendLine($"                     Extrato nº {venda.ObterUltimoIdVenda().ToString()}");
             dadosParaImpressao.AppendLine("             Cupom Fiscal Eletronico ");
             dadosParaImpressao.AppendLine("---------------------------------------------------");
             dadosParaImpressao.AppendLine("NUM | CODIGO | PRODUTO       | QTD | PRECO UN R$ | PRECO TOTAL R$");

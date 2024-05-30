@@ -1,4 +1,6 @@
 using PadariaJJM.entidade;
+using PadariaJJM.impressao;
+using PadariaJJM.log;
 using System.ComponentModel;
 using System.Media;
 
@@ -6,7 +8,7 @@ namespace PadariaJJM
 {
     public partial class PageInicial : Form
     {
-        SoundPlayer player = new SoundPlayer();
+       
         BindingList<Produto> produtosVenda = new BindingList<Produto>();
         BindingList<Venda> listaVenda = new BindingList<Venda>();
 
@@ -14,7 +16,7 @@ namespace PadariaJJM
         {
             InitializeComponent();
 
-            player.SoundLocation = @"arquivos\sounds\sound.wav";
+            
             var listMetodos = new string[] { "Dinheiro", "Cartão Debito", "Cartão Credito", "Á prazo" };
 
             foreach (var mtd in listMetodos)
@@ -154,7 +156,7 @@ namespace PadariaJJM
                 MessageBox.Show("Não tem nenhuma venda sendo realizada!");
                 return;
             }
-
+            
 
             Venda v = new Venda(null, decimal.Parse(valorTotallb.Text), mtd_Pagamento.Text, DateTime.Now);
 
@@ -178,7 +180,7 @@ namespace PadariaJJM
                     produto.Quantidade -= quantidadeRetirada;
                     produto.AtualizarProduto();
                 }
-                produtosVenda.Clear();
+               
 
                 DialogResult resultado = new DialogResult();
                 resultado = MessageBox.Show("Imprimir a via?", "Venda Finalizada.", MessageBoxButtons.OKCancel);
@@ -187,14 +189,20 @@ namespace PadariaJJM
                     //implementar a logica de imprimir a via
                     try
                     {
-                        MessageBox.Show("Imprimindo sua via");
-                    }
-                    catch (Exception)
-                    {
+                        Lugao58 impressao = new Lugao58(produtosVenda, decimal.Parse(valorTotallb.Text),mtd_Pagamento.Text,DateTime.Now,decimal.Parse(troco_caixa.Text));
+                        impressao.ImprimirCupom();
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao imprimir, verifique a impressora.");
+                        SalvarLog salvar = new SalvarLog();
+                        salvar.SalvarEmArquivoLog(ex.Message, "500");
 
                     }
                 }
+
+                produtosVenda.Clear();
                 valorTotallb.Text = "0";
                 valor_Troco.Text = "0";
                 cpf.Text = "";
@@ -221,6 +229,7 @@ namespace PadariaJJM
             {
                 var texto = qtdTB.Text;
                 bool havePointer = texto.Contains('.');
+
                 if (havePointer)
                 {
                     MessageBox.Show("Por Favor use virgula no lugar de '.'");
@@ -261,10 +270,12 @@ namespace PadariaJJM
 
 
                                 produto.ValorTotal = Math.Round(produto.Quantidade * produto.Preco, 2);
+
+                                
                                 produtosVenda.Add(produto);
 
                                 // ao adicionar eu solto um som de bip
-                                player.Play();
+                                
                                 decimal valorTotal = decimal.Parse(valorTotallb.Text);
                                 valorTotal += produto.ValorTotal;
                                 valorTotallb.Text = valorTotal.ToString();

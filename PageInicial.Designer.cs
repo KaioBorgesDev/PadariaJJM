@@ -34,6 +34,7 @@
             iniciarVendasToolStripMenuItem = new ToolStripMenuItem();
             abrirToolStripMenuItem = new ToolStripMenuItem();
             fecharCaixaToolStripMenuItem = new ToolStripMenuItem();
+            relátorioVendasToolStripMenuItem = new ToolStripMenuItem();
             cadastrarProdutoToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem = new ToolStripMenuItem();
             adicionarCategoriaToolStripMenuItem1 = new ToolStripMenuItem();
@@ -77,7 +78,6 @@
             label8 = new Label();
             painelVendas = new Panel();
             qtdTB = new MaskedTextBox();
-            relátorioVendasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource3).BeginInit();
@@ -113,6 +113,12 @@
             fecharCaixaToolStripMenuItem.Name = "fecharCaixaToolStripMenuItem";
             resources.ApplyResources(fecharCaixaToolStripMenuItem, "fecharCaixaToolStripMenuItem");
             fecharCaixaToolStripMenuItem.Click += fecharCaixaToolStripMenuItem_Click;
+            // 
+            // relátorioVendasToolStripMenuItem
+            // 
+            relátorioVendasToolStripMenuItem.Name = "relátorioVendasToolStripMenuItem";
+            resources.ApplyResources(relátorioVendasToolStripMenuItem, "relátorioVendasToolStripMenuItem");
+            relátorioVendasToolStripMenuItem.Click += relátorioVendasToolStripMenuItem_Click;
             // 
             // cadastrarProdutoToolStripMenuItem
             // 
@@ -387,12 +393,6 @@
             // 
             resources.ApplyResources(qtdTB, "qtdTB");
             qtdTB.Name = "qtdTB";
-            // 
-            // relátorioVendasToolStripMenuItem
-            // 
-            relátorioVendasToolStripMenuItem.Name = "relátorioVendasToolStripMenuItem";
-            resources.ApplyResources(relátorioVendasToolStripMenuItem, "relátorioVendasToolStripMenuItem");
-            relátorioVendasToolStripMenuItem.Click += relátorioVendasToolStripMenuItem_Click;
             // 
             // PageInicial
             // 

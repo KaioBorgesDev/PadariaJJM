@@ -16,6 +16,8 @@ namespace PadariaJJM
         public string Categoria { get; set; }
         public string CodigoBarras { get; set; } // Código de Barras é opcional
 
+    
+
         SalvarLog salvar = new();
 
         public decimal ValorTotal { get; set; } // Fornecedor é opcional
