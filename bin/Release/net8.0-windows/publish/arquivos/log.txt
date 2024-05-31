@@ -4645,3 +4645,75 @@ Data: 29/05/2024 20:36:08
 Categoria: 200
 Mensagem: Conexão fechada.
 
+Data: 5/31/2024 12:53:28 AM
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 5/31/2024 12:53:28 AM
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 5/31/2024 12:53:28 AM
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Preparando comando para inserir venda.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Venda inserida com sucesso.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para procurar produto pelo código de barras.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão fechada.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Tentando abrir conexão com o banco de dados para atualizar produto.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão aberta com sucesso.
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 500
+Mensagem: Erro ao atualizar produto: MySql.Data.MySqlClient.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`padariajjm`.`produtos`, CONSTRAINT `fk_produtos_tributos1` FOREIGN KEY (`tributos_nome`) REFERENCES `tributos` (`nome`))
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at PadariaJJM.Produto.AtualizarProduto() in C:\Users\PadariaJJM\Source\Repos\PadariaJJM\entidade\Produto.cs:line 252
+
+Data: 5/31/2024 12:53:32 AM
+Categoria: 200
+Mensagem: Conexão fechada.
+

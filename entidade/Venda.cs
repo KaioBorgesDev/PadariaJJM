@@ -17,7 +17,7 @@ namespace PadariaJJM.entidade
 
         SalvarLog log = new SalvarLog();
 
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Juniormeira";
         // private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Senai1234";
 
         public Venda(int? idVenda, decimal preco_total, string metodo_pagamento, DateTime data_venda, string cpf = null, decimal troco = 0)

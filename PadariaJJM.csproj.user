@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_LastSelectedProfileId>C:\Users\Administrador\Source\Repos\KaioBorgesDev\PadariaJJM\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>C:\Users\PadariaJJM\Source\Repos\PadariaJJM\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="AtualizarProdutoForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormAddCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormAddTributo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdicionarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProcurarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PageInicial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormAddCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormProcurarProduto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormAdicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ProdutoRemoverForm.cs">

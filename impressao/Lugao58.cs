@@ -1,9 +1,6 @@
-﻿using PadariaJJM;
-using PadariaJJM.entidade;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO.Ports;
 using System.Text;
 using System.Windows.Forms;
 
@@ -11,14 +8,12 @@ namespace PadariaJJM.impressao
 {
     internal class Lugao58
     {
-
         private readonly BindingList<Produto> lista;
         private readonly decimal valorTotal;
         private readonly string metodo_pagamento;
         private readonly DateTime data_venda;
         private readonly decimal troco;
 
-        private Venda venda = new Venda();
         public Lugao58(BindingList<Produto> lista, decimal valorTotal, string metodo_pagamento, DateTime data_venda, decimal troco)
         {
             this.lista = lista ?? throw new ArgumentNullException(nameof(lista));
@@ -30,37 +25,16 @@ namespace PadariaJJM.impressao
 
         public void ImprimirCupom()
         {
-            string portaSerial = "USB002";
-            int baudRate = 9600;
+            string nomeDaImpressora = "POS-58"; // Substitua pelo nome correto da impressora
             string dadosParaImpressao = GerarDadosParaImpressao();
 
-            using (SerialPort serialPort = new SerialPort(portaSerial, baudRate))
+            try
             {
-                try
-                {
-                    serialPort.Open();
-
-                    if (serialPort.IsOpen)
-                    {
-                        byte[] buffer = Encoding.ASCII.GetBytes(dadosParaImpressao);
-                        serialPort.Write(buffer, 0, buffer.Length);
-
-                        // Comando de corte de papel (ESC/POS)
-                        byte[] corte = { 0x1B, 0x69 }; // ESC i
-                        serialPort.Write(corte, 0, corte.Length);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao imprimir: {ex.Message}");
-                }
-                finally
-                {
-                    if (serialPort.IsOpen)
-                    {
-                        serialPort.Close();
-                    }
-                }
+                RawPrinter.SendStringToPrinter(nomeDaImpressora, dadosParaImpressao);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao imprimir: {ex.Message}");
             }
         }
 
@@ -68,17 +42,17 @@ namespace PadariaJJM.impressao
         {
             StringBuilder dadosParaImpressao = new StringBuilder();
 
-            dadosParaImpressao.AppendLine("                     PADARIA JJM                   ");
-            dadosParaImpressao.AppendLine("          Rua Mato Grosso do Sul, Monte Mor, 401 A");
-            dadosParaImpressao.AppendLine("          CNPJ: 1923819283989 013");
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
+            dadosParaImpressao.AppendLine("          PADARIA JJM          ");
+            dadosParaImpressao.AppendLine("     Comunidade Santa Rita");
+            dadosParaImpressao.AppendLine("      Monte Mor, SP           ");
+            dadosParaImpressao.AppendLine("    CNPJ: 49927885/000168    ");
+            dadosParaImpressao.AppendLine("--------------------------------");
             dadosParaImpressao.AppendLine($"Data: {data_venda:dd/MM/yyyy} Hora: {data_venda:HH:mm:ss}");
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
-            dadosParaImpressao.AppendLine($"                     Extrato nº {venda.ObterUltimoIdVenda().ToString()}");
-            dadosParaImpressao.AppendLine("             Cupom Fiscal Eletronico ");
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
-            dadosParaImpressao.AppendLine("NUM | CODIGO | PRODUTO       | QTD | PRECO UN R$ | PRECO TOTAL R$");
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
+            dadosParaImpressao.AppendLine("--------------------------------");
+            dadosParaImpressao.AppendLine("       Cupom Fiscal Eletronico");
+            dadosParaImpressao.AppendLine("--------------------------------");
+            dadosParaImpressao.AppendLine("NUM | CODIGO | PRODUTO      | QTD | PRECO UN R$ | PRECO TOTAL R$");
+            dadosParaImpressao.AppendLine("--------------------------------");
 
             int i = 0;
             foreach (Produto produto in lista)
@@ -86,15 +60,18 @@ namespace PadariaJJM.impressao
                 i++;
                 string precoUnitario = (produto.Preco / produto.Quantidade).ToString("F2");
                 string precoTotal = produto.Preco.ToString("F2");
-                dadosParaImpressao.AppendLine($"{i,3} | {produto.CodigoBarras,6} | {produto.Nome,-12} | {produto.Quantidade,3} | {precoUnitario,10} | {precoTotal,12}");
+                dadosParaImpressao.AppendLine($"{i} | {produto.CodigoBarras,6} | {produto.Nome} | {produto.Quantidade} | {precoUnitario} | {precoTotal}");
             }
 
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
+            dadosParaImpressao.AppendLine("--------------------------------");
             dadosParaImpressao.AppendLine($"Total: {valorTotal,45:C2}");
             dadosParaImpressao.AppendLine($"Método de Pagamento: {metodo_pagamento}");
-            dadosParaImpressao.AppendLine($"Troco: {troco:C2}");
-            dadosParaImpressao.AppendLine("---------------------------------------------------");
-            dadosParaImpressao.AppendLine("Obrigado pela compra!");
+            dadosParaImpressao.AppendLine($"Troco:{troco:C2}");
+            dadosParaImpressao.AppendLine("--------------------------------");
+            dadosParaImpressao.AppendLine("    Obrigado pela compra!     ");
+
+            // Comando de corte de papel (ESC/POS)
+            dadosParaImpressao.AppendLine("\x1B\x69"); // ESC i
 
             return dadosParaImpressao.ToString();
         }

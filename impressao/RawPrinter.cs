@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-public class RawPrinterHelper
+public class RawPrinter
 {
     [DllImport("winspool.Drv", EntryPoint = "OpenPrinterA", SetLastError = true,
         CharSet = CharSet.Ansi, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]

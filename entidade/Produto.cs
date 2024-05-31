@@ -23,7 +23,7 @@ namespace PadariaJJM
         public decimal ValorTotal { get; set; } // Fornecedor é opcional
 
         // URL da conexão com o banco de dados
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Juniormeira";
 
         // Construtor para as propriedades obrigatórias
         public Produto(string nome, decimal preco, decimal quantidade, bool isPeso, string categoria, string codigodebarras)

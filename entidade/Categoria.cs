@@ -10,7 +10,7 @@ namespace PadariaJJM.entidade
     {
         public string Name { get; set; }
         private SalvarLog salvar = new SalvarLog();
-        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=270275";
+        private string Url = "Server=127.0.0.1;Database=PadariaJJM;Uid=root;Pwd=Juniormeira";
 
         public Categoria(string name)
         {

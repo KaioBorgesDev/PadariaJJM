@@ -184,13 +184,41 @@ namespace PadariaJJM
 
                 DialogResult resultado = new DialogResult();
                 resultado = MessageBox.Show("Imprimir a via?", "Venda Finalizada.", MessageBoxButtons.OKCancel);
+
                 if (resultado == DialogResult.OK)
                 {
-                    //implementar a logica de imprimir a via
+                    // Implementar a lógica de imprimir a via
                     try
                     {
-                        Lugao58 impressao = new Lugao58(produtosVenda, decimal.Parse(valorTotallb.Text),mtd_Pagamento.Text,DateTime.Now,decimal.Parse(troco_caixa.Text));
+                         // Preencha com seus dados
+                        decimal valorTotal = decimal.Parse(valorTotallb.Text);
+                        string metodoPagamento = mtd_Pagamento.Text;
+                        DateTime dataVenda = DateTime.Now;
+                        decimal troco = 0m;
+                        if (troco_caixa.Text != "")
+                        troco = decimal.Parse(troco_caixa.Text);
+                        
+
+
+                        Lugao58 impressao = new Lugao58(produtosVenda, valorTotal, metodoPagamento, dataVenda, troco);
                         impressao.ImprimirCupom();
+
+                        MessageBox.Show("Impressão realizada com sucesso!");
+
+                        DialogResult resultado2;
+                        do
+                        {
+                            resultado2 = new DialogResult();
+                            resultado2 = MessageBox.Show("Imprimir a via Denovo?", "Venda Finalizada.", MessageBoxButtons.OKCancel);
+                            if (resultado2 == DialogResult.OK)
+                            {
+                                impressao.ImprimirCupom();
+                            }
+                        } while (resultado2 != DialogResult.Cancel);
+                        
+
+                        produtosVenda.Clear();
+
 
                     }
                     catch (Exception ex)
@@ -198,11 +226,11 @@ namespace PadariaJJM
                         MessageBox.Show("Erro ao imprimir, verifique a impressora.");
                         SalvarLog salvar = new SalvarLog();
                         salvar.SalvarEmArquivoLog(ex.Message, "500");
-
                     }
                 }
 
-                produtosVenda.Clear();
+
+                
                 valorTotallb.Text = "0";
                 valor_Troco.Text = "0";
                 cpf.Text = "";
